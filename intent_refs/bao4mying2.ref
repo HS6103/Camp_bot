@@ -1,0 +1,18 @@
+{
+    "language": "zh-tw",
+    "type": "basic",
+    "version": {
+        "atk": "v265",
+        "intent": "1.0"
+    },
+    "user_defined": {
+        "as_noun": [
+            "冬令營",
+            "夏令營"
+        ]
+    },
+    "utterance": {},
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
