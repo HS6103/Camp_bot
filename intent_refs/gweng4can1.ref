@@ -7,525 +7,22 @@
     },
     "user_defined": {
         "as_noun": [
-            "保險",
-            "過夜",
             "中午",
             "休息時間",
-            "戶外"
+            "保險",
+            "冬令營",
+            "夏令營",
+            "戶外",
+            "紀錄",
+            "行前",
+            "親師群",
+            "過夜"
         ]
     },
     "utterance": {
-        "午餐吃什麼?": {
-            "id": "90224845-c2a4-4f7d-9366-a3d73ab639a8",
+        "帶零食": {
+            "id": "772a33e1-a1db-43f6-9b09-91516ea5b35a",
             "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "吃掉",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸收",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攝入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "耗損",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "花掉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "煮",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "啃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吃著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "喝",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "常吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吃了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "生吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吃過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想吃",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "吃",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "會有點心嗎?": {
-            "id": "d8516a7e-b4bd-4468-8748-7ab1d8cbff89",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "會",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "點心",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "中午會吃什麼?": {
-            "id": "8b2bc298-4a09-4dd5-9283-07a6efa01d2b",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "中午",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "會",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "吃掉",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸收",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攝入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "耗損",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "花掉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吃著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "煮",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "啃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "喝",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吃了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "生吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "常吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吃過",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "吃",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "會提供午餐嗎?": {
-            "id": "22600eb9-d116-4c7e-81a3-4cbe89550af9",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "會",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "供應",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供貨",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供銷",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供電",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提案",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "協助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "奉獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "武裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獻出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "發放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭拜",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭祀",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "補給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "貢獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "資助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "進獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出借",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收集",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶來",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提供",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "可以帶零食去嗎?": {
-            "id": "695d9eb6-7948-4c7f-8f79-49e44915a29e",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
-                    "checked": false,
-                    "checkbox": false
-                },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
@@ -625,12 +122,12 @@
                             "checked": false
                         },
                         {
-                            "text": "常帶",
+                            "text": "忙趕",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶拉",
+                            "text": "常帶",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -640,22 +137,7 @@
                             "checked": false
                         },
                         {
-                            "text": "忙趕",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶讓",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶灘",
+                            "text": "有帶",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -665,12 +147,27 @@
                             "checked": false
                         },
                         {
+                            "text": "帶拉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "帶等",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "有帶",
+                            "text": "帶著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶灘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶讓",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -684,32 +181,727 @@
                     "text": "零食",
                     "checked": true,
                     "checkbox": true
+                }
+            ]
+        },
+        "有點心": {
+            "id": "210a4de1-0667-4974-9b2d-690f98812283",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "點心",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "供應午餐": {
+            "id": "670b466b-297c-4c4f-b944-2a8ba72139b7",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供銷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供電",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "支應",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "滋養",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "供水",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "採購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自產",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "生產",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "儲藏",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "供氣",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "供應",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "午餐",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "提供午餐": {
+            "id": "6ea7a744-3cac-49bb-a4a3-bf820a1b21e7",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供應",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供銷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供電",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提案",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奉獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "武裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獻出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭拜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭祀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收集",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出借",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "提供",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "午餐",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "自備午餐": {
+            "id": "30e14463-aedb-4292-9a2b-e6fd916445ce",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "選購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶備",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "添購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夾取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加滿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "購買",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝滿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "自備",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "午餐",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "午餐吃什麼": {
+            "id": "47e915c6-60ec-4f82-a85e-144ca651f290",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "午餐",
+                    "checked": false,
+                    "checkbox": true
                 },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "要去",
+                            "text": "吃掉",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸收",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "耗損",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "花掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "煮",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "回去",
+                            "text": "啃",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "想去",
+                            "text": "吃著",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "去了",
+                            "text": "喝",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "跑去",
+                            "text": "常吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "生吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想吃",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "吃",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "帶零食進去": {
+            "id": "e3bfe463-113c-4e10-b060-99a86750970d",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "佩帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "夾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶病",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶走",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "挾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "隨帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "佩戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "披掛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "穿破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "肩扛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "背負",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "負載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "載攜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運送",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "配戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "馱運",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙趕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶拉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶等",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶灘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶讓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "帶",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "零食",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "進來",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "進入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿出來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "藏起來",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -719,12 +911,12 @@
                             "checked": false
                         },
                         {
-                            "text": "跑來",
+                            "text": "跑出來",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "趕去",
+                            "text": "回去",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -734,339 +926,29 @@
                             "checked": false
                         },
                         {
-                            "text": "來",
+                            "text": "進去了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出來",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "去",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
+                    "text": "進去",
                     "checked": false,
                     "checkbox": false
                 }
             ]
         },
-        "需要自備午餐嗎?": {
-            "id": "016433fd-1743-4fac-9ad4-d508a3eaa255",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "索要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "要求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索討",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "願意",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "選購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶備",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "攜帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拿取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "添購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "夾取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加滿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "購買",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "裝滿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "自備",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "是否需要自備午餐？": {
-            "id": "d1f65578-9549-4cc7-a372-b38969701ec1",
-            "argument": [
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "是否",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "索要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "要求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索討",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "願意",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "選購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶備",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "攜帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拿取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "添購",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "夾取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加滿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "購買",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "裝滿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "自備",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "有沒有點心可以吃？": {
-            "id": "bbc424b1-4d0b-4508-bb24-203bc8761a30",
+        "有沒有點心": {
+            "id": "d0af07c1-ad7e-4e07-b5f2-936c3cac6a48",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -1077,12 +959,23 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
-                    "checked": true,
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "中午會吃什麼": {
+            "id": "ff4fdddc-e508-4114-89f8-6ce8b39a62ef",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "中午",
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "MODAL",
-                    "text": "可以",
+                    "text": "會",
                     "checked": false,
                     "checkbox": false
                 },
@@ -1170,599 +1063,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
                     "checked": false,
                     "checkbox": false
                 }
             ]
         },
-        "營隊有提供午餐嗎？": {
-            "id": "b5590d96-c104-41a9-b481-4b6a19d6ad99",
+        "把零食帶進去": {
+            "id": "cca85a6b-5b18-4cd6-9e9e-df82e2771aea",
             "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "營隊",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "供應",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供貨",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供銷",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供電",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提案",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "協助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "奉獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "武裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獻出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "發放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭拜",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭祀",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "補給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "貢獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "資助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "進獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出借",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收集",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶來",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提供",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "請問有提供點心嗎？": {
-            "id": "7fe44636-e7a4-4e1f-9785-0122f849e94c",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "試問",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "倒底",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有想過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想問",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "受得了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "問說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "敢說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "陷害了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "反問",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "常說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有想",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "受得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "陷害",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "請問",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "供應",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供貨",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供銷",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供電",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提案",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "協助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "奉獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "武裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獻出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "發放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭拜",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭祀",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "補給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "貢獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "資助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "進獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收集",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出借",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶來",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提供",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "點心",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "可以把零食帶進去嗎？": {
-            "id": "29929b93-bfa7-4af4-9641-d0672fbe815e",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
-                    "checked": false,
-                    "checkbox": false
-                },
                 {
                     "pos": "ACTION_lightVerb",
                     "text": "把",
@@ -1895,342 +1205,12 @@
                     "text": "去",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "是否需要自己帶午餐？": {
-            "id": "9ed2f7e9-0267-4b37-83c5-17dd60070624",
+        "自行攜帶午餐": {
+            "id": "0f4100e5-c8c4-41cb-a7e8-48524da412b0",
             "argument": [
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "是否",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "索要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "要求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索討",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "願意",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "自己",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "佩帶",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "夾帶",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶病",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶走",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "挾帶",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "攜帶",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "隨帶",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "佩戴",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "承接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "披掛",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "穿破",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "肩扛",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "背負",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "負載",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "載攜",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "運載",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "運送",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "配戴",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "馱運",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "忙趕",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "常帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忙送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶拉",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶等",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶灘",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶讓",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "帶",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "需要自行準備午餐嗎？": {
-            "id": "c2bb73da-c5fa-475f-8fc0-e5729a09ee1b",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "索要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "要求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "索討",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "願意",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "需要",
-                    "checked": false,
-                    "checkbox": false
-                },
                 {
                     "pos": "MODIFIER",
                     "text": "自行",
@@ -2241,204 +1221,27 @@
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "備戰",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "預備",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "企劃",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "意指",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "意謂",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "打算",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "預演",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "預約",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "等待",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "趕著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "鋪墊",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "籌劃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "決定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "安排",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "正要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "趕",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "準備",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "進去的時候可以帶零食嗎？": {
-            "id": "b1f240f4-c8c3-4a71-a0bb-1c2263c3945a",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "進來",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "進入",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "拿出來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "藏起來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "跑出來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進去了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拿起來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出來",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "進去",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "TIME_justtime",
-                    "text": "時候",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
                             "text": "佩帶",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
                             "text": "夾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶來",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
                             "level": "tier_1",
                             "checked": false
                         },
@@ -2458,7 +1261,7 @@
                             "checked": false
                         },
                         {
-                            "text": "攜帶",
+                            "text": "載攜",
                             "level": "tier_1",
                             "checked": false
                         },
@@ -2468,7 +1271,47 @@
                             "checked": false
                         },
                         {
-                            "text": "佩戴",
+                            "text": "具有",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "包藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "導致",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "庇護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "怨恨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷恨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷疑",
                             "level": "tier_2",
                             "checked": false
                         },
@@ -2478,12 +1321,27 @@
                             "checked": false
                         },
                         {
-                            "text": "披掛",
+                            "text": "抱怨",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "穿破",
+                            "text": "抱持",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿來",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "牽動",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "窩藏",
                             "level": "tier_2",
                             "checked": false
                         },
@@ -2503,11 +1361,6 @@
                             "checked": false
                         },
                         {
-                            "text": "載攜",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
                             "text": "運載",
                             "level": "tier_2",
                             "checked": false
@@ -2518,7 +1371,12 @@
                             "checked": false
                         },
                         {
-                            "text": "配戴",
+                            "text": "隱藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "飲恨",
                             "level": "tier_2",
                             "checked": false
                         },
@@ -2528,69 +1386,158 @@
                             "checked": false
                         },
                         {
-                            "text": "忙趕",
+                            "text": "攜帶著",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "常帶",
+                            "text": "攜帶了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "送",
+                            "text": "攜",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "有帶",
+                            "text": "載運",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "忙送",
+                            "text": "裝載",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶拉",
+                            "text": "夾藏",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶等",
+                            "text": "拿取",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶著",
+                            "text": "帶備",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶灘",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶讓",
+                            "text": "自備",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "帶",
+                    "text": "攜帶",
                     "checked": false,
                     "checkbox": false
                 },
                 {
                     "pos": "ENTITY_noun",
-                    "text": "零食",
+                    "text": "午餐",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "有沒有點心吃？": {
+            "id": "a2900e47-e4a4-4a62-b8df-eebbe6e491b3",
+            "argument": [
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "有沒有",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "點心",
                     "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "吃掉",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸收",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "耗損",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "花掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "煮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "啃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喝",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "生吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃過",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "吃",
                     "checked": false,
                     "checkbox": false
                 },
@@ -2604,6 +1551,32 @@
         }
     },
     "alias": {},
-    "prompt": {},
-    "document": []
+    "prompt": {
+        "user": "你是一個和善的助理，請依上文擬定5句回覆「{{UTTERANCE}}」的句子",
+        "system": "你是一個繁體中文回答問題助理",
+        "assistant": "問題「{{Q}}」，答案「{{A}}」"
+    },
+    "document": [
+        {
+            "title": "午餐",
+            "content": {
+                "A": "五天活動均有提供午餐唷~",
+                "Q": "有提供午餐嗎?"
+            }
+        },
+        {
+            "title": "午餐吃什麼",
+            "content": {
+                "A": "我們會視情況而定，基本上都會確保每一位孩子有吃飽且營養均衡~",
+                "Q": "午餐會吃什麼?"
+            }
+        },
+        {
+            "title": "點心",
+            "content": {
+                "A": "我們會視課表而定，基本上下午會有小點心，但還是鼓勵孩子午餐吃飽一點下午才有精神繼續活動。",
+                "Q": "有提供點心嗎?"
+            }
+        }
+    ]
 }
