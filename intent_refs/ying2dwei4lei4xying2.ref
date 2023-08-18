@@ -7,8 +7,16 @@
     },
     "user_defined": {
         "as_noun": [
+            "中午",
+            "休息時間",
+            "保險",
             "冬令營",
-            "夏令營"
+            "夏令營",
+            "戶外",
+            "紀錄",
+            "行前",
+            "親師群",
+            "過夜"
         ]
     },
     "utterance": {
@@ -1621,360 +1629,6 @@
                         }
                     ],
                     "text": "報名",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "有幾個營隊可供選擇？": {
-            "id": "b64b3844-267b-45ce-9951-f44296c05e66",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "幾",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_classifier",
-                    "text": "個",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "營隊",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "供認",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "招供",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "承認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "招認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "專供",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "供參",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "供當",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有供",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "供予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "供作",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "供入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "容納",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "方便",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "供",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "徵選",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "挑選",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "揀選",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擇定",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "甄選",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "評選",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "遴選",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "選出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "選定",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "選拔",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "選用",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "選課",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "選購",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "選送",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "點選",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "拔取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "拾得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "拾獲",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "挑揀",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "採摘",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提拔",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "摘採",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "甄拔",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "自願",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預設",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "選取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "決定",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "考慮",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "選擇了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "判斷",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "選擇",
                     "checked": false,
                     "checkbox": false
                 },
@@ -4052,7 +3706,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "夏令營",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -4082,6 +3736,18 @@
         "text": {},
         "regex": {}
     },
-    "prompt": {},
-    "document": []
+    "prompt": {
+        "user": "你是一個和善的助理，請依上文擬定五句回覆「{{UTTERANCE}}」的句子",
+        "system": "你是一個繁體中文營隊客服助理",
+        "assistant": "問題「{{Q}}」，答案「{{A}}」"
+    },
+    "document": [
+        {
+            "title": "營隊類型",
+            "content": {
+                "A": "",
+                "Q": "有哪些推薦的營隊類型"
+            }
+        }
+    ]
 }
