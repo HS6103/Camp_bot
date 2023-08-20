@@ -6,6 +6,27 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "地點": [
+            "位置",
+            "地方"
+        ],
+        "小孩": [
+            "孩子",
+            "小朋友"
+        ],
+        "活動": [
+            "行程",
+            "營隊"
+        ],
+        "點心": [
+            "零食",
+            "巧克力",
+            "洋芋片",
+            "糖果",
+            "餅乾",
+            "泡麵",
+            ""
+        ],
         "as_noun": [
             "中午",
             "休息時間",
@@ -17,6 +38,11 @@
             "行前",
             "親師群",
             "過夜"
+        ],
+        "親師群": [
+            "賴群",
+            "Line群",
+            "群組"
         ]
     },
     "utterance": {
@@ -856,7 +882,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2132,7 +2158,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2297,7 +2323,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2502,7 +2528,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2694,7 +2720,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2711,7 +2737,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2897,7 +2923,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3325,7 +3351,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
