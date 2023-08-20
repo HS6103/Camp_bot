@@ -904,6 +904,41 @@
                 }
             ]
         },
+        "老師和學生的比例": {
+            "id": "818e7018-e543-4161-9d47-eb2e69404ceb",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "老師",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "和",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "學生",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "如何控制教學品質？": {
             "id": "c8c50bb7-b0d6-4a90-8b90-12a70d615e02",
             "argument": [
