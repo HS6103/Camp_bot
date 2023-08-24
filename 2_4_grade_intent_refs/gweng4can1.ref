@@ -8,8 +8,8 @@
     "user_defined": {
         "保險": [
             "意外險",
-            "醫療險",
-            "旅平險"
+            "旅平險",
+            "醫療險"
         ],
         "地點": [
             "位置",
@@ -20,17 +20,26 @@
             "小朋友"
         ],
         "年紀": [
-            "年齡",
-            "年級"
+            "年級",
+            "年齡"
         ],
         "活動": [
             "營隊",
             "行程"
         ],
         "照片": [
-            "相片",
             "圖片",
-            "影片"
+            "影片",
+            "相片"
+        ],
+        "點心": [
+            "",
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "糖果",
+            "零食",
+            "餅乾"
         ],
         "as_noun": [
             "中午",
@@ -51,8 +60,8 @@
         ],
         "吃的東西": [
             "乖乖",
-            "樂事",
             "巧克力",
+            "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
@@ -657,7 +666,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1480,8 +1489,360 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "午餐",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "早餐是自己解決": {
+            "id": "443d5b7a-f8c1-496c-b0dd-5e44e0d8486b",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "早餐",
                     "checked": false,
                     "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "自己",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "分解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "化解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "決定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "破解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解惑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解析",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解謎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解開",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解題",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "講解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "開解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "偵破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "判斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應付",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺設",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "破譯",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "破關",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "釋疑",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "消弭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "緩解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "弭平",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "克服",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "消除",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解決了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "處理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解套",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "應對",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "解決",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "早餐是自行解決": {
+            "id": "e0db4b0a-b4fe-41dd-b32d-c45af5e69391",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "早餐",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "自行",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "分解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "化解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "決定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "破解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解惑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解析",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解謎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解開",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "解題",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "講解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "開解",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "偵破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "判斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應付",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺設",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "破譯",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "破關",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "釋疑",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "消弭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "緩解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "弭平",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "克服",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "消除",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解決了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "處理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "解套",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "應對",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "解決",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -1604,6 +1965,13 @@
             "content": {
                 "A": "我們不會阻止孩子在下課或空課時吃零食，除了點心之外若孩子有需要也可以自備唷~",
                 "Q": "可以帶零食進去嗎?"
+            }
+        },
+        {
+            "title": "早餐",
+            "content": {
+                "A": "由於營隊九點才開始，我們非常建議爸爸嬤嬤讓小孩在家裡享用完早餐再過來唷~",
+                "Q": "早餐是自己解決嗎?"
             }
         },
         {

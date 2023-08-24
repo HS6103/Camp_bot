@@ -8,8 +8,8 @@
     "user_defined": {
         "保險": [
             "意外險",
-            "醫療險",
-            "旅平險"
+            "旅平險",
+            "醫療險"
         ],
         "地點": [
             "位置",
@@ -20,17 +20,26 @@
             "小朋友"
         ],
         "年紀": [
-            "年齡",
-            "年級"
+            "年級",
+            "年齡"
         ],
         "活動": [
             "營隊",
             "行程"
         ],
         "照片": [
-            "相片",
             "圖片",
-            "影片"
+            "影片",
+            "相片"
+        ],
+        "點心": [
+            "",
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "糖果",
+            "零食",
+            "餅乾"
         ],
         "as_noun": [
             "中午",
@@ -51,8 +60,8 @@
         ],
         "吃的東西": [
             "乖乖",
-            "樂事",
             "巧克力",
+            "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
@@ -775,6 +784,120 @@
                         }
                     ],
                     "text": "辦",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "會不會受傷": {
+            "id": "c2766da6-48eb-4717-83ed-ea66576239f9",
+            "argument": [
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "會不會",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "弄傷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "打傷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "砍傷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "受害",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "受損",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "受虐",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃虧",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "容忍",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "隱忍",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拉傷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "傷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "中彈",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掛彩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "扭傷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "傷患",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "負傷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喪命",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擦傷",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "摔傷",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "受傷",
                     "checked": false,
                     "checkbox": false
                 }

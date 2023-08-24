@@ -8,8 +8,8 @@
     "user_defined": {
         "保險": [
             "意外險",
-            "醫療險",
-            "旅平險"
+            "旅平險",
+            "醫療險"
         ],
         "地點": [
             "位置",
@@ -20,17 +20,26 @@
             "小朋友"
         ],
         "年紀": [
-            "年齡",
-            "年級"
+            "年級",
+            "年齡"
         ],
         "活動": [
             "營隊",
             "行程"
         ],
         "照片": [
-            "相片",
             "圖片",
-            "影片"
+            "影片",
+            "相片"
+        ],
+        "點心": [
+            "",
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "糖果",
+            "零食",
+            "餅乾"
         ],
         "as_noun": [
             "中午",
@@ -51,8 +60,8 @@
         ],
         "吃的東西": [
             "乖乖",
-            "樂事",
             "巧克力",
+            "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
@@ -1529,7 +1538,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "通知",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1701,7 +1710,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "通知",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1724,7 +1733,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "任務",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1771,7 +1780,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "通知",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
