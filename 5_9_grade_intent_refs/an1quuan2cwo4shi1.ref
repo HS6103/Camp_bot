@@ -71,6 +71,23 @@
         ]
     },
     "utterance": {
+        "不舒服": {
+            "id": "948cc398-38c9-4b67-ae90-83def0c16399",
+            "argument": [
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "舒服",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "會受傷": {
             "id": "85331082-386e-4a7c-8609-59dae5d2e041",
             "argument": [
@@ -884,7 +901,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1121,7 +1138,107 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": true,
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "身體有狀況": {
+            "id": "a2899ff2-4146-4b9c-b747-5ccdb6a6831e",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "身體",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "狀況",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1624,7 +1741,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "情況",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1943,7 +2060,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2191,7 +2308,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2214,7 +2331,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2326,7 +2443,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]

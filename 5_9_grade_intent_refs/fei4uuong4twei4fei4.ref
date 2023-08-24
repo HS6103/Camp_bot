@@ -162,7 +162,7 @@
                             "checked": false
                         },
                         {
-                            "text": "希望",
+                            "text": "渴望",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -172,7 +172,7 @@
                             "checked": false
                         },
                         {
-                            "text": "想讓",
+                            "text": "更想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -182,12 +182,17 @@
                             "checked": false
                         },
                         {
+                            "text": "想讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "打算",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "試著",
+                            "text": "希望",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -197,17 +202,12 @@
                             "checked": false
                         },
                         {
+                            "text": "試著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴望",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -281,144 +281,8 @@
                 }
             ]
         },
-        "申請退費": {
-            "id": "f9d696fa-f6eb-45d4-b76d-fce2a443bda5",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "申辦",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "申領",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "請求",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "應徵",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "應聘",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "註冊",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聲請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "核發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申訴",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申報",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "登記",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "領取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "申請",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "退款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退票",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退貨",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理賠",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "押金",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "補繳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "補發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "退費",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "辦理退費": {
-            "id": "1a47e224-cd54-4d60-a74a-1e4b88a3eaa0",
+        "辦理退款": {
+            "id": "ab973be8-218d-48a6-ad83-37b672ccd4c9",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -434,6 +298,11 @@
                             "checked": false
                         },
                         {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "受理",
                             "level": "word2vec",
                             "checked": false
@@ -444,27 +313,7 @@
                             "checked": false
                         },
                         {
-                            "text": "辦理了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "試辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉行",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自辦",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -474,12 +323,27 @@
                             "checked": false
                         },
                         {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "申請",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "實施",
+                            "text": "試辦",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -492,17 +356,22 @@
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "退款",
-                            "level": "word2vec",
+                            "text": "退還",
+                            "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "退票",
-                            "level": "word2vec",
+                            "text": "退錢",
+                            "level": "tier_1",
                             "checked": false
                         },
                         {
                             "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退稅",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -512,112 +381,42 @@
                             "checked": false
                         },
                         {
-                            "text": "付款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "押金",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "補繳",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "補發",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "繳款",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "退費",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "可不可以退費": {
-            "id": "84bb65aa-007f-4602-a110-95bf4bc23733",
-            "argument": [
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "可不可",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "以",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "退款",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "退票",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "退貨",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "理賠",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "付款",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "繳費",
+                            "text": "訂位",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "押金",
+                            "text": "開戶",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "補繳",
+                            "text": "儲值",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "補發",
+                            "text": "退費",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "繳款",
+                            "text": "充值",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "退費",
+                    "text": "退款",
                     "checked": false,
                     "checkbox": false
                 }
@@ -760,6 +559,87 @@
                 }
             ]
         },
+        "可不可以退費？": {
+            "id": "24b2452b-f4e5-4afb-9d11-da8b57f00805",
+            "argument": [
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "可不可",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "以",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "是否可以退費？": {
             "id": "4c62f622-f8d1-4d05-b9d1-6375f8057978",
             "argument": [
@@ -841,8 +721,570 @@
                 }
             ]
         },
-        "退費要如何進行": {
-            "id": "bfcc7db7-8093-42dd-a275-ded82937bdef",
+        "可以申請退費嗎？": {
+            "id": "0afa9713-00a0-436f-8e58-365256506e87",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "申辦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "申領",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "請求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "註冊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聲請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "核發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "登記",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "領取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "申請",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "可以要求退費嗎？": {
+            "id": "b5f91357-fe3c-4349-9cc8-4102b4a8d7b3",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "乞求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "哀求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "央求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "徵求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懇求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "求乞",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "求助",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "求告",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "求饒",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "請求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "乞討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "交涉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "商談",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "對付",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懇請",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拜託",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "籲請",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "討饒",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "督促",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "呼籲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "指示",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "強迫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "建議",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "促請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "命令",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "敦促",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "要求",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "會如何辦理退費呢": {
+            "id": "88d55d54-72b5-4593-b27c-8a31f7e0fa9b",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "處理",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "做買賣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "受理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦理",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_particle",
+                    "text": "呢",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "退費要如何進行？": {
+            "id": "633fffe3-e163-444f-ad69-b1ac49a1aa61",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -936,7 +1378,7 @@
                             "checked": false
                         },
                         {
-                            "text": "真要",
+                            "text": "餓了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -946,12 +1388,12 @@
                             "checked": false
                         },
                         {
-                            "text": "更要",
+                            "text": "需",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "要去",
+                            "text": "更要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -961,12 +1403,12 @@
                             "checked": false
                         },
                         {
-                            "text": "需",
+                            "text": "要去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "餓了",
+                            "text": "真要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1000,37 +1442,7 @@
                             "checked": false
                         },
                         {
-                            "text": "進行了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "展開",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "完成",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進行過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "作出",
+                            "text": "進行著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1040,7 +1452,37 @@
                             "checked": false
                         },
                         {
-                            "text": "進行著",
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "作出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完成",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1053,11 +1495,17 @@
                     "text": "進行",
                     "checked": false,
                     "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
-        "退費要怎麼辦裡": {
-            "id": "aa8231cb-fc29-4c54-8a25-71f8b9c29095",
+        "退費要怎麼辦理？": {
+            "id": "6fcd0cde-8334-4013-8aa3-c70a43696065",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -1151,7 +1599,7 @@
                             "checked": false
                         },
                         {
-                            "text": "餓了",
+                            "text": "真要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1161,17 +1609,7 @@
                             "checked": false
                         },
                         {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "更要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1181,7 +1619,17 @@
                             "checked": false
                         },
                         {
-                            "text": "真要",
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1205,7 +1653,27 @@
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "籌辦",
+                            "text": "處理",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "做買賣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開展",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1220,49 +1688,39 @@
                             "checked": false
                         },
                         {
-                            "text": "主辦",
+                            "text": "實施",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "辦了",
+                            "text": "自辦",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "辦過",
+                            "text": "舉行",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "辦副",
+                            "text": "申請",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
+                            "text": "試辦",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "辦",
+                    "text": "辦理",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "RANGE_locality",
-                    "text": "裡",
-                    "checked": true,
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
                     "checkbox": false
                 }
             ]
