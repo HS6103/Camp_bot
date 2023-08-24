@@ -71,8 +71,116 @@
         ]
     },
     "utterance": {
+        "拍照": {
+            "id": "0409fe65-9ed4-4705-8212-1e2db9c8b561",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "拍戲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "拍攝",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "射出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "射殺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "彈射",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拋射",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擊落",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "槍殺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發射",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聊天",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逛街",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打卡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搶拍",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合影",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自拍",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀看",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "留念",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷拍",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "拍照",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "有照片": {
-            "id": "887a957b-b809-4dee-941e-9adbcfb0e180",
+            "id": "774e46fb-3677-4dcb-a306-f96a7fd7880e",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -158,288 +266,284 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "照片",
                     "checked": false,
                     "checkbox": true
                 }
             ]
         },
-        "有沒有照片": {
-            "id": "077ec7b2-0df1-4b1b-89d5-7f0bc2f7ab3f",
+        "活動的相片": {
+            "id": "8b1be6b3-ec51-4d39-b075-34c2b6a2a601",
             "argument": [
                 {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "有沒有",
-                    "checked": true,
+                    "pos": "UserDefined",
+                    "text": "活動",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_oov",
-                    "text": "照片",
+                    "pos": "UserDefined",
+                    "text": "相片",
                     "checked": false,
                     "checkbox": true
                 }
             ]
         },
-        "有活動照片": {
-            "id": "35b473d4-8c08-49e0-801a-6b14076c440e",
+        "相片要怎麼看": {
+            "id": "7b068a73-22bd-4e53-952e-5e277875c5ee",
             "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "相片",
+                    "checked": false,
+                    "checkbox": true
+                },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "具有",
+                            "text": "想要",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "兼有",
+                            "text": "需要",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
+                            "text": "想拿",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "有同",
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "存在著",
+                            "text": "得照",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "含有",
+                            "text": "需",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "有過",
+                            "text": "更要",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "存在",
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "真要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "有",
+                    "text": "要",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "活動",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "照片",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "更新活動照片": {
-            "id": "648bee0a-2093-4310-ae89-c987990007f7",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "修復",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "整修",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "整建",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "翻修",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "翻蓋",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "翻造",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "裝修",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "優化",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "升級",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更改",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改版",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "改進",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "修改",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加載",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "變更",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "擴充",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更換",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "更新",
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "活動",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "照片",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "看到活動照片": {
-            "id": "7c7099ff-9530-45d4-8912-e216735590a9",
-            "argument": [
-                {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "看見",
+                            "text": "探看",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "見到",
+                            "text": "收看",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "睇見",
+                            "text": "看守",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看戲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看望",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看顧",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀看",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "光顧",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "瞅見",
+                            "text": "探望",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "瞧見",
+                            "text": "探視",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "看過",
+                            "text": "探訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "收視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "注視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "盯住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "省親",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "瞭望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀賞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訪問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訪談",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走動",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "造訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "逼視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "看到了",
+                            "text": "瞧",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "聽到",
+                            "text": "想看",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "聽見",
+                            "text": "看到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -449,313 +553,282 @@
                             "checked": false
                         },
                         {
-                            "text": "瞥見",
+                            "text": "看來",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "看見了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "感覺到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看見",
+                            "text": "看起",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "看到",
+                    "text": "看",
                     "checked": false,
                     "checkbox": false
-                },
+                }
+            ]
+        },
+        "照片要去哪裡看": {
+            "id": "1b2f9c0f-8034-4e29-ad0d-6de80c58adcc",
+            "argument": [
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "活動",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "照片",
                     "checked": false,
                     "checkbox": true
-                }
-            ]
-        },
-        "找到活動的相片": {
-            "id": "df04d2a5-14d2-4833-a7af-84f324fbb9e0",
-            "argument": [
+                },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "找出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "找著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "尋出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "尋回",
+                            "text": "想去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "尋找",
+                            "text": "跑去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "尋找到",
+                            "text": "去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "發現了",
+                            "text": "去了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "找到了",
+                            "text": "跑來",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "尋到",
+                            "text": "想來",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "覓得",
+                            "text": "回去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "尋得",
+                            "text": "得去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "尋覓",
+                            "text": "硬要",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "發現",
+                            "text": "忙著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "找到",
+                    "text": "要去",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "活動",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
                     "checked": false,
                     "checkbox": false
                 },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "相片",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "提供活動的相片": {
-            "id": "52eb77a9-34e9-4cb1-8586-9ab5e7849ade",
-            "argument": [
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "供應",
+                            "text": "探看",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "供給",
+                            "text": "收看",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "供貨",
+                            "text": "看守",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "供銷",
+                            "text": "看戲",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "供電",
+                            "text": "看望",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "提出",
+                            "text": "看護",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "提案",
+                            "text": "看顧",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "協助",
+                            "text": "觀看",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "光顧",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "奉獻",
+                            "text": "探望",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "帶給",
+                            "text": "探視",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "武裝",
+                            "text": "探訪",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "獻出",
+                            "text": "收視",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "發放",
+                            "text": "注視",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "祭拜",
+                            "text": "盯住",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "祭祀",
+                            "text": "省親",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "補給",
+                            "text": "瞭望",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "貢獻",
+                            "text": "觀望",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "資助",
+                            "text": "觀賞",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "進獻",
+                            "text": "訪問",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "收取",
+                            "text": "訪談",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走動",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "造訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "逼視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "收集",
+                            "text": "瞧",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "出借",
+                            "text": "想看",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "獲取",
+                            "text": "看到",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "發送",
+                            "text": "講",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "給予",
+                            "text": "看著",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "提供了",
+                            "text": "看來",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶來",
+                            "text": "看起",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "提供",
+                    "text": "看",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "活動",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "相片",
-                    "checked": false,
-                    "checkbox": true
                 }
             ]
         },
         "了解孩子參與狀況": {
-            "id": "d10fcd4c-ceab-4b95-8ec1-3f6f4d14e74f",
+            "id": "5f046ab6-4277-4ae9-8cea-598127afa29a",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -966,9 +1039,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1047,13 +1120,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "狀況",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "得知孩子參與狀況": {
-            "id": "921b6ee4-c281-4c06-801e-bba95567a96d",
+            "id": "511dcb0b-693b-42f7-9e21-25af5aea2fe5",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -1164,9 +1237,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1245,13 +1318,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "狀況",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
-        "有沒有活動的照片": {
-            "id": "63fc1ccc-98b9-4c07-86d3-86b031ccac91",
+        "有沒有活動的相片": {
+            "id": "c0a7762b-4328-4afa-99f4-65d5ca19463f",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -1260,9 +1333,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1272,15 +1345,15 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "照片",
+                    "pos": "UserDefined",
+                    "text": "相片",
                     "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "有活動拍攝的圖片": {
-            "id": "655b2ec0-999f-42c2-99ed-f148aee7e862",
+            "id": "25600457-4d8d-4871-94e5-2ba95c840056",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -1336,22 +1409,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1366,9 +1439,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1435,12 +1508,17 @@
                             "checked": false
                         },
                         {
+                            "text": "拍攝了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "錄製",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "拍攝了",
+                            "text": "開拍",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1451,11 +1529,6 @@
                         },
                         {
                             "text": "補拍",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開拍",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1476,454 +1549,36 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "圖片",
                     "checked": false,
                     "checkbox": true
                 }
             ]
         },
-        "活動的相片要怎麼看": {
-            "id": "65fbb6ca-4220-40df-a7a3-374ebce3e511",
+        "想要看活動照片要去哪裡找": {
+            "id": "5c72c2f3-bfc8-4eb9-9d25-3545e7ea6fe2",
             "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "活動",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "相片",
-                    "checked": false,
-                    "checkbox": true
-                },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "想要",
+                            "text": "想拿",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
                             "text": "需要",
                             "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想拿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_2",
                             "checked": false
                         },
                         {
                             "text": "渴望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "真要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得照",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "要去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "餓",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "要",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "探看",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "收看",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "看守",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "看戲",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "看望",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "看護",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "看顧",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "觀看",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "光顧",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探視",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "探訪",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "收視",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "注視",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "盯住",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "省親",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "瞭望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "觀望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "觀賞",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "訪問",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "訪談",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "走動",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "走訪",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "迫視",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "造訪",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "逼視",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "看了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看起",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想看",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "瞧",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "講",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看到",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "看",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "有沒有活動所拍攝的相片": {
-            "id": "4a13445b-db29-4b76-9430-f14961616a78",
-            "argument": [
-                {
-                    "pos": "CLAUSE_AnotAQ",
-                    "text": "有沒有",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "活動",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "所",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "拍戲",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "拍照",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "拍片",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "攝影",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "射出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "射殺",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "彈射",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "拋射",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擊落",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "槍殺",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "發射",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攝製",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "錄製",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拍攝了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拍",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "補拍",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開拍",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取景",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "拍攝",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "相片",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "想要看活動照片要去哪裡找": {
-            "id": "eee6107d-e32b-45fb-87a4-a5c29961b76c",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "想拿",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "想買",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "需要",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "希望",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1933,7 +1588,7 @@
                             "checked": false
                         },
                         {
-                            "text": "想讓",
+                            "text": "更想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1943,12 +1598,17 @@
                             "checked": false
                         },
                         {
+                            "text": "想讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "打算",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "試著",
+                            "text": "希望",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1958,17 +1618,12 @@
                             "checked": false
                         },
                         {
+                            "text": "試著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "渴望",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2121,17 +1776,7 @@
                             "checked": false
                         },
                         {
-                            "text": "看來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看起",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看著",
+                            "text": "瞧",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2141,7 +1786,7 @@
                             "checked": false
                         },
                         {
-                            "text": "瞧",
+                            "text": "看到",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2151,7 +1796,17 @@
                             "checked": false
                         },
                         {
-                            "text": "看到",
+                            "text": "看著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看起",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2161,13 +1816,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "照片",
                     "checked": false,
                     "checkbox": true
@@ -2310,22 +1965,12 @@
                             "checked": false
                         },
                         {
-                            "text": "找不到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "找了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "找上",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想找",
+                            "text": "拜託",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2335,7 +1980,12 @@
                             "checked": false
                         },
                         {
-                            "text": "撿",
+                            "text": "找不到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "找上",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2345,7 +1995,12 @@
                             "checked": false
                         },
                         {
-                            "text": "拜託",
+                            "text": "想找",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撿",
                             "level": "word2vec",
                             "checked": false
                         }

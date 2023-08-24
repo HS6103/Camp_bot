@@ -907,7 +907,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2183,7 +2183,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2348,7 +2348,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2553,7 +2553,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2745,7 +2745,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2762,7 +2762,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2948,7 +2948,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3376,7 +3376,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -3494,9 +3494,9 @@
     },
     "alias": {},
     "prompt": {
-        "user": "你是一個和善的助理，請依上文擬定5句回覆「{{UTTERANCE}}」的句子",
-        "system": "你是一個繁體中文回答問題助理",
-        "assistant": "問題「{{Q}}」，答案「{{A}}」"
+        "user": "",
+        "system": "",
+        "assistant": ""
     },
     "document": [
         {

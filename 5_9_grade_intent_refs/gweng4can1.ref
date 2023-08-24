@@ -230,7 +230,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "零食",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -324,7 +324,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -439,160 +439,6 @@
                     "pos": "ENTITY_noun",
                     "text": "午餐",
                     "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "提供午餐": {
-            "id": "6ea7a744-3cac-49bb-a4a3-bf820a1b21e7",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "供應",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供貨",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供銷",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供電",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提案",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "協助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "奉獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "武裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獻出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "發放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭拜",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭祀",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "補給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "貢獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "資助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "進獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收集",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出借",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶來",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提供",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "午餐",
-                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -930,7 +776,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "零食",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1010,7 +856,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1133,7 +979,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "零食",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1506,7 +1352,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1608,13 +1454,6 @@
         "assistant": "問題「{{Q}}」，答案「{{A}}」"
     },
     "document": [
-        {
-            "title": "帶零食",
-            "content": {
-                "A": "我們不會阻止孩子在下課或空課時吃零食，除了點心之外若孩子有需要也可以自備唷~",
-                "Q": "可以帶零食進去嗎?"
-            }
-        },
         {
             "title": "午餐",
             "content": {
