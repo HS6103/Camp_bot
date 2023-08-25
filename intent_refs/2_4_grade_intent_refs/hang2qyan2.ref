@@ -6,6 +6,11 @@
         "intent": "1.0"
     },
     "user_defined": {
+        "保險": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "地點": [
             "位置",
             "地方"
@@ -14,18 +19,27 @@
             "孩子",
             "小朋友"
         ],
+        "年紀": [
+            "年級",
+            "年齡"
+        ],
         "活動": [
-            "行程",
-            "營隊"
+            "營隊",
+            "行程"
+        ],
+        "照片": [
+            "圖片",
+            "影片",
+            "相片"
         ],
         "點心": [
-            "零食",
+            "",
             "巧克力",
+            "泡麵",
             "洋芋片",
             "糖果",
-            "餅乾",
-            "泡麵",
-            ""
+            "零食",
+            "餅乾"
         ],
         "as_noun": [
             "中午",
@@ -40,9 +54,20 @@
             "過夜"
         ],
         "親師群": [
-            "賴群",
             "Line群",
-            "群組"
+            "群組",
+            "賴群"
+        ],
+        "吃的東西": [
+            "乖乖",
+            "巧克力",
+            "樂事",
+            "泡麵",
+            "洋芋片",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ]
     },
     "utterance": {
@@ -169,323 +194,6 @@
                         }
                     ],
                     "text": "進入",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "親師群",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "加入到親師群": {
-            "id": "bde3c30c-0168-45fe-82ba-475f070a5284",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "加上",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加添",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加盟",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加總",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加進",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "參加",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "添加",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "交結",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "交融",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "併吞",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "侵吞",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "合併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吞併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸收",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "團結",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "增添",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "增補",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "投入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "拼接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "接合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搭接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搭配",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攙兌",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攙合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攝取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攪混",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "新增",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "歸併",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "混合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "混搭",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "相接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "積聚",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "總合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聯合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "融入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "連接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "銜接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "參與",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "重返",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退出了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加入過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "加入了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉投",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "退出",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "加入",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到受",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到離",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到包",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到經過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到回",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到隨",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到死",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到愛",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "到經",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "到",
                     "checked": false,
                     "checkbox": false
                 },
@@ -1830,7 +1538,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "通知",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2002,7 +1710,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "通知",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2025,7 +1733,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "任務",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2072,7 +1780,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "通知",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
