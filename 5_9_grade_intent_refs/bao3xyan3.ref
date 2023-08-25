@@ -46,6 +46,7 @@
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
@@ -249,7 +250,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -486,7 +487,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -646,7 +647,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -731,7 +732,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -806,7 +807,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -886,7 +887,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1059,7 +1060,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1223,7 +1224,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1372,7 +1373,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1566,7 +1567,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1583,7 +1584,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1779,7 +1780,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "保險",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

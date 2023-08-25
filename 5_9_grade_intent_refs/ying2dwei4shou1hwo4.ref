@@ -46,6 +46,7 @@
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
@@ -1231,7 +1232,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "東西",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1481,8 +1482,124 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "實力",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
+                }
+            ]
+        },
+        "學到些什麼？": {
+            "id": "e2eff378-72c1-4d46-a7c4-00aa9fbb3f99",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "弄到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "習得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "教給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學不到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "體會到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "讀到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學習過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸取了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學習了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "汲取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學習",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "學到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -1656,7 +1773,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "經驗",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1771,130 +1888,8 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "經驗",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
-                }
-            ]
-        },
-        "能夠學到些什麼？": {
-            "id": "77655296-59bd-442f-92eb-a75a010208dc",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "能夠",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "弄到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "得到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "奪得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "習得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "學到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸取了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "體會到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "讀到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "教給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "汲取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學習過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學習了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學不到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學習",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "學到",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "QUANTIFIER",
-                    "text": "些",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
@@ -2074,7 +2069,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "知識",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {

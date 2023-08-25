@@ -46,6 +46,7 @@
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
@@ -230,7 +231,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "零食",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -324,7 +325,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -438,7 +439,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -512,7 +513,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -523,7 +524,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -776,7 +777,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "零食",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -856,7 +857,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -867,7 +868,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "中午",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -979,7 +980,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "零食",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1335,7 +1336,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1352,7 +1353,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

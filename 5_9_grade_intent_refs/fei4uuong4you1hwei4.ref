@@ -46,6 +46,7 @@
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
@@ -71,6 +72,17 @@
         ]
     },
     "utterance": {
+        "團報優惠": {
+            "id": "aee54899-ce72-493d-a5c9-bf39643b1cdd",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "團報優惠",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "有折扣嗎": {
             "id": "8433fceb-a788-49c9-a259-719a998a3331",
             "argument": [

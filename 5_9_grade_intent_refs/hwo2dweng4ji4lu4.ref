@@ -46,6 +46,7 @@
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
@@ -268,7 +269,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -291,7 +292,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "相片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -302,7 +303,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "相片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -575,7 +576,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1347,7 +1348,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "相片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1551,7 +1552,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "圖片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1824,7 +1825,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
