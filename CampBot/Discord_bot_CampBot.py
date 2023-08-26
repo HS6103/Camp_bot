@@ -90,7 +90,7 @@ class BotClient(discord.Client):  ##和discord連線
                 #沒有講過話(給他一個新的template)
                 else:
                     self.mscDICT[message.author.id] = self.resetMSCwith(message.author.id)
-                    replySTR = msgSTR.title() + "\n我是台北區的營隊客服機器人，請問你想問什麼呢?"
+                    replySTR = msgSTR.title() + "\n我是台北區的玩轉營隊客服機器人，請先輸入小朋友目前幾年級，我們將會做客製化回覆!" #works (tested)
 
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
