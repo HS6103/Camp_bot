@@ -548,6 +548,91 @@
                 }
             ]
         },
+        "比例怎麼算": {
+            "id": "0324ba78-6fbc-4561-8330-b115ce7d00ea",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "算輸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算數",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算真",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願屈",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "算",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "可不可以退費": {
             "id": "84bb65aa-007f-4602-a110-95bf4bc23733",
             "argument": [
@@ -760,6 +845,237 @@
                 }
             ]
         },
+        "退費比例政策": {
+            "id": "817f112d-67b8-4cda-9f17-0f775103a73f",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例政策",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "退費比例規定": {
+            "id": "60d0ff45-2859-40bc-86ff-4774487aa8c1",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "制定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擬定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "約定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "規範",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "限定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "主宰",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "制訂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "局限",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "明訂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "統治",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "限度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "限制",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "規定了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增訂",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂明",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "規定",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "是否可以退費？": {
             "id": "4c62f622-f8d1-4d05-b9d1-6375f8057978",
             "argument": [
@@ -836,6 +1152,418 @@
                 {
                     "pos": "PUNCTUATION",
                     "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "比例該怎麼算？": {
+            "id": "8e277091-aa34-4c59-ae7a-47676253681f",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "該",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "算輸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算數",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算真",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願屈",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "算",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "退款比例的原則": {
+            "id": "a39e5534-fa5a-4bc0-977f-888b249bdc78",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退還",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "退錢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退稅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開戶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "儲值",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "充值",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退款",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "原則",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "退費比例怎麼算": {
+            "id": "4de4e008-9cd7-4df1-9c24-2c3e51a634d1",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "算輸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算數",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算真",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願屈",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "算",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "退費比例的標準": {
+            "id": "76354f79-905e-4fa3-ba8b-e1337b3ed297",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "標準",
                     "checked": false,
                     "checkbox": false
                 }
@@ -1266,6 +1994,747 @@
                     "checkbox": false
                 }
             ]
+        },
+        "怎樣計算退費比例？": {
+            "id": "98c88998-689c-4ffb-b128-d3317da3a6aa",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎樣",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "估計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "合算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "推算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算數",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算起來",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "統計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "總計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "計數",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "計量",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "估量",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推估",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "試算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "測算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "求解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "估算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "量度",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "運算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推導",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "測量",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "計算",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "比例要如何計算呢？": {
+            "id": "490278d4-32b9-475b-974a-6596f27fcdcc",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "真要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "估計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "合算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "推算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算數",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算起來",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "統計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "總計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "計數",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "計量",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "估量",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推估",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "試算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "測算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "求解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "估算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "量度",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "運算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推導",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "測量",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "計算",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_particle",
+                    "text": "呢",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "退費的比例該如何計算？": {
+            "id": "a4bf1afb-f4e7-43de-b11a-d7384af1ac85",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "該",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "估計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "合算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "推算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算數",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "算起來",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "統計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "總計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "計數",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "計量",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "估量",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推估",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "試算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "測算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "求解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "估算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "量度",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "運算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推導",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "測量",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "計算",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "比例的計算方式是什麼呢？": {
+            "id": "bb789b59-35c3-4d7d-b1dc-db9470587c57",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "比例",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "計",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "算輸",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算數",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算真",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願屈",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "算用",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夠",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "算",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "方式",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_particle",
+                    "text": "呢",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
         }
     },
     "alias": {},
@@ -1276,9 +2745,16 @@
     },
     "document": [
         {
+            "title": "退費比例",
+            "content": {
+                "A": "(1) 寒暑假開始前31天以上：扣除金流手續費全額退費\n(2) 寒暑假開始前21~30天：退費80%\n(3) 寒暑假開始前2~20天：退費70%\n(4) 寒暑假開始至營隊前1天：退費50%\n(5) 營隊活開始後，無法退費",
+                "Q": "退費比例怎麼計算?"
+            }
+        },
+        {
             "title": "退費方式",
             "content": {
-                "A": "報名後若因故不能參加，請主動於玩轉LINE 官方帳號或來電告知我們。我們將依下方比例，於當月月底轉帳退費：\n\n(1) 寒暑假開始前31天以上：扣除金流手續費全額退費\n(2) 寒暑假開始前21~30天：退費80%\n(3) 寒暑假開始前2~20天：退費70%\n(4) 寒暑假開始至營隊前1天：退費50%\n(5) 營隊活開始後，無法退費",
+                "A": "報名後若因故不能參加，請主動於玩轉LINE 官方帳號或來電告知我們，我們將依比例於當月月底轉帳退費。",
                 "Q": "會如何辦理退費呢？"
             }
         }
