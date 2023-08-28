@@ -100,17 +100,23 @@ class BotClient(discord.Client):  ##和discord連線
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
                 if (self.mscDICT[message.author.id]["age_grade"] == None):
-                    self.mscDICT[message.author.id]["age_grade"] = msgSTR
+                    #self.mscDICT[message.author.id]["age_grade"] = msgSTR
                     resultDICT = getLokiResult(msgSTR, "Age_runloki")
                     logging.debug("######\nLoki 處理結果如下：")
                     logging.debug(resultDICT)
                     replySTR = resultDICT["response"]
+                    self.mscDICT[message.author.id]["age_grade"] = resultDICT["grade"]
                 else:
-                    resultDICT = getLokiResult(msgSTR)
-                    logging.debug("######\nLoki 處理結果如下：")
-                    logging.debug(resultDICT)
-                    replySTR = resultDICT["response"]
-                    
+                    if self.mscDICT[message.author.id]["age_grade"] == "":  #WIP
+                        resultDICT = getLokiResult(msgSTR, "fivenine_runloki")
+                        logging.debug("######\nLoki 處理結果如下：")
+                        logging.debug(resultDICT)
+                        replySTR = resultDICT["response"]
+                    elif self.mscDICT[message.author.id]["age_grade"] == "": #WIP
+                        resultDICT = getLokiResult(msgSTR, "twofour_runloki")
+                        logging.debug("######\nLoki 處理結果如下：")
+                        logging.debug(resultDICT)
+                        replySTR = resultDICT["response"]                        
             await message.reply(replySTR)
 
 
