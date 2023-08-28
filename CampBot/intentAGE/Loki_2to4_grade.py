@@ -51,31 +51,47 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[2]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ["2","3","4"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[0]))
+                pass
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
             pass
 
     if utterance == "[二]年級":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ["二","三","四"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[0]))
+                pass
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
             pass
 
     if utterance == "[小][二]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[1] in ["二","三","四"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[1]))
+                pass
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
             pass
 
     if utterance == "國小[二]年級":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ["二","三","四"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[0]))
+                pass
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
             pass
-
+        
     return resultDICT
