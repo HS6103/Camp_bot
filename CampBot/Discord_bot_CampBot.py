@@ -22,6 +22,8 @@ logging.basicConfig(level=logging.DEBUG)
 
 punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
 def getLokiResult(inputSTR, context=""):
+    punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
+    inputLIST = punctuationPat.sub("\n", inputSTR).split("\n")
     if context == "Age_runloki":
         filterLIST = []
         resultDICT = Age_runloki(inputLIST, filterLIST)        
@@ -31,9 +33,6 @@ def getLokiResult(inputSTR, context=""):
     elif context == "twofour_runloki":
         filterLIST = []
         resultDICT = twofour_runloki(inputLIST, filterLIST)        
-        
-    punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
-    inputLIST = punctuationPat.sub("\n", inputSTR).split("\n")
     logging.debug("Loki Result => {}".format(resultDICT))
     return resultDICT
 
@@ -49,8 +48,10 @@ class BotClient(discord.Client):  ##和discord連線
 
     async def on_ready(self):
         # ################### Multi-Session Conversation :設定多輪對話資訊 ###################
+        
         self.templateDICT = {"updatetime" : None,
-                             "latestQuest": ""
+                             "latestQuest": "", 
+                             "age_grade": None
         }
         self.mscDICT = { #userid:templateDICT
         }
@@ -90,15 +91,26 @@ class BotClient(discord.Client):  ##和discord連線
                 #沒有講過話(給他一個新的template)
                 else:
                     self.mscDICT[message.author.id] = self.resetMSCwith(message.author.id)
-                    replySTR = msgSTR.title() + "\n我是台北區的玩轉營隊客服機器人，請先輸入小朋友目前幾年級，我們將會做客製化回覆!" #works (tested)
+                    replySTR = msgSTR.title() + "\n" + "我是台北區的玩轉營隊客服機器人，請先輸入小朋友目前幾年級，我們將會為您做客製化回覆!" #works (tested)
+                    
+                    
+                    
 
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
-                resultDICT = getLokiResult(msgSTR, context="") #not sure of this works yet
-                logging.debug("######\nLoki 處理結果如下：")
-                logging.debug(resultDICT)
-                replySTR = resultDICT["reply"] + "\n" + "請問還有想要問什麼嗎?" #not sure if this works yet
+                if (self.mscDICT[message.author.id]["age_grade"] == None):
+                    self.mscDICT[message.author.id]["age_grade"] = msgSTR
+                    resultDICT = getLokiResult(msgSTR, "Age_runloki")
+                    logging.debug("######\nLoki 處理結果如下：")
+                    logging.debug(resultDICT)
+                    replySTR = resultDICT["response"]
+                else:
+                    resultDICT = getLokiResult(msgSTR)
+                    logging.debug("######\nLoki 處理結果如下：")
+                    logging.debug(resultDICT)
+                    replySTR = resultDICT["response"]
+                    
             await message.reply(replySTR)
 
 
