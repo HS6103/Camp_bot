@@ -56,6 +56,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["response"] = getResponse(utterance, args)
             else:
                 resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[0]))
+                resultDICT["age_grade"] = "junior"
                 pass
         else:
             resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
@@ -67,6 +68,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["response"] = getResponse(utterance, args)
             else:
                 resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[0]))
+                resultDICT["age_grade"] = "junior"
                 pass
         else:
             resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
@@ -78,6 +80,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["response"] = getResponse(utterance, args)
             else:
                 resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[1]))
+                resultDICT["age_grade"] = "junior"
                 pass
         else:
             resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
@@ -89,6 +92,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["response"] = getResponse(utterance, args)
             else:
                 resultDICT["response"] = ("我知道了，小朋友是國小{}年級，那請問您想問什麼呢?".format(args[0]))
+                resultDICT["age_grade"] = "junior"
                 pass
         else:
             resultDICT["response"] = "抱歉，我們沒有適合您的小孩的營隊喔!"
