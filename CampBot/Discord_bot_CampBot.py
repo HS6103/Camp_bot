@@ -105,14 +105,14 @@ class BotClient(discord.Client):  ##和discord連線
                     logging.debug("######\nLoki 處理結果如下：")
                     logging.debug(resultDICT)
                     replySTR = resultDICT["response"]
-                    self.mscDICT[message.author.id]["age_grade"] = resultDICT["grade"]
+                    self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"]
                 else:
-                    if self.mscDICT[message.author.id]["age_grade"] == "":  #WIP
+                    if self.mscDICT[message.author.id]["age_grade"] == "senior":  #WIP
                         resultDICT = getLokiResult(msgSTR, "fivenine_runloki")
                         logging.debug("######\nLoki 處理結果如下：")
                         logging.debug(resultDICT)
                         replySTR = resultDICT["response"]
-                    elif self.mscDICT[message.author.id]["age_grade"] == "": #WIP
+                    elif self.mscDICT[message.author.id]["age_grade"] == "junior": #WIP
                         resultDICT = getLokiResult(msgSTR, "twofour_runloki")
                         logging.debug("######\nLoki 處理結果如下：")
                         logging.debug(resultDICT)
