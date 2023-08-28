@@ -99,14 +99,14 @@ class BotClient(discord.Client):  ##和discord連線
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
-                if (self.mscDICT[message.author.id]["age_grade"] == None):
+                #if (self.mscDICT[message.author.id]["age_grade"]):
                     #self.mscDICT[message.author.id]["age_grade"] = msgSTR
                     resultDICT = getLokiResult(msgSTR, "Age_runloki")
                     logging.debug("######\nLoki 處理結果如下：")
                     logging.debug(resultDICT)
-                    replySTR = resultDICT["response"]
+                    replySTR = resultDICT["response"][0]
                     self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"]
-                else:
+                #else:
                     if self.mscDICT[message.author.id]["age_grade"] == "senior":  #WIP
                         resultDICT = getLokiResult(msgSTR, "fivenine_runloki")
                         logging.debug("######\nLoki 處理結果如下：")
