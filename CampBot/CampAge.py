@@ -49,8 +49,8 @@ import math
 import os
 import re
 try:
-    from intentAGE import Loki_5to9_grade
-    from intentAGE import Loki_2to4_grade
+    from intent import Loki_5to9_grade
+    from intent import Loki_2to4_grade
 except:
     from .intent import Loki_5to9_grade
     from .intent import Loki_2to4_grade
@@ -224,13 +224,15 @@ def execLoki(content, filterLIST=[], splitLIST=[], refDICT={}):
         resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"])                # output => ["今天天氣", "後天氣象"]
     """
     resultDICT = refDICT
+    if resultDICT is None:
+        resultDICT = {}
+
     contentLIST = []
     if type(content) == str:
         contentLIST = [content]
     if type(content) == list:
         contentLIST = content
 
-    resultDICT = {}
     if contentLIST:
         if splitLIST:
             # 依 splitLIST 做分句切割
@@ -265,13 +267,13 @@ def testLoki(inputLIST, filterLIST):
 def testIntent():
     # 5to9_grade
     print("[TEST] 5to9_grade")
-    inputLIST = ['5','6','7','8','9','國一','國三','國二','小五','小六','五年級','六年級','中學一年級','國中一年級']
+    inputLIST = ['5','國一','小五','五年級','中學一年級']
     testLoki(inputLIST, ['5to9_grade'])
     print("")
 
     # 2to4_grade
     print("[TEST] 2to4_grade")
-    inputLIST = ['2','3','4','小三','小二','小四','四年級','國小三年級','國小二年級','小學三年級','小學二年級']
+    inputLIST = ['2','小二','二年級','國小二年級']
     testLoki(inputLIST, ['2to4_grade'])
     print("")
 
