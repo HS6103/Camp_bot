@@ -49,8 +49,10 @@ import math
 import os
 import re
 try:
-    from intent import Loki_5to9_grade
-    from intent import Loki_2to4_grade
+    from intentAGE import Loki_5to9_grade
+    from intentAGE import Loki_2to4_grade
+    import intentFIVENINE
+    import intentTWOFOUR
 except:
     from .intent import Loki_5to9_grade
     from .intent import Loki_2to4_grade
@@ -60,7 +62,7 @@ LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 try:
     accountInfo = json.load(open(os.path.join(os.path.dirname(__file__), "account.info"), encoding="utf-8"))
     USERNAME = accountInfo["username"]
-    LOKI_KEY = accountInfo["loki_key"]
+    LOKI_KEY = accountInfo["loki_key_age"]
 except Exception as e:
     print("[ERROR] AccountInfo => {}".format(str(e)))
     USERNAME = ""
@@ -193,14 +195,10 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
-                if k not in resultDICT:
-                    resultDICT[k] = []
-                if type(resultDICT[k]) != list:
-                    resultDICT[k] = [resultDICT[k]] if resultDICT[k] else []
-                if type(lokiResultDICT[k]) == list:
-                    resultDICT[k].extend(lokiResultDICT[k])
+                if type(lokiResultDICT[k]) == list: 
+                    resultDICT[k] = lokiResultDICT[k]
                 else:
-                    resultDICT[k].append(lokiResultDICT[k])
+                    resultDICT[k] = [lokiResultDICT[k]]
     else:
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT
@@ -269,7 +267,7 @@ def testIntent():
     print("[TEST] 5to9_grade")
     inputLIST = ['5','國一','小五','五年級','中學一年級']
     testLoki(inputLIST, ['5to9_grade'])
-    print("")
+    print("") 
 
     # 2to4_grade
     print("[TEST] 2to4_grade")
@@ -280,11 +278,14 @@ def testIntent():
 
 if __name__ == "__main__":
     # 測試所有意圖
-    testIntent()
+    #testIntent()
 
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    inputSTR = ["一年級"]
+    resultDICT = runLoki(inputSTR)
+    print (resultDICT["response"])
     # 設定參考資料
     refDICT = {
         #"key": []
