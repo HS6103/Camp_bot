@@ -483,8 +483,16 @@ def testIntent():
 
 
 if __name__ == "__main__":
+   
+    
+    inputLIST = ["年紀較大的小孩會不會感到無聊啊?"]
+    
+    resultDICT = runLoki(inputLIST)
+    print(resultDICT)     
+    
+    '''
     # 測試所有意圖
-    testIntent()
+    testIntent()  
 
     # 測試其它句子
     filterLIST = []
@@ -496,3 +504,6 @@ if __name__ == "__main__":
     resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
     resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
     resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
+    
+    
+    '''
