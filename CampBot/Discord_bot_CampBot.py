@@ -27,10 +27,10 @@ def getLokiResult(inputSTR, context=""):
     if context == "Age_runloki":
         filterLIST = []
         resultDICT = Age_runloki(inputLIST, filterLIST)        
-    elif context == "fivenine_runloki":
+    elif context == "senior":
         filterLIST = []
         resultDICT = fivenine_runloki(inputLIST, filterLIST)        
-    elif context == "twofour_runloki":
+    elif context == "junior":
         filterLIST = []
         resultDICT = twofour_runloki(inputLIST, filterLIST)        
     logging.debug("Loki Result => {}".format(resultDICT))
@@ -84,7 +84,7 @@ class BotClient(discord.Client):  ##和discord連線
                     #有講過話，但與上次差超過 5 分鐘(視為沒有講過話，刷新template)
                     if timeDIFF.total_seconds() >= 300:
                         self.mscDICT[message.author.id] = self.resetMSCwith(message.author.id)
-                        replySTR = "嗨嗨，我們好像見過面，但卓騰的隱私政策不允許我記得你的資料，抱歉！"
+                        replySTR = "嗨嗨，我們好像見過面，請重新輸入小朋友目前幾年級，我們將會為您做客製化回覆!"
                     #有講過話，而且還沒超過5分鐘就又跟我 hello (就繼續上次的對話)
                     else:
                         replySTR = self.mscDICT[message.author.id]["latestQuest"]
@@ -99,24 +99,23 @@ class BotClient(discord.Client):  ##和discord連線
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
-                #if (self.mscDICT[message.author.id]["age_grade"]):
-                    #self.mscDICT[message.author.id]["age_grade"] = msgSTR
+                if (self.mscDICT[message.author.id]["age_grade"] == None):
                     resultDICT = getLokiResult(msgSTR, "Age_runloki")
                     logging.debug("######\nLoki 處理結果如下：")
                     logging.debug(resultDICT)
                     replySTR = resultDICT["response"][0]
-                    self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"]
-                #else:
-                    if self.mscDICT[message.author.id]["age_grade"] == "senior":  #WIP
-                        resultDICT = getLokiResult(msgSTR, "fivenine_runloki")
-                        logging.debug("######\nLoki 處理結果如下：")
-                        logging.debug(resultDICT)
-                        replySTR = resultDICT["response"]
-                    elif self.mscDICT[message.author.id]["age_grade"] == "junior": #WIP
-                        resultDICT = getLokiResult(msgSTR, "twofour_runloki")
-                        logging.debug("######\nLoki 處理結果如下：")
-                        logging.debug(resultDICT)
-                        replySTR = resultDICT["response"]                        
+                    self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]
+                    print(self.mscDICT[message.author.id]["age_grade"])
+                elif self.mscDICT[message.author.id]["age_grade"] == "senior":  
+                    resultDICT = getLokiResult(msgSTR, "senior")
+                    logging.debug("######\nLoki 處理結果如下：")
+                    logging.debug(resultDICT)
+                    replySTR = resultDICT["response"][0]
+                elif self.mscDICT[message.author.id]["age_grade"] == "junior": 
+                    resultDICT = getLokiResult(msgSTR, "junior")
+                    logging.debug("######\nLoki 處理結果如下：")
+                    logging.debug(resultDICT)
+                    replySTR = resultDICT["response"][0]                        
             await message.reply(replySTR)
 
 
