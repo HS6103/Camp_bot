@@ -93,7 +93,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "有照片":
-        if CHATBOT_MODE:
+        if args[0] not in userDefinedDICT["照片"]:
+            pass
+        elif CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here

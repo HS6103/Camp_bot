@@ -295,14 +295,10 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
-                if k not in resultDICT:
-                    resultDICT[k] = []
-                if type(resultDICT[k]) != list:
-                    resultDICT[k] = [resultDICT[k]] if resultDICT[k] else []
-                if type(lokiResultDICT[k]) == list:
-                    resultDICT[k].extend(lokiResultDICT[k])
+                if type(lokiResultDICT[k]) == list: 
+                    resultDICT[k] = lokiResultDICT[k]
                 else:
-                    resultDICT[k].append(lokiResultDICT[k])
+                    resultDICT[k] = [lokiResultDICT[k]]
     else:
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT
@@ -484,15 +480,18 @@ def testIntent():
 
 if __name__ == "__main__":
     # 測試所有意圖
-    testIntent()
+    #testIntent()
 
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    inputSTR = ["我要吃炸雞"]
+    resultDICT = runLoki(inputSTR)
+    print(resultDICT["response"][0])    
     # 設定參考資料
     refDICT = {
         #"key": []
     }
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
-    resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
+    #resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
+    #resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
+    #resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}

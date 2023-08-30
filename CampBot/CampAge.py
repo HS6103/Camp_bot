@@ -201,7 +201,9 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                     resultDICT[k] = [lokiResultDICT[k]]
     else:
         resultDICT["msg"] = lokiRst.getMessage()
+        resultDICT["intent"] = lokiRst.getIntent()
     return resultDICT
+        
 
 def execLoki(content, filterLIST=[], splitLIST=[], refDICT={}):
     """
@@ -283,9 +285,9 @@ if __name__ == "__main__":
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    #inputSTR = ["中二"]
-    #resultDICT = runLoki(inputSTR)
-    #print (resultDICT["response"])
+    inputSTR = ["小六"]
+    resultDICT = runLoki(inputSTR)
+    print (resultDICT)
     
     # 設定參考資料
     refDICT = {
