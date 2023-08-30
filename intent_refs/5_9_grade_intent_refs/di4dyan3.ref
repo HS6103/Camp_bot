@@ -11,17 +11,28 @@
             "旅平險",
             "醫療險"
         ],
+        "優惠": [
+            "折扣",
+            "團報"
+        ],
         "地點": [
             "位置",
             "地方"
         ],
         "小孩": [
             "孩子",
+            "學生",
             "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
+        ],
+        "急事": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
         ],
         "活動": [
             "營隊",
@@ -32,20 +43,24 @@
             "影片",
             "相片"
         ],
-        "點心": [
-            "",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "糖果",
-            "零食",
-            "餅乾"
+        "經驗": [
+            "實力",
+            "知識",
+            "硬實力",
+            "軟實力",
+            "知識點"
+        ],
+        "老師": [
+            "工作人員",
+            "營隊方",
+            "教師"
         ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
@@ -67,10 +82,43 @@
             "糖果",
             "零食",
             "餅乾",
-            "點心"
+            "點心",
+            "午餐",
+            "早餐",
+            "晚餐",
+            "宵夜"
+        ],
+        "營隊名稱": [
+            "創新創業營",
+            "搶救玩具島",
+            "最重要的小事營",
+            "世界和平遊戲營"
         ]
     },
     "utterance": {
+        "會在哪裡": {
+            "id": "ff253a11-6810-491d-8821-27d2fd837497",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "知道地點": {
             "id": "ba7a000a-22fd-49d6-a941-4acd5d10f6e4",
             "argument": [
@@ -502,7 +550,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "地點",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -746,213 +794,89 @@
                 }
             ]
         },
-        "知道確切位置": {
-            "id": "ed9e97a0-0b1c-4dcb-88ae-8acfff0ffa0a",
+        "會在哪裡舉行": {
+            "id": "1bebabd0-0bd8-4c86-b770-0591b1104eb4",
             "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
+                },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "得知",
+                            "text": "舉辦",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "明知",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "深知",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲知",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "知悉",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "知情",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "知曉",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "知足",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "確知",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "了解",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "得悉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "懂得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "掌握",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "曉得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "熟悉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "熟諳",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "熟識",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲悉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "看懂",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "看穿",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "瞭解",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "確信",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聽得懂",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聽懂",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "記得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "認出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "認得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "認識",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "識得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "辨認出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "知",
+                            "text": "召開",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "知道了",
+                            "text": "開幕",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "意識到",
+                            "text": "舉辦了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "明白",
+                            "text": "召開了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "驚覺",
+                            "text": "閉幕",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "發覺",
+                            "text": "舉行過",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "明白了",
+                            "text": "出席",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "知道",
+                    "text": "舉行",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "確切",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "位置",
-                    "checked": true,
-                    "checkbox": true
                 }
             ]
         },
@@ -1113,7 +1037,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "地點",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1279,7 +1203,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "地點",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

@@ -11,17 +11,28 @@
             "旅平險",
             "醫療險"
         ],
+        "優惠": [
+            "折扣",
+            "團報"
+        ],
         "地點": [
             "位置",
             "地方"
         ],
         "小孩": [
             "孩子",
+            "學生",
             "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
+        ],
+        "急事": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
         ],
         "活動": [
             "營隊",
@@ -32,14 +43,17 @@
             "影片",
             "相片"
         ],
-        "點心": [
-            "",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "糖果",
-            "零食",
-            "餅乾"
+        "經驗": [
+            "實力",
+            "知識",
+            "硬實力",
+            "軟實力",
+            "知識點"
+        ],
+        "老師": [
+            "工作人員",
+            "營隊方",
+            "教師"
         ],
         "as_noun": [
             "中午",
@@ -68,10 +82,113 @@
             "糖果",
             "零食",
             "餅乾",
-            "點心"
+            "點心",
+            "午餐",
+            "早餐",
+            "晚餐",
+            "宵夜"
         ]
     },
     "utterance": {
+        "保保險": {
+            "id": "c65f2a51-dcb3-4a01-ba2e-c604289fd63d",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "保衛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "守禦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "守護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "維護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "防護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "保通",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保餘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保忠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保站",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保篤",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "隨保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保朋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保港",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "祀保",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "保",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "保險",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "有包含保險": {
             "id": "ae2e03d2-26d7-4fdd-a547-69b19378e95a",
             "argument": [

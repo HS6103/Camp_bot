@@ -11,17 +11,28 @@
             "旅平險",
             "醫療險"
         ],
+        "優惠": [
+            "折扣",
+            "團報"
+        ],
         "地點": [
             "位置",
             "地方"
         ],
         "小孩": [
             "孩子",
+            "學生",
             "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
+        ],
+        "急事": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
         ],
         "活動": [
             "營隊",
@@ -32,14 +43,17 @@
             "影片",
             "相片"
         ],
-        "點心": [
-            "",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "糖果",
-            "零食",
-            "餅乾"
+        "經驗": [
+            "實力",
+            "知識",
+            "硬實力",
+            "軟實力",
+            "知識點"
+        ],
+        "老師": [
+            "工作人員",
+            "營隊方",
+            "教師"
         ],
         "as_noun": [
             "中午",
@@ -68,7 +82,11 @@
             "糖果",
             "零食",
             "餅乾",
-            "點心"
+            "點心",
+            "午餐",
+            "早餐",
+            "晚餐",
+            "宵夜"
         ]
     },
     "utterance": {
@@ -408,6 +426,119 @@
                 {
                     "pos": "PUNCTUATION",
                     "text": "。",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "誰會負責分組": {
+            "id": "a4c61824-e8a1-4ddc-87be-d8a34c598a98",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhoQ",
+                    "text": "誰",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "做買賣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "交給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承擔",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "肩負",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受託",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔當",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掌管",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "統籌",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掌理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分管",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔負",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "負責",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "抽籤",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "汰賽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "同分",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "附加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "總分",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "分組",
                     "checked": false,
                     "checkbox": false
                 }

@@ -11,17 +11,28 @@
             "旅平險",
             "醫療險"
         ],
+        "優惠": [
+            "折扣",
+            "團報"
+        ],
         "地點": [
             "位置",
             "地方"
         ],
         "小孩": [
             "孩子",
+            "學生",
             "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
+        ],
+        "急事": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
         ],
         "活動": [
             "營隊",
@@ -32,14 +43,17 @@
             "影片",
             "相片"
         ],
-        "點心": [
-            "",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "糖果",
-            "零食",
-            "餅乾"
+        "經驗": [
+            "實力",
+            "知識",
+            "硬實力",
+            "軟實力",
+            "知識點"
+        ],
+        "老師": [
+            "工作人員",
+            "營隊方",
+            "教師"
         ],
         "as_noun": [
             "中午",
@@ -68,29 +82,27 @@
             "糖果",
             "零食",
             "餅乾",
-            "點心"
+            "點心",
+            "午餐",
+            "早餐",
+            "晚餐",
+            "宵夜"
+        ],
+        "營隊名稱": [
+            "創新創業營",
+            "搶救玩具島",
+            "最重要的小事營",
+            "世界和平遊戲營"
         ]
     },
     "utterance": {
-        "最重要的小事營在幹嘛": {
-            "id": "1abca7e8-8d63-4c9c-91ad-856a6e4c34a4",
+        "創新創業營在幹嘛": {
+            "id": "d4acfe18-a0c3-4358-a668-1092767eda42",
             "argument": [
                 {
-                    "pos": "DegreeP",
-                    "text": "最重要",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "小事營",
-                    "checked": false,
+                    "pos": "UserDefined",
+                    "text": "創新創業營",
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -107,25 +119,13 @@
                 }
             ]
         },
-        "最重要的小事營的細節": {
-            "id": "0dfc618d-b724-440c-8a13-c28134b6b03f",
+        "創新創業營的細節": {
+            "id": "77034177-2d53-4ac5-a2c4-20c4ad2cdd1e",
             "argument": [
                 {
-                    "pos": "DegreeP",
-                    "text": "最重要",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "小事營",
-                    "checked": false,
+                    "pos": "UserDefined",
+                    "text": "創新創業營",
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -137,30 +137,18 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "細節",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
-        "最重要的小事營在做什麼": {
-            "id": "fc2c78e7-7b71-49b9-b7e7-a31fc3810586",
+        "創新創業營在做什麼": {
+            "id": "dbfa7134-4a3c-4584-8151-abc0526e788c",
             "argument": [
                 {
-                    "pos": "DegreeP",
-                    "text": "最重要",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "小事營",
-                    "checked": false,
+                    "pos": "UserDefined",
+                    "text": "創新創業營",
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -300,13 +288,13 @@
                 }
             ]
         },
-        "最重要的小事營的課表嗎": {
-            "id": "88d49f48-313b-45a9-a277-b14b7cd1a4fe",
+        "創新創業營的詳細內容": {
+            "id": "52f94403-3a03-4d6a-be62-90227940b202",
             "argument": [
                 {
-                    "pos": "DegreeP",
-                    "text": "最重要",
-                    "checked": false,
+                    "pos": "UserDefined",
+                    "text": "創新創業營",
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -316,9 +304,109 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "小事營",
+                    "pos": "MODIFIER",
+                    "text": "詳細",
                     "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "內容",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "有創新創業營的課表嗎": {
+            "id": "37c2773d-15a9-4d1c-8066-078b058475ec",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "創新創業營",
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -341,66 +429,13 @@
                 }
             ]
         },
-        "最重要的小事營的詳細內容": {
-            "id": "9e834ab9-010e-45aa-855e-5c70fe8b7951",
+        "創新創業營的特色是什麼": {
+            "id": "afa01b33-1244-49ec-b8ad-7eb33b02c962",
             "argument": [
                 {
-                    "pos": "DegreeP",
-                    "text": "最重要",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "小事營",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "詳細",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "內容",
+                    "pos": "UserDefined",
+                    "text": "創新創業營",
                     "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "最重要的小事營的特色是什麼": {
-            "id": "cce1835a-712f-4db5-8be0-a84560560719",
-            "argument": [
-                {
-                    "pos": "DegreeP",
-                    "text": "最重要",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "小事營",
-                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -412,7 +447,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "特色",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -431,18 +466,6 @@
         }
     },
     "alias": {},
-    "prompt": {
-        "user": "你是一個和善的助理，請依上文擬定5句回覆「{{UTTERANCE}}」的句子",
-        "system": "你是一個繁體中文回答問題助理",
-        "assistant": "問題「{{Q}}」，答案「{{A}}」"
-    },
-    "document": [
-        {
-            "title": "最重要的小事營內容",
-            "content": {
-                "A": "最重要的小事營希望讓孩子在「玩：體驗享受純粹的樂趣」、「創：全心全意的投入創造」、「享：分享自己驕傲的成果」的過程中，逐漸創造與實現自己的願望，並且在最後一天會有同樂會讓大家分享自己驕傲的成果。\n有興趣的話可以進入官網https://pleyschool.org/camps/our-key-trifles/看更多詳細內容~",
-                "Q": "最重要的小事營在做什麼"
-            }
-        }
-    ]
+    "prompt": {},
+    "document": []
 }
