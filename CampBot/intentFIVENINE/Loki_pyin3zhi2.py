@@ -106,7 +106,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "帶幾[個]小孩":
+    if utterance == "帶幾[個][小孩]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "確保[教師]素質":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -120,14 +127,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "確保教師素質":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "確保營隊師資[品質]":
+    if utterance == "確保營隊[師資][品質]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

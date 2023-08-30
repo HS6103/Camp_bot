@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for zwei4zhweng4yao4de5xyao3shi4ying2
+    Loki module for ying2dwei4nei4rweng2
 
     Input:
         inputSTR      str,
@@ -19,7 +19,7 @@ from random import sample
 import json
 import os
 
-DEBUG_zwei4zhweng4yao4de5xyao3shi4ying2 = True
+DEBUG_ying2dwei4nei4rweng2 = True
 CHATBOT_MODE = True
 
 userDefinedDICT = {}
@@ -31,14 +31,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_zwei4zhweng4yao4de5xyao3shi4ying2.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_ying2dwei4nei4rweng2.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_zwei4zhweng4yao4de5xyao3shi4ying2:
-        print("[zwei4zhweng4yao4de5xyao3shi4ying2] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_ying2dwei4nei4rweng2:
+        print("[ying2dwei4nei4rweng2] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -50,42 +50,42 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "最重要的小事營在做什麼":
+    if utterance == "[創新創業營]在做什麼":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "最重要的小事營在幹嘛":
+    if utterance == "[創新創業營]在幹嘛":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "最重要的小事營的[特色]是什麼":
+    if utterance == "[創新創業營]的[詳細]內容":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "最重要的小事營的[細節]":
+    if utterance == "[創新創業營]的特色是什麼":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "最重要的小事營的[詳細][內容]":
+    if utterance == "[創新創業營]的細節":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "最重要的小事營的課表嗎":
+    if utterance == "有[創新創業營]的課表嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

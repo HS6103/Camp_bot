@@ -50,133 +50,84 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[全部]的地點[都]在臺北嗎？":
+    if utterance == "[地點]位於哪裡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[地點][都]在台北嗎?":
+    if utterance == "[地點]在哪[邊]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[地點]在哪裡?":
+    if utterance == "[地點]在哪個位置":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "什麼[時候][會]知[道地][點]?":
+    if utterance == "[地點]在哪裡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "什麼[時候]才[能]取得地點的[資訊]？":
+    if utterance == "[地點]的[具體]位置是哪裡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "何時[才能]得知[具體][位置]？":
+    if utterance == "[會]在哪裡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "地點位於哪裡？":
+    if utterance == "[會]在哪裡舉行":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "地點的[具體]位置是哪裡？":
+    if utterance == "取得[地點]的資訊":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "甚麼[時候]才[會]得知地點的[具體]情況？":
+    if utterance == "得知[具體][位置]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "臺北[以外]有沒[有]其他[可以]參加營隊的地方？":
+    if utterance == "得知[地點]的[具體]情況":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "要到什麼[時候]才[能]確定地點？":
+    if utterance == "知道[地點]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "要到何時[才能]知道[確切][位置]？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "請問地點在哪[邊]？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "請問地點在哪個位置？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "除了台北之外，還有其他[場地]嗎?":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "除了臺北[以外]，還有其他的地方[可以]考慮嗎?":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "除了臺北外，還有[別]的地點[可]供選擇嗎?":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "非台北[地區]有其他活動[地點]嗎?":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "非臺北地區還有沒[有][別]的營隊地點[可]供選擇？":
+    if utterance == "確定[地點]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

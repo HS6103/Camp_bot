@@ -50,6 +50,20 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
+    if utterance == "[照片]要去哪裡看":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[相片]要怎麼看":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "了解孩子參與狀況":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -64,7 +78,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "想要看活動照片要去哪裡找":
+    if utterance == "想要看活動[照片]要去哪裡找":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -78,44 +92,28 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有沒[有]活動的相片":
+    if utterance == "有[照片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有活動拍攝的圖片":
+    if utterance == "有沒[有]活動的[相片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有照片":
-        if args[0] not in userDefinedDICT["照片"]:
-            pass
-        elif CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "活動的相片":
+    if utterance == "有活動拍攝的[圖片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "照片要去哪裡看":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "相片要怎麼看":
+    if utterance == "活動的[相片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
