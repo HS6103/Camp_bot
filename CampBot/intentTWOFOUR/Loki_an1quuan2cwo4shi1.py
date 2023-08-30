@@ -31,7 +31,7 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replytwofour/reply_an1quuan2cwo4shi1.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_an1quuan2cwo4shi1.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
@@ -52,112 +52,134 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[會]受傷":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "出現[危險]的[情況]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "受傷了[該]怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "受傷怎麼辦":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "如何處理受傷":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "會不[會]受傷":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "有[危險]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "有[安全][措施]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if "安" in args[0]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")    
         else:
             # write your code here
             pass
 
     if utterance == "有[安全]保護[措施]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if "措施" in args[1]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")    
         else:
             # write your code here
             pass
 
     if utterance == "有[相關]的[安全][措施]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if "安" in args[1]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")    
         else:
             # write your code here
             pass
 
     if utterance == "有什麼[安全][措施]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if "安" in args[0]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")                  
+                
         else:
             # write your code here
             pass
 
     if utterance == "有沒[有][安全][措施]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if "安" in args[1]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")    
         else:
             # write your code here
             pass
 
     if utterance == "有防護[措施]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "發生[危險]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "碰[上][危險]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "確保[安全]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
