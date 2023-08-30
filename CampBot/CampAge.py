@@ -195,10 +195,16 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
+                #if k not in resultDICT:
+                    #resultDICT[k] = []
+                #if type(resultDICT[k]) != list:
+                    #resultDICT[k] = [resultDICT[k]] if resultDICT[k] else []   #讓reply不會疊加在resultDICT
                 if type(lokiResultDICT[k]) == list: 
                     resultDICT[k] = lokiResultDICT[k]
                 else:
                     resultDICT[k] = [lokiResultDICT[k]]
+                    
+                    
     else:
         resultDICT["msg"] = lokiRst.getMessage()
         resultDICT["intent"] = lokiRst.getIntent()
