@@ -51,9 +51,10 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[創新創業營]在做什麼":
+        if args[0] in userDefinedDICT["as_camp"]:
         utterance == "{}在做什麼".format(args[0])
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)           
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)           
             
         else:
             resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
