@@ -49,7 +49,7 @@ def getResponse(utterance, args):
     return resultSTR
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
-        debugInfo(inputSTR, utterance)
+    debugInfo(inputSTR, utterance)
     if utterance == "[是]否提供[保險]":
         if args[1] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:

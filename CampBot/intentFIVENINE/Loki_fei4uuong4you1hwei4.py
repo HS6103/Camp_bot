@@ -72,8 +72,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[能]給[一點][折扣]嗎？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[2] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
@@ -86,43 +87,49 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "提供[任何][折扣]方案？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[1] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
 
     if utterance == "提供[優惠]？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
 
     if utterance == "有[優惠]價格？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
 
     if utterance == "有[優惠]方案[可]供選擇？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
 
     if utterance == "有[優惠]方案嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
 
     if utterance == "有[折扣]嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
@@ -135,15 +142,17 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "有提供[折扣]或[優惠]？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["優惠"] or args[1] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
 
     if utterance == "有沒[有][優惠]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[1] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass
@@ -155,9 +164,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "能不[能]給[個]優惠？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "能不[能]給[個][優惠]？":
+        if args[2] in userDefinedDICT["優惠"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
         else:
             # write your code here
             pass

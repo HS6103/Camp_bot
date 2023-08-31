@@ -31,7 +31,7 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_ying2dwei4nei4rweng2.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replyfivenine/reply_ying2dwei4nei4rweng2.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
@@ -51,45 +51,62 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[創新創業營]在做什麼":
+        utterance == "{}在做什麼".format(args[0])
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args)           
+            
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]在幹嘛":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["as_camp"]:
+            utterance == "{}在幹嘛".format(args[0])
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)           
+            
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]的[詳細]內容":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["as_camp"]:
+            utterance == "{}的[詳細]內容".format(args[0])
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)           
+        
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]的特色是什麼":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["as_camp"]:
+            utterance == "{}的特色是什麼".format(args[0])
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)           
+            
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]的細節":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["as_camp"]:
+            utterance == "{}的細節".format(args[0])
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)           
+        
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "有[創新創業營]的課表嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["as_camp"]:
+            utterance == "有{}的課表嗎".format(args[0])
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)           
+        
         else:
-            # write your code here
+            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     return resultDICT

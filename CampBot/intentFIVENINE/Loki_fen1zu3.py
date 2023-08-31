@@ -120,14 +120,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "是由老師來進行分組是嗎？":
+    if utterance == "是由[老師]來進行分組是嗎？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "是老師要進行分組嗎？":
+    if utterance == "是[老師]要進行分組嗎？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

@@ -72,8 +72,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "加入到[親師群]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["親師群"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
+        
         else:
             # write your code here
             pass
@@ -142,15 +144,19 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "被加入[親師群]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["親師群"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
+        
         else:
             # write your code here
             pass
 
     if utterance == "進入[親師群]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["親師群"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)            
+        
         else:
             # write your code here
             pass

@@ -79,7 +79,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "想了解營隊":
-        if CHATBOT_MODE:
+        if "課表" in inputSTR:
+            pass
+        elif CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
