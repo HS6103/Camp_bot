@@ -31,7 +31,7 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replytwofour/reply_ke4cheng2.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_ke4cheng2.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
@@ -52,42 +52,55 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "中午休息時[通常][會]做什麼":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "中午休息時[都][會]做什麼事":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "中午休息時間[會]做什麼":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "中午休息時間[會]進行哪些活動":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "中午休息時間[都][會]做什麼事情":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
 
     if utterance == "了解[營隊]課表":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ("營隊", "活動", "課程", "行程"):
+                if args[0] in userDefinedDICT.keys():
+                    args.append(userDefinedDICT[args[0]][0])
+                    tmpReplySTR = getResponse(utterance, args).format(*args)
+                    resultDICT["response"] = tmpReplySTR
+                else:
+                    pass
+            else:
+                pass
         else:
             # write your code here
             pass
@@ -171,7 +184,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "知道[營隊]的課程內容和時間分配":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in ("營隊", "活動", "課程", "行程"):
+                if args[0] in userDefinedDICT.keys():
+                    args.append(userDefinedDICT[args[0]][0])
+                    tmpReplySTR = getResponse(utterance, args).format(*args)
+                    resultDICT["response"] = tmpReplySTR
+                else:
+                    pass
+            else:
+                pass
         else:
             # write your code here
             pass
