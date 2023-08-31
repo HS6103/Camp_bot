@@ -58,11 +58,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "不[舒服]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+        if args[0] == "舒服":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                # write your code here
+                pass
 
     if utterance == "出現[危險]的情況":
         if CHATBOT_MODE:
@@ -93,43 +94,49 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "有[危險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ["危險", "意外"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
-
+        
     if utterance == "有[安全]保護措施":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] == "安全":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
     if utterance == "有[安全]措施":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] == "安全":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
     if utterance == "有[相關]的[安全]措施":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[1] == "安全":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
     if utterance == "有什麼[安全]措施":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] == "安全":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
     if utterance == "有沒[有][安全]措施":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] == "安全":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
@@ -142,22 +149,25 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "發生[危險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ["危險", "意外"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
     if utterance == "碰[上][危險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ["危險", "意外"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
     if utterance == "確保[安全]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] == "安全":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
@@ -165,6 +175,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     if utterance == "身體有狀況":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+        
+    if utterance == "[不適]":
+        if args[0] == "不適":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
