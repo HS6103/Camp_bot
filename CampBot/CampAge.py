@@ -291,7 +291,7 @@ if __name__ == "__main__":
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ["小六"]
+    inputSTR = ["11歲"]
     resultDICT = runLoki(inputSTR)
     print (resultDICT)
     
