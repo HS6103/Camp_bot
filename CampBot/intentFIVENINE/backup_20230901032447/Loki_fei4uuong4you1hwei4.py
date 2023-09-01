@@ -133,10 +133,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有打折[優惠]？":
-        if args[0] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
+    if utterance == "有打折優惠？":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
@@ -172,103 +171,4 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-
-    if utterance == "[可以]打折":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "團報[會]比較便宜":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "團報有[優惠]":
-        if args[0] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        else:
-            # write your code here
-            pass
-
-    if utterance == "團報有比較便宜":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "提供[任何][折扣]方案":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "提供[優惠]":
-        if args[0] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有[優惠]":
-        if args[0] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有[優惠][方案]":
-        if args[0] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有什麼[優惠]":
-        if args[0] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有優待":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有打折[優惠]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "給[一點][折扣]":
-        if args[1] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        else:
-            # write your code here
-            pass
-
-    if utterance == "給[個][優惠]":
-        if args[0] in userDefinedDICT["優惠"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        else:
-            # write your code here
-            pass
-        
     return resultDICT
