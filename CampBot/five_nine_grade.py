@@ -473,14 +473,14 @@ def testIntent():
 
 if __name__ == "__main__":
     # 測試所有意圖
-    #testIntent()
+    testIntent()
 
     # 測試其它句子
-    filterLIST = []
-    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ["有創新創業營的課表嗎"]
-    resultDICT = runLoki(inputSTR)
-    print(resultDICT["response"][0])
+    #filterLIST = []
+    #splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    #inputSTR = ["有創新創業營的課表嗎"]
+    #resultDICT = runLoki(inputSTR)
+    #print(resultDICT["response"][0])
     # 設定參考資料
     refDICT = {
         #"key": []
