@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for fei4uuong4you1hwei4
+    Loki module for hwen4lying2
 
     Input:
         inputSTR      str,
@@ -19,7 +19,7 @@ from random import sample
 import json
 import os
 
-DEBUG_fei4uuong4you1hwei4 = True
+DEBUG_hwen4lying2 = True
 CHATBOT_MODE = False
 
 userDefinedDICT = {}
@@ -31,14 +31,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_fei4uuong4you1hwei4.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_hwen4lying2.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_fei4uuong4you1hwei4:
-        print("[fei4uuong4you1hwei4] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_hwen4lying2:
+        print("[hwen4lying2] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -50,105 +50,119 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[可]否打個折":
+    if utterance == "[同][年齡]？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[可以]打折":
+    if utterance == "[年紀][小]的[孩子][是]否[能]跟得[上]活動的節奏":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "團報[會]比較便宜":
+    if utterance == "[年紀][小]的[孩子]會不[會]玩不起來?":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "團報有[優惠]":
+    if utterance == "[年紀][小]的[小孩]能不[能]融入[這個]活動":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "團報有比較便宜":
+    if utterance == "[年紀]比較大的[孩子]會不[會][無聊]?":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "提供[任何][折扣]方案":
+    if utterance == "[年紀]比較大的[孩子]會不[會]覺得[無聊]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "提供[優惠]":
+    if utterance == "[年紀]比較大的[小孩][可能][會]感到[無趣]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有[優惠]":
+    if utterance == "[年紀]比較大的[小孩]會不[會]感到[無聊]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有[優惠][方案]":
+    if utterance == "[年齡]較大的[孩子][是]否[會]感到[無聊]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有什麼[優惠]":
+    if utterance == "以[不同][年齡]混合分組":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有優待":
+    if utterance == "分組[都]是混齡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有打折優惠":
+    if utterance == "包含[不同][年齡]層":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有沒[有]打折":
+    if utterance == "在分組時[不同][年齡]的人是不[是][都]混合在[一起]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "給[一點][折扣]":
+    if utterance == "年紀[小]會不[會]跟不[上]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "給[個][優惠]":
+    if utterance == "是[同年]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "是[相同][年紀]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "較大[年紀]的[孩子][是]否[會]感到[無聊]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

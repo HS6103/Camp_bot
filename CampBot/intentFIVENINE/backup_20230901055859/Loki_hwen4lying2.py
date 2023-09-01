@@ -182,6 +182,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "是同年":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
 
     if utterance == "較大[年紀]的[孩子][是]否[會]感到[無聊]":
         if args[0] in userDefinedDICT["年紀"]:
@@ -189,20 +195,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
-            pass
-
-    if utterance == "年紀[小]會不[會]跟不[上]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "是[同年]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
             pass
 
     return resultDICT
