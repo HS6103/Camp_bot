@@ -31,7 +31,7 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replytwofour/reply_gweng4can1.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_gweng4can1.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
@@ -79,25 +79,40 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "帶[零食]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+        if args[0] in userDefinedDICT["吃的東西"]:
+            
+        
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format(args[0])             
+            else:
+                # write your code here
+                pass
+        else: resultDICT["response"] = "請問是要帶什麼呢?是吃的嗎?"
 
     if utterance == "帶[零食]進去":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+        if args[0] in userDefinedDICT["吃的東西"]:
+            
+        
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format(args[0])             
+            else:
+                # write your code here
+                pass
+        else: resultDICT["response"] = "請問是要帶什麼呢?是吃的嗎?"
 
     if utterance == "把[零食]帶進去":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+        if args[0] in userDefinedDICT["吃的東西"]:
+            
+        
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format(args[0])             
+            else:
+                # write your code here
+                pass
+        else: resultDICT["response"] = "請問是要帶什麼呢?是吃的嗎?"
 
     if utterance == "提供[午餐]":
         if CHATBOT_MODE:
@@ -120,23 +135,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有[點心]":
-        if args[0] in userDefinedDICT["點心"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-            else:
-                # write your code here
-                pass
-
-    if utterance == "有沒[有][點心]":
+    if utterance == "有沒[有]點心":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有沒[有][點心]吃？":
+    if utterance == "有沒[有]點心吃？":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "有點心":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

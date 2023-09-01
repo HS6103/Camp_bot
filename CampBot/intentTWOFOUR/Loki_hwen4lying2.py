@@ -52,8 +52,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[同][年齡]？":
         if CHATBOT_MODE:
-            tmpSTR = "關於是否{}呢...".format("同齡") + getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")            
+            if "同" in args[0]: 
+                          
+                tmpSTR = "關於是否{}呢...".format("同齡") + getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")            
             
         else:
             # write your code here
@@ -125,8 +127,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "以[不同][年齡]混合分組":
         if CHATBOT_MODE:
-            tmpSTR = "關於是否{}呢...".format("不同齡") + getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")   
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子") 
         else:
             # write your code here
             pass
@@ -141,8 +143,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "包含[不同][年齡]層":
         if CHATBOT_MODE:
-            tmpSTR = "關於是否{}呢...".format("包含不同年齡") + getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")   
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子") 
         else:
             # write your code here
             pass
@@ -158,7 +160,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     if utterance == "年紀[小]會不[會]跟不[上]":
         if CHATBOT_MODE:
             tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子") 
+            tmpSTR = tmpSTR.format("孩子")
+            resultDICT["response"] = tmpSTR 
         else:
             # write your code here
             pass
