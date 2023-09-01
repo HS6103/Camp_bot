@@ -60,7 +60,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:
                 # write your code here
                 pass
-        else: resultDICT["response"] = "請問您指的是什麼?"
+        else: pass
 
     if utterance == "參加[營隊][前][應該]做哪些準備事項":
         if CHATBOT_MODE:
@@ -184,7 +184,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:
                 # write your code here
                 pass
-        else: resultDICT["response"] = "請問您指的是什麼?"
+        else: pass
 
     if utterance == "被邀請加入[親師群]":
         if args[0] in userDefinedDICT["親師群"]:
@@ -196,7 +196,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:
                 # write your code here
                 pass
-        else: resultDICT["response"] = "請問您指的是什麼?"
+        else: pass
 
     if utterance == "進入[親師群]":
         if args[0] in userDefinedDICT["親師群"]:
@@ -208,7 +208,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:
                 # write your code here
                 pass
-        else: resultDICT["response"] = "請問您指的是什麼?"
+        else: pass
 
     if utterance == "進入[營隊][前][須]要準備什麼":
         if CHATBOT_MODE:
