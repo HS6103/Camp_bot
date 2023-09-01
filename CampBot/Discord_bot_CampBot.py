@@ -102,7 +102,7 @@ class BotClient(discord.Client):  ##和discord連線
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
-                if (self.mscDICT[message.author.id]["age_grade"] == None):
+                if (self.mscDICT[message.author.id]["age_grade"] == None) or (self.mscDICT[message.author.id]["age_grade"] == 'tmp') :
                     try:
                         resultDICT = getLokiResult(msgSTR, "grade")
                         logging.debug("######\nLoki 處理結果如下：")
@@ -113,6 +113,7 @@ class BotClient(discord.Client):  ##和discord連線
                         
                     except KeyError:
                         replySTR = "我們沒有適合的營隊喔!"
+                        self.mscDICT[message.author.id]["age_grade"] = None
                 
             
                 elif self.mscDICT[message.author.id]["age_grade"] == "senior":
