@@ -49,9 +49,7 @@ import math
 import os
 import re
 try:
-    from intentAGE import Loki_5to9_grade
     from intentAGE import Loki_2to4_grade
-    import intentFIVENINE
     import intentTWOFOUR
 except:
     from .intent import Loki_5to9_grade
@@ -186,8 +184,8 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
             lokiResultDICT = {}
             for resultIndex in range(0, lokiRst.getLokiLen(index)):
                 # 5to9_grade
-                if lokiRst.getIntent(index, resultIndex) == "5to9_grade":
-                    lokiResultDICT = Loki_5to9_grade.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+                #if lokiRst.getIntent(index, resultIndex) == "5to9_grade":
+                    #lokiResultDICT = Loki_5to9_grade.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
                 # 2to4_grade
                 if lokiRst.getIntent(index, resultIndex) == "2to4_grade":
@@ -291,7 +289,7 @@ if __name__ == "__main__":
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ["11歲"]
+    inputSTR = ["國4"]
     resultDICT = runLoki(inputSTR)
     print (resultDICT)
     
