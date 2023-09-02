@@ -294,10 +294,15 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
+                #if k not in resultDICT:
+                    #resultDICT[k] = []
+                #if type(resultDICT[k]) != list:
+                    #resultDICT[k] = [resultDICT[k]] if resultDICT[k] else []
                 if type(lokiResultDICT[k]) == list: 
                     resultDICT[k] = lokiResultDICT[k]
                 else:
                     resultDICT[k] = [lokiResultDICT[k]]
+
     else:
         resultDICT["msg"] = lokiRst.getMessage()
     return resultDICT
@@ -478,9 +483,9 @@ if __name__ == "__main__":
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ["有什麼營隊"]
+    inputSTR = ["創新創業營在幹嘛"]
     resultDICT = runLoki(inputSTR)
-    print(resultDICT["response"][0])
+    print(resultDICT["response"])
     # 設定參考資料
     refDICT = {
         #"key": []
