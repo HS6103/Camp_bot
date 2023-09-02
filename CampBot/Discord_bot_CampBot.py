@@ -34,6 +34,8 @@ def getLokiResult(inputSTR, context=""):
         
     elif context == "junior":
         resultDICT = twofour_runloki(inputLIST, filterLIST)
+    
+    
         
     logging.debug("Loki Result => {}".format(resultDICT))
     return resultDICT
@@ -45,6 +47,7 @@ class BotClient(discord.Client):  ##和discord連線
         清空與 messageAuthorID 之間的對話記錄 ## multi session composition 多輪對話
         '''
         templateDICT = self.templateDICT
+        templateDICT["latestQuest"] = ""
         templateDICT["updatetime"] = datetime.now()
         templateDICT["age_grade"] = None
         return templateDICT
@@ -102,7 +105,7 @@ class BotClient(discord.Client):  ##和discord連線
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
-                if (self.mscDICT[message.author.id]["age_grade"] == None) or (self.mscDICT[message.author.id]["age_grade"] == 'tmp') :
+                if (self.mscDICT[message.author.id]["age_grade"] == None) :
                     try:
                         resultDICT = getLokiResult(msgSTR, "grade")
                         logging.debug("######\nLoki 處理結果如下：")
@@ -118,19 +121,45 @@ class BotClient(discord.Client):  ##和discord連線
             
                 elif self.mscDICT[message.author.id]["age_grade"] == "senior":
                     try:
+                        print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "senior")
+                        print(resultDICT)
                         logging.debug("######\nLoki 處理結果如下：")
                         logging.debug(resultDICT)
-                        replySTR = resultDICT["response"][0]
+                        if resultDICT["response"][0] == '':
+                            replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎聯絡真人客服~"
+                        else:
+                            replySTR = resultDICT["response"][0]  + "\n\n請問還有想問什麼問題嗎~"
+                            resultDICT["response"] = ''
+                            self.mscDICT[message.author.id]["latestQuest"] = replySTR
+                            
+                        resultDICT = {}
+                        print (resultDICT)
+                        #print(self.mscDICT[message.author.id]["latestQuest"])
+                        
+                        
                     except Exception:
                         replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎聯絡真人客服~"
                     
                 elif self.mscDICT[message.author.id]["age_grade"] == "junior":
                     try:
+                        print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "junior")
+                        print(resultDICT)
                         logging.debug("######\nLoki 處理結果如下：")
                         logging.debug(resultDICT)
-                        replySTR = resultDICT["response"][0]
+                        if resultDICT["response"][0] == '':
+                            replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎聯絡真人客服~"
+                        else:
+                            replySTR = resultDICT["response"][0]  + "\n\n請問還有想問什麼問題嗎~"
+                            resultDICT["response"] = ''
+                            self.mscDICT[message.author.id]["latestQuest"] = replySTR
+                            
+                        resultDICT = {}
+                        print (resultDICT)
+                        #print(self.mscDICT[message.author.id]["latestQuest"])
+                        
+                        
                     except Exception:
                         replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎聯絡真人客服~"
                         
