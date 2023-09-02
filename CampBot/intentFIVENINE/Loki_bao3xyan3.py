@@ -53,6 +53,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[1] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+            else:
+                pass
         else:
             # write your code here
             pass
@@ -61,6 +63,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[2] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -69,6 +72,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[2] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -77,6 +81,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[2] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -85,6 +90,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[0] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -93,6 +99,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[0] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -101,6 +108,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[0] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -109,6 +117,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[0] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -125,6 +134,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[0] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -133,6 +143,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[0] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
@@ -140,6 +151,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     if utterance == "有沒[有]投保[險]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+            
         else:
             # write your code here
             pass
@@ -148,6 +160,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if args[1] in userDefinedDICT["保險"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
         else:
             # write your code here
             pass
