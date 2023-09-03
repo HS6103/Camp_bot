@@ -49,6 +49,13 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
+    if utterance == "退費":
+        
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass        
     if utterance == "[可以]申請退費嗎？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
