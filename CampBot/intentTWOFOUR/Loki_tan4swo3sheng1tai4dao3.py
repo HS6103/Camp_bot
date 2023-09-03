@@ -105,5 +105,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+        
+    if utterance == "探索生態島是在做什麼的":
+               # args []
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("探索生態島")
+        else:
+            # write your code here
+            pass        
 
     return resultDICT

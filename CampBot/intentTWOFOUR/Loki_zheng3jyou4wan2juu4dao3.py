@@ -92,6 +92,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "拯救玩具島是在做什麼的":
+              # args []
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass        
+
     if utterance == "有拯救玩具島的課表嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)

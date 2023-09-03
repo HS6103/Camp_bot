@@ -69,6 +69,7 @@ try:
     from intentTWOFOUR import Loki_zheng3jyou4wan2juu4dao3
     from intentTWOFOUR import Loki_tan4swo3sheng1tai4dao3
     from intentTWOFOUR import Loki_fei4uuong4xi4jye2
+    from intentTWOFOUR import Loki_pyin3zhi2
 except:
     from .intent import Loki_fei4uuong4you1hwei4
     from .intent import Loki_gwo4ye4
@@ -90,6 +91,7 @@ except:
     from .intent import Loki_zheng3jyou4wan2juu4dao3
     from .intent import Loki_tan4swo3sheng1tai4dao3
     from .intent import Loki_fei4uuong4xi4jye2
+    from .intent import Loki_pyin3zhi2
 
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
@@ -299,6 +301,10 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "fei4uuong4xi4jye2":
                     lokiResultDICT = Loki_fei4uuong4xi4jye2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
+                # pyin3zhi2
+                if lokiRst.getIntent(index, resultIndex) == "pyin3zhi2":
+                    lokiResultDICT = Loki_pyin3zhi2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
@@ -488,13 +494,19 @@ def testIntent():
     print("[TEST] fei4uuong4xi4jye2")
     inputLIST = ['費用為何?','費用是多少','費用要多少','價格是多少錢?','花費需要多少錢?','費用有包含教材嗎','會不會有額外的費用','是否會有其他的花費？','教材有包含在費用裡嗎？','是否會產生額外的費用？','費用裡有沒有包含教材？','教材是否已納入費用之中？','費用是否已經包括了教材？','教材是否已經被納入費用了？','會不會有額外需支付的費用？','是否會有額外的金額需要支付？','教材是不是已經包含在費用中了？']
     testLoki(inputLIST, ['fei4uuong4xi4jye2'])
+    print("")
+    
+    # pyin3zhi2
+    print("[TEST] pyin3zhi2")
+    inputLIST = ['是小班制','班級人數','什麼是玩伴','帶幾個小孩','玩伴是什麼','師生比是多少','控制教學品質','玩伴在做什麼','確保教師素質','管理教學品質','維護教學品質','如何把關教學品質','如何確保教學品質','師生比例是多少？','確保營隊師資品質','老師和學生的比例','師生之間的比例是多少']
+    testLoki(inputLIST, ['pyin3zhi2'])
     print("")    
 
 
 if __name__ == "__main__":
    
     
-    inputLIST = ["營隊的費用是多少?"]
+    inputLIST = ["針對低年級，你們有防護措施嗎?"]
     
     resultDICT = runLoki(inputLIST)
     print(resultDICT)     
