@@ -72,7 +72,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "參加什麼[營]":
-        if args[1] in userDefinedDICT["活動"]:
+        if args[0] in userDefinedDICT["活動"]:
             
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
