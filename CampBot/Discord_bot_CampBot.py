@@ -46,18 +46,21 @@ class BotClient(discord.Client):  ##和discord連線
         '''
         清空與 messageAuthorID 之間的對話記錄 ## multi session composition 多輪對話
         '''
-        templateDICT = self.templateDICT
-        templateDICT["latestQuest"] = ""
-        templateDICT["updatetime"] = datetime.now()
-        templateDICT["age_grade"] = None
+        templateDICT = {    "id": messageAuthorID,
+                             "updatetime" : datetime.now(),
+                             "latestQuest": "",
+                             "age_grade": None                             
+                             
+        }
         return templateDICT
 
     async def on_ready(self):
         # ################### Multi-Session Conversation :設定多輪對話資訊 ###################
         
-        self.templateDICT = {"updatetime" : None,
-                             "latestQuest": "", 
-                             "age_grade": None
+        self.templateDICT = {
+            "updatetime" : None,
+            "latestQuest": "", 
+            "age_grade": None
         }
         self.mscDICT = { #userid:templateDICT
         }
