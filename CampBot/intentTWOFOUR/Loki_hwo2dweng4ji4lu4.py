@@ -85,7 +85,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "找到[活動]的相片":
+    if utterance == "找到[活動]的[相片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -99,7 +99,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "更新[活動]照片":
+    if utterance == "更新[活動][照片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -113,7 +113,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有[活動]照片":
+    if utterance == "有[活動][照片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -134,14 +134,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有沒[有]照片":
+    if utterance == "有沒[有][照片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有照片":
+    if utterance == "有[照片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -155,7 +155,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "看到[活動]照片":
+    if utterance == "看到[活動][照片]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
