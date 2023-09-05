@@ -58,9 +58,6 @@ class BotClient(discord.Client):  ##和discord連線
         # ################### Multi-Session Conversation :設定多輪對話資訊 ###################
         
         self.templateDICT = {
-            "updatetime" : None,
-            "latestQuest": "", 
-            "age_grade": None
         }
         self.mscDICT = { #userid:templateDICT
         }
