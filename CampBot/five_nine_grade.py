@@ -68,6 +68,9 @@ try:
     from intentFIVENINE import Loki_ying2dwei4shou1hwo4
     from intentFIVENINE import Loki_bao4mying2
     from intentFIVENINE import Loki_ying2dwei4nei4rweng2
+    from intentFIVENINE import Loki_Ending
+    from intentFIVENINE import Loki_fei4uuong4xi4jye2
+    
 except:
     from .intent import Loki_di4dyan3
     from .intent import Loki_hwen4lying2
@@ -292,6 +295,14 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "ying2dwei4nei4rweng2":
                     lokiResultDICT = Loki_ying2dwei4nei4rweng2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
+                # fei4uuong4xi4jye2
+                if lokiRst.getIntent(index, resultIndex) == "fei4uuong4xi4jye2":
+                    lokiResultDICT = Loki_fei4uuong4xi4jye2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+                
+                # Ending
+                if lokiRst.getIntent(index, resultIndex) == "Ending":
+                    lokiResultDICT = Loki_Ending.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
                 #if k not in resultDICT:
@@ -483,7 +494,7 @@ if __name__ == "__main__":
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ["創新創業營在幹嘛"]
+    inputSTR = ["推薦營隊"]
     resultDICT = runLoki(inputSTR)
     print(resultDICT["response"])
     # 設定參考資料
