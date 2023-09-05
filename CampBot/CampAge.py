@@ -49,12 +49,9 @@ import math
 import os
 import re
 try:
-    from intentAGE import Loki_2to4_grade
-    import intentTWOFOUR
+    from intentAGE import Loki_age
 except:
-    from .intent import Loki_5to9_grade
-    from .intent import Loki_2to4_grade
-
+    from .intent import Loki_age
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 try:
@@ -183,13 +180,9 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
         for index, key in enumerate(inputLIST):
             lokiResultDICT = {}
             for resultIndex in range(0, lokiRst.getLokiLen(index)):
-                # 5to9_grade
-                #if lokiRst.getIntent(index, resultIndex) == "5to9_grade":
-                    #lokiResultDICT = Loki_5to9_grade.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
-
-                # 2to4_grade
-                if lokiRst.getIntent(index, resultIndex) == "2to4_grade":
-                    lokiResultDICT = Loki_2to4_grade.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+                # age
+                if lokiRst.getIntent(index, resultIndex) == "age":
+                    lokiResultDICT = Loki_age.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
@@ -269,16 +262,11 @@ def testLoki(inputLIST, filterLIST):
         print(resultDICT["msg"])
 
 def testIntent():
-    # 5to9_grade
-    print("[TEST] 5to9_grade")
-    inputLIST = ['5','國一','小五','五年級','中學一年級']
-    testLoki(inputLIST, ['5to9_grade'])
-    print("") 
 
-    # 2to4_grade
-    print("[TEST] 2to4_grade")
+    # age
+    print("[TEST] age")
     inputLIST = ['2','小二','二年級','國小二年級']
-    testLoki(inputLIST, ['2to4_grade'])
+    testLoki(inputLIST, ['age'])
     print("")
 
 
