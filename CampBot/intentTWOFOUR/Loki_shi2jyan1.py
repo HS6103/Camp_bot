@@ -240,5 +240,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+        
+    if utterance == "什麼[時候][可以]去接[小孩]":
+             # args ["時候", "可以", "小朋友"]
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("家長","孩子")
+        else:
+            # write your code here
+            pass        
 
     return resultDICT

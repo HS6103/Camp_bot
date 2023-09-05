@@ -101,7 +101,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "有[特殊]需求":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if "特" in args[0]:
+                        
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
@@ -126,5 +128,28 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+    
+    
+    #新增    
+    if utterance == "有[額外]的[問題]":
+               # args ["額外", "問題"]
+        if CHATBOT_MODE:
+            if args[1] in userDefinedDICT["問題"]:
+
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
+        else:
+            # write your code here
+            pass    
+
+    if utterance == "不吃[青菜]":
+        # args ["葷"]
+        if args[0] in ("青菜", "肉", "豬肉", "牛肉", "葷"):    
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
+        else:
+            # write your code here
+            pass        
 
     return resultDICT

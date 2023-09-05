@@ -265,7 +265,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["response"] = tmpReplySTR
               
             else:
-                pass             
+                pass
+        else:
+            # write your code here
+            pass
+                
    
          
     if utterance == "有沒[有][教材]":

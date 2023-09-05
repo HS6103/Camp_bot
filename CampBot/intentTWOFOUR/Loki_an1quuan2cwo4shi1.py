@@ -100,8 +100,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "有[危險]":
         if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")
+            if "危" in args[0]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")
         else:
             # write your code here
             pass
@@ -128,7 +129,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             if "安" in args[1]:
                 tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("孩子")    
+                resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
         else:
             # write your code here
             pass
@@ -177,9 +179,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "確保[安全]":
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")
+        if "安" in args[0]:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
         else:
             # write your code here
             pass
