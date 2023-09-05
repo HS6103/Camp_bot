@@ -56,8 +56,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[2]":
         if "國" in inputSTR:
-            if args[0] in ["國一", "國二", "國三", "國1", "國2", "國3"]:
-                resultDICT["response"] = "我知道了，小朋友是{}，請問您想問什麼呢?".format(args[0])
+            if args[0] in ["1", "2", "3"]:
+                resultDICT["response"] = "我知道了，小朋友是國{}，請問您想問什麼呢?".format(args[0])
                 resultDICT["age_grade"] = "senior"                                
                 pass
             else:
