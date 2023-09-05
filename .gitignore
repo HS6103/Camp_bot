@@ -1,3 +1,5 @@
 #ignore account.info
 account.info
-.pyc
+
+#ignore pycache
+_pychache_
