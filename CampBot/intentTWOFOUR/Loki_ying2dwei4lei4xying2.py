@@ -124,7 +124,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有哪些營隊":
+    if utterance == "有哪些營隊[適合]":
+        # args ["適合"]
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

@@ -64,21 +64,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "低年級有安排過夜的營隊":
+    if utterance == "有安排過夜的營隊":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "低年級有提供過夜活動的營隊":
+    if utterance == "有提供過夜活動的營隊":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "低年級有過夜的營隊":
+    if utterance == "有過夜的營隊":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

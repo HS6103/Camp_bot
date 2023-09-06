@@ -50,16 +50,22 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[自己]負責保險":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "負責[保險]":
+        # args ["意外險"]
+        if args[0].endswith("險"):
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
 
     if utterance == "包含[保險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0].endswith("險"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
@@ -78,12 +84,32 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "投什麼保險":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "投什麼[保險]":
+        if args[0].endswith("險"):
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
+        
+    if utterance == "投什麼[險]":
+        if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            
+        else:
+            # write your code here
+            pass              # args ["險"]
+    
+    if utterance == "保什麼[險]":
+              # args ["險"]
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+    
+        else:
+            # write your code here
+            pass                
 
     if utterance == "投保了什麼保險":
         if CHATBOT_MODE:
@@ -93,29 +119,40 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "提供[保險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0].endswith("險"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
 
     if utterance == "有沒[有]投[保險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[1].endswith("險"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
 
-    if utterance == "需要[自己]投保[保險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "投保[保險]":
+        # args ["意外險"]
+        if args[0].endswith("險"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
+             
 
-    if utterance == "需要[自行]購買[保險]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "購買[保險]":
+        # args ["意外險"]
+        if args[0].endswith("險"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass

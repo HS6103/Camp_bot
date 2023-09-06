@@ -81,6 +81,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+        
+    #新增1
+    if utterance == "在[你們]那受傷怎麼辦":
+           # args ["你們"]
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
+        else:
+            # write your code here
+            pass        
 
     if utterance == "如何處理受傷":
         if CHATBOT_MODE:
@@ -119,10 +129,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "有[安全]保護[措施]":
-        if CHATBOT_MODE:
-            if "安" in args[0]:
+        if args[1] in ("措施", "機制"):
+            if CHATBOT_MODE:
                 tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("孩子")    
+                resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
         else:
             # write your code here
             pass

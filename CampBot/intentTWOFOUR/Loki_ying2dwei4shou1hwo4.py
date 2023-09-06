@@ -155,7 +155,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "獲得的[東西]":
-        if args[0] not in userDefinedDICT["小孩"]: 
+        if args[0] not in userDefinedDICT["小孩"] and not userDefinedDICT["地點"]: 
             if CHATBOT_MODE:
            
                 tmpSTR = "關於{}呢...".format("獲得什麼") + getResponse(utterance, args)

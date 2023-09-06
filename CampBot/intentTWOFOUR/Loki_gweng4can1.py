@@ -141,8 +141,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else: pass
 
     if utterance == "提供[午餐]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0].endswith("餐"):
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
@@ -219,8 +222,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         #新增
     if utterance == "[早餐]怎麼辦":
                # args ["晚餐"]
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0].endswith("餐"):
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass        
