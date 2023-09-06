@@ -125,8 +125,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營][幾天]幾[夜]":
         if args[0] in userDefinedDICT["as_camp"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = "我們營隊都是五天四夜喔"
         else:
             # write your code here
             pass

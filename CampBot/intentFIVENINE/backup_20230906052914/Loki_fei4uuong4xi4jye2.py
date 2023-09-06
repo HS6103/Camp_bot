@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for hang2qyan2
+    Loki module for fei4uuong4xi4jye2
 
     Input:
         inputSTR      str,
@@ -19,9 +19,10 @@ from random import sample
 import json
 import os
 
-DEBUG_hang2qyan2 = True
+DEBUG_fei4uuong4xi4jye2 = True
 CHATBOT_MODE = True
 
+userDefinedDICT = {}
 try:
     userDefinedDICT = json.load(open(os.path.join(os.path.dirname(__file__), "USER_DEFINED.json"), encoding="utf-8"))
 except Exception as e:
@@ -30,14 +31,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replyfivenine/reply_hang2qyan2.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replyfivenine/reply_fei4uuong4xi4jye2.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_hang2qyan2:
-        print("[hang2qyan2] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_fei4uuong4xi4jye2:
+        print("[fei4uuong4xi4jye2] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -49,134 +50,119 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[應該][先]作哪些準備的安排":
+    if utterance == "[價格]是多少錢?":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[應該]做哪些準備事項":
+    if utterance == "[教材][是]否已納入[費用]之[中]？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[須]要準備什麼":
-        if "夜" in inputSTR:
-            pass
-        elif CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "加入到[親師群]":
-        if args[0] in userDefinedDICT["親師群"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        
-        else:
-            # write your code here
-            pass
-
-    if utterance == "告知營隊行前的通知":
+    if utterance == "[教材][是]否已經被納入[費用]了？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "提供營隊行前的通知":
+    if utterance == "[教材]是不[是]已經包含在[費用][中]了？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有沒[有]營隊行前的通知":
+    if utterance == "[教材]有[包]含在[費用][裡]嗎？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "營隊行前要完成的任務有哪些":
+    if utterance == "[是]否[會]有[額外]的金額需要支付？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "行前[應該]要做什麼準備工作":
+    if utterance == "[是]否[會]有其他的[花費]？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "行前[須]要完成的事情是什麼":
+    if utterance == "[是]否[會]產生[額外]的[費用]？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "行前任務是什麼":
+    if utterance == "[費用][是]否已經包括了[教材]？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "行前的工作有哪些":
+    if utterance == "[費用][裡]有沒[有][包]含[教材]？":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "行前通知":
+    if utterance == "[費用]是多少":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "被加入[親師群]":
-        if args[0] in userDefinedDICT["親師群"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        
-        else:
-            # write your code here
-            pass
-
-    if utterance == "進入[親師群]":
-        if args[0] in userDefinedDICT["親師群"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)            
-        
-        else:
-            # write your code here
-            pass
-
-    if utterance == "需做哪些準備工作":
+    if utterance == "[費用]有[包]含[教材]嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "需要做什麼準備":
+    if utterance == "[費用]為何?":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "需要準備什麼":
+    if utterance == "[費用]要多少":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "會不[會]有[額外]的[費用]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "會不[會]有[額外]需支付的[費用]？":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "花費需要多少錢?":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

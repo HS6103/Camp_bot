@@ -169,4 +169,18 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "多少錢":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "多貴":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     return resultDICT

@@ -20,7 +20,7 @@ import json
 import os
 
 DEBUG_hwen4lying2 = True
-CHATBOT_MODE = False
+CHATBOT_MODE = True
 
 userDefinedDICT = {}
 try:
@@ -51,6 +51,13 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[同][年齡]？":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[年紀][小]會不[會]跟不[上]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -141,21 +148,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "年紀[小]會不[會]跟不[上]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "是[同年]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
     if utterance == "是[相同][年紀]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "是同年":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

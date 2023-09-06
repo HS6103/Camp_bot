@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for te4shu1xuu1qyou2
+    Loki module for hwo2dweng4ji4lu4
 
     Input:
         inputSTR      str,
@@ -19,7 +19,7 @@ from random import sample
 import json
 import os
 
-DEBUG_te4shu1xuu1qyou2 = True
+DEBUG_hwo2dweng4ji4lu4 = True
 CHATBOT_MODE = True
 
 try:
@@ -30,14 +30,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replyfivenine/reply_te4shu1xuu1qyou2.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/replyfivenine/reply_hwo2dweng4ji4lu4.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_te4shu1xuu1qyou2:
-        print("[te4shu1xuu1qyou2] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_hwo2dweng4ji4lu4:
+        print("[hwo2dweng4ji4lu4] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -49,25 +49,8 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[暫時]有[緊急][事項]":
-        if args[1] != "緊急":
-            pass
-        elif CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "[突發][情況]需要找誰":
-        if args[1] in userDefinedDICT["problem"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "[臨時]有[事情]":
-        if args[1] in userDefinedDICT["problem"]:
+    if utterance == "[照片]要去哪裡看":
+        if args[0] in userDefinedDICT["照片"]:
             
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -75,8 +58,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[臨時]有[狀況]要找誰":
-        if args[1] in userDefinedDICT["problem"]:
+    if utterance == "[相片]要怎麼看":
+        if args[0] in userDefinedDICT["照片"]:
             
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -84,22 +67,22 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "吃素":
+    if utterance == "了解孩子參與狀況":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "吃藥":
+    if utterance == "得知孩子參與狀況":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "有[急事]":
-        if args[0] in userDefinedDICT["problem"]:
+    if utterance == "想要看活動[照片]要去哪裡找":
+        if args[0] in userDefinedDICT["照片"]:
             
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
@@ -107,27 +90,45 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有其他[問題]":
-        if args[0] in userDefinedDICT["problem"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有其他[問題]怎麼辦":
-        if args[0] in userDefinedDICT["problem"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "不[能]吃":
+    if utterance == "拍照":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "有[照片]":
+        if args[0] in userDefinedDICT["照片"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "有沒[有]活動的[相片]":
+        if args[1] in userDefinedDICT["照片"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "有活動拍攝的[圖片]":
+        if args[0] in userDefinedDICT["照片"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "活動的[相片]":
+        if args[0] in userDefinedDICT["照片"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
