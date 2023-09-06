@@ -183,4 +183,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "負責[保險]":
+        if args[0] in userDefinedDICT["as_insur"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+                
+        else:
+            # write your code here
+            pass
+
+
+    if utterance == "購買[保險]":
+        if args[0] in userDefinedDICT["as_insur"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+                
+        else:
+            # write your code here
+            pass
+
+
     return resultDICT
