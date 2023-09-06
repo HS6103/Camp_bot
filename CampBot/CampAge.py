@@ -186,10 +186,10 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
-                #if k not in resultDICT:
-                    #resultDICT[k] = []
-                #if type(resultDICT[k]) != list:
-                    #resultDICT[k] = [resultDICT[k]] if resultDICT[k] else []   #讓reply不會疊加在resultDICT
+                if k not in resultDICT:
+                    resultDICT[k] = []
+                if type(resultDICT[k]) != list:
+                    resultDICT[k] = [resultDICT[k]] if resultDICT[k] else []   #讓reply不會疊加在resultDICT
                 if type(lokiResultDICT[k]) == list: 
                     resultDICT[k] = lokiResultDICT[k]
                 else:
@@ -198,7 +198,6 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                     
     else:
         resultDICT["msg"] = lokiRst.getMessage()
-        resultDICT["intent"] = lokiRst.getIntent()
     return resultDICT
         
 
@@ -277,14 +276,14 @@ if __name__ == "__main__":
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ["國4"]
-    resultDICT = runLoki(inputSTR)
+    inputSTR = ["價格是多少錢?"]
+    resultDICT = execLoki(inputSTR, splitLIST= splitLIST)
     print (resultDICT)
     
     # 設定參考資料
-    refDICT = {
+    #refDICT = {
         #"key": []
-    }
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
-    resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
+    #}
+    #resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
+    #resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
+    #resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}
