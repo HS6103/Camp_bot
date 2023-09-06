@@ -2,4 +2,5 @@
 account.info
 
 #ignore pycache
-__pycache__/
+CampBot/intentTWOFOUR/__pycache__/
+CampBot/intentFIVENINE/__pycache__/
