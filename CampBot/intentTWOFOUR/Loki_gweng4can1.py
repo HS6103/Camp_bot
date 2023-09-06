@@ -55,20 +55,28 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
             else:pass
-            
+        elif args[1] in userDefinedDICT["吃的東西"]:
+            resultDICT["response"] = "沒有不行喔~我們不會阻止孩子們攜帶{}。".format(args[1])              
         else:
             # write your code here
             pass
 
     if utterance == "[中午][會]吃什麼":
-        if args[0] in ("中午", "早上", "午餐", "早餐"):
+        if args[0] in ("中午", "早上", "午餐", "早餐", "早點"):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
+                
             else:
                 resultDICT["response"] = "哩勒攻殺虫"
+        elif args[0] in userDefinedDICT["點心"]:
+            resultDICT["response"] = "可以期待一下每天的{}時間~".format(args[0])           
         else:
             # write your code here
             pass
+      
+        
+                    
+     
 
     if utterance == "供應午餐":
         if CHATBOT_MODE:
@@ -84,8 +92,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
             else:pass
+        
         elif args[0] in ("早餐", "早點", "早上"):
             resultDICT["response"] = "抱歉，我們營隊沒有供應早餐喔。"
+        
         elif args[0] in userDefinedDICT["點心"]:
             resultDICT["response"] = "可以期待一下每天的{}時間~".format(args[0])                
         else:pass
@@ -128,7 +138,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:
                 # write your code here
                 pass
-        else: resultDICT["response"] = "請問是要帶什麼呢?是吃的嗎?"
+        else: pass
 
     if utterance == "提供[午餐]":
         if CHATBOT_MODE:
@@ -197,7 +207,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:pass            
         else:
             # write your code here
-            resultDICT["response"] = "請問你是要問早餐、午餐，還是點心呢?"
+            pass
 
     if utterance == "自備[午餐]":
         if CHATBOT_MODE:

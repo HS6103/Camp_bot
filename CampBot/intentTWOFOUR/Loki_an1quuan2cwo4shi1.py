@@ -103,6 +103,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if "危" in args[0]:
                 tmpSTR = getResponse(utterance, args)
                 resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
+            
         else:
             # write your code here
             pass

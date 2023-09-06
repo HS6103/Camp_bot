@@ -167,19 +167,22 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "是[同年]":
-        if CHATBOT_MODE:
-            tmpSTR = "關於是否{}呢...".format("同年") + getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子") 
+        if args[0].startswith("同"):
+            
+            if CHATBOT_MODE:
+                tmpSTR = "關於是否{}呢...".format(args[0]) + getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
         else:
             # write your code here
             pass
 
     if utterance == "是[相同][年紀]":
-        if args[1].startswith("年"):
-            if CHATBOT_MODE:
-                tmpSTR = "關於{}呢...".format(args[1]) + getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("孩子")
-            else:pass
+       
+        if CHATBOT_MODE:
+            tmpSTR = "關於{}呢...".format(args[1]) + getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("孩子")
+            
         else:
             # write your code here
             pass
