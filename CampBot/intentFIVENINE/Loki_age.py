@@ -232,36 +232,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             pass
         
-    if utterance == "國中[一]年級":
-        if args[0] in ["1", "2", "3", "一", "二", "三"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-            else:
-                resultDICT["response"] = "我知道了，請問您想問什麼呢?"
-                resultDICT["age_grade"] = "senior"                                
-                pass        
-        else:
-            pass
-        
-    if utterance == "中學[一]年級":
-        if args[0] in ["1", "2", "3", "一", "二", "三"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-            else:
-                resultDICT["response"] = "我知道了，小朋友是國中{}年級，請問您想問什麼呢?".format(args[0])
-                resultDICT["age_grade"] = "senior"                                
-                pass        
-        else:
-            pass
-        
-    if utterance == "初中[一]年級":
-        if args[0] in ["1", "2", "3", "一", "二", "三"]:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-            else:
-                resultDICT["response"] = "我知道了，小朋友是國中{}年級，請問您想問什麼呢?".format(args[0])
-                resultDICT["age_grade"] = "senior"                                
-                pass        
+    if utterance == "[初中][一]年級":
+        if args[0] in ["初中", "中學", "國中"]:
+            
+            if args[1] in ["1", "2", "3", "一", "二", "三"]:
+                if CHATBOT_MODE:
+                    resultDICT["response"] = getResponse(utterance, args)
+                else:
+                    resultDICT["response"] = "我知道了，小朋友是國中{}年級，請問您想問什麼呢?".format(args[0])
+                    resultDICT["age_grade"] = "senior"                                
+                    pass        
         else:
             pass
         
