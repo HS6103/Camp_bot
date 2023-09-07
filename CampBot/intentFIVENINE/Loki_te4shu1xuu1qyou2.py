@@ -50,7 +50,7 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[暫時]有[緊急][事項]":
-        if args[1] != "緊急":
+        if args[2] not in userDefinedDICT["problem"]:
             pass
         elif CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -132,4 +132,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "有[急事]找誰":
+        if args[0] in userDefinedDICT["problem"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "有[臨時][狀況]":
+        if args[1] in userDefinedDICT["problem"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
     return resultDICT

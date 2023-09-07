@@ -121,8 +121,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "有[包]含[保險]":
-        if args[1] in userDefinedDICT["as_insur"]:
+    if utterance == "包含[保險]":
+        if args[0] in userDefinedDICT["as_insur"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -201,5 +201,37 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+
+    if utterance == "保什麼[險]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "投什麼[保險]":
+        if args[0] in userDefinedDICT["as_insur"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+                
+        else:
+            # write your code here
+            pass
+
+    if utterance == "投什麼[險]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "提供[保險]":
+        if args[0] in userDefinedDICT["as_insur"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+                
+        else:
+            # write your code here
+            pass
 
     return resultDICT
