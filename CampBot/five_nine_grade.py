@@ -69,6 +69,7 @@ try:
     from intentFIVENINE import Loki_bao4mying2
     from intentFIVENINE import Loki_ying2dwei4nei4rweng2
     from intentFIVENINE import Loki_fei4uuong4xi4jye2
+    from intentFIVENINE import Loki_age
     
 except:
     from .intent import Loki_di4dyan3
@@ -298,6 +299,10 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "fei4uuong4xi4jye2":
                     lokiResultDICT = Loki_fei4uuong4xi4jye2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
                 
+                # age
+                if lokiRst.getIntent(index, resultIndex) == "age":
+                    lokiResultDICT = Loki_age.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
@@ -505,14 +510,14 @@ def testIntent():
 if __name__ == "__main__":
     # 測試所有意圖
     
-    testIntent()
+    #testIntent()
 
     #測試其它句子
-    #filterLIST = []
-    #splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    #inputSTR = ['地點在哪個位置？']
-    #resultDICT = runLoki(inputSTR)
-    #print(resultDICT["response"])
+    filterLIST = []
+    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    inputSTR = ['有什麼不同？']
+    resultDICT = runLoki(inputSTR)
+    print(resultDICT["response"])
     ### 設定參考資料
     #refDICT = {
         #"key": []
