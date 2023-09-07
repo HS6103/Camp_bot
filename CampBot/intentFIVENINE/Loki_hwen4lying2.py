@@ -50,7 +50,7 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[同][年齡]？":
-        if args[0] in userDefinedDICT["年紀"]:
+        if args[1] in userDefinedDICT["年紀"]:
             
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)

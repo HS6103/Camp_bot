@@ -50,7 +50,7 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[是]否提供[保險]":
-        if args[1] in userDefinedDICT["保險"]:
+        if args[1] in userDefinedDICT["as_insur"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
             else:
@@ -60,7 +60,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[是]否要[自己]負責[保險]":
-        if args[2] in userDefinedDICT["保險"]:
+        if args[2] in userDefinedDICT["as_insur"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
                 
@@ -69,7 +69,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[是]否需要[自己]投保[保險]":
-        if args[2] in userDefinedDICT["保險"]:
+        if args[2] in userDefinedDICT["as_insur"]:
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
                 
@@ -78,8 +78,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[是]否需要[自行]購買[保險]":
-        if args[2] in userDefinedDICT["保險"]:
-            if CHATBOT_MODE:
+        if args[2] in userDefinedDICT["as_insur"]:
                 resultDICT["response"] = getResponse(utterance, args)
                 
         else:

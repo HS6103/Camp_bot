@@ -50,7 +50,6 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[創新創業營]在做什麼":
-        print[args[0]]
         if args[0] in userDefinedDICT["as_camp"]:
             utterance = "{}在做什麼".format(args[0])
             print(utterance)
@@ -58,8 +57,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["response"] = getResponse(utterance, args)           
             
         else:
-            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
+    else:
+        pass
 
     if utterance == "[創新創業營]在幹嘛":
         if args[0] in userDefinedDICT["as_camp"]:
@@ -71,8 +71,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)           
             
+            else:
+                pass
         else:
-            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]的[詳細]內容":
@@ -81,8 +82,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)           
         
+            else:
+                pass
         else:
-            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]的特色是什麼":
@@ -90,9 +92,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             utterance = "{}的特色是什麼".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)           
-            
+            else:
+                pass
         else:
-            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]的細節":
@@ -101,8 +103,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)           
         
+            else:
+                pass
         else:
-            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "有[創新創業營]的課表嗎":
@@ -111,12 +114,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)           
         
+            else:
+                pass
         else:
-            resultDICT["response"] = "抱歉，沒有您所詢問的營隊資訊喔!"
             pass
 
     if utterance == "[創新創業營]":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -132,6 +137,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營][都]在幹嘛":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}[都]在幹嘛".format(args[0])
+            
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -140,6 +147,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]是啥":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}是啥".format(args[0])
+            
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -148,6 +157,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]聽起來很有趣":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}聽起來很有趣".format(args[0])
+            
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -156,6 +167,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "介紹一下[創新創業營]":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "介紹一下{}".format(args[0])
+            
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -164,6 +177,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]具有什麼[特][點]":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}具有什麼[特][點]".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -172,6 +186,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]感覺很有趣":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}感覺很有趣".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -180,6 +195,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]有哪些[獨特]之處":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}有哪些[獨特]之處".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -188,6 +204,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]聽起來[似乎][很]有意思":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}聽起來[似乎][很]有意思".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -196,6 +213,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]聽起來[相當][有趣]":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}聽起來[相當][有趣]".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -204,6 +222,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]聽起來好像挺[好玩]的":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}聽起來好像挺[好玩]的".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -212,6 +231,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[創新創業營]聽起來挺有意思的":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "{}聽起來挺有意思的".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -220,6 +240,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "分享一下[創新創業營]":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "分享一下{}".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -228,6 +249,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "談談[創新創業營]":
         if args[0] in userDefinedDICT["as_camp"]:
+            utterance = "談談{}".format(args[0])
             if CHATBOT_MODE:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
