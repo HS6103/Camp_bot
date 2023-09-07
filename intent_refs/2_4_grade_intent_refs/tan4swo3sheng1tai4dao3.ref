@@ -11,35 +11,59 @@
             "旅平險",
             "醫療險"
         ],
+        "問題": [
+            "狀況",
+            "事情",
+            "需求",
+            "事項",
+            "問題",
+            "急事",
+            "情況"
+        ],
         "地點": [
             "位置",
-            "地方"
+            "地方",
+            "地址",
+            "場地"
         ],
         "小孩": [
             "孩子",
-            "小朋友"
+            "小朋友",
+            "寶貝",
+            "小孩"
         ],
         "年紀": [
             "年級",
             "年齡"
         ],
+        "教材": [
+            "課表",
+            "教具"
+        ],
         "活動": [
             "營隊",
-            "行程"
+            "行程",
+            "課程"
         ],
         "照片": [
             "圖片",
             "影片",
             "相片"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "定價",
+            "費用",
+            "金額",
+            "支出"
+        ],
         "點心": [
-            "",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "糖果",
-            "零食",
-            "餅乾"
+            "下午茶",
+            "小點心",
+            "點心",
+            "甜點"
         ],
         "as_noun": [
             "中午",
@@ -51,12 +75,16 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "早上"
         ],
         "親師群": [
             "Line群",
             "群組",
-            "賴群"
+            "親師群組",
+            "賴群",
+            "line群",
+            "親師群"
         ],
         "吃的東西": [
             "乖乖",
@@ -1189,6 +1217,322 @@
                 {
                     "pos": "CLAUSE_YesNoQ",
                     "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "探索生態島是在做什麼的": {
+            "id": "f9935071-1986-4456-9f88-512218a17a06",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "刺探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "勘探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探勘",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探問",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探尋",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探查",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探測",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探究",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探討",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探訪",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探險",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢索",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "試探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "勘測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋找",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搜尋",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查找",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查看",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢查",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢驗",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏查",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "追尋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開拓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "探求",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "漫步",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "探索",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "生態島",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ASPECT",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "作用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "冒充",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創造",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "喬裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "孕育",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝製",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "生出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "產出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "製作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "常做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "指做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "新做",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "做",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
                     "checked": false,
                     "checkbox": false
                 }

@@ -11,35 +11,59 @@
             "旅平險",
             "醫療險"
         ],
+        "問題": [
+            "狀況",
+            "事情",
+            "需求",
+            "事項",
+            "問題",
+            "急事",
+            "情況"
+        ],
         "地點": [
             "位置",
-            "地方"
+            "地方",
+            "地址",
+            "場地"
         ],
         "小孩": [
             "孩子",
-            "小朋友"
+            "小朋友",
+            "寶貝",
+            "小孩"
         ],
         "年紀": [
             "年級",
             "年齡"
         ],
+        "教材": [
+            "課表",
+            "教具"
+        ],
         "活動": [
             "營隊",
-            "行程"
+            "行程",
+            "課程"
         ],
         "照片": [
             "圖片",
             "影片",
             "相片"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "定價",
+            "費用",
+            "金額",
+            "支出"
+        ],
         "點心": [
-            "",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "糖果",
-            "零食",
-            "餅乾"
+            "下午茶",
+            "小點心",
+            "點心",
+            "甜點"
         ],
         "as_noun": [
             "中午",
@@ -51,12 +75,16 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "早上"
         ],
         "親師群": [
             "Line群",
             "群組",
-            "賴群"
+            "親師群組",
+            "賴群",
+            "line群",
+            "親師群"
         ],
         "吃的東西": [
             "乖乖",
@@ -3127,6 +3155,210 @@
                 }
             ]
         },
+        "給我家小孩報名": {
+            "id": "f6b8f099-cf23-4704-85d8-ad869099f7c0",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "給老",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "留給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給聖",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給阿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給對",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "給",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_possessive",
+                    "text": "我",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "家",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "報到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登錄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "填報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投稿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推荐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報考",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "報名",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "幫我姊姊的姐姐報名": {
             "id": "0834523e-dc14-4eb8-ae7a-8e478c855484",
             "argument": [
@@ -3446,6 +3678,216 @@
                     "text": "小孩",
                     "checked": true,
                     "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "報到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登錄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "填報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投稿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推荐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報考",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "報名",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "幫我小孩的姐姐報名": {
+            "id": "e91ad810-6e43-486d-a1dc-64af012c6e11",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "幫助",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扶助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "援助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想幫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "替",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫忙",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常幫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想替",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "幫",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "姐姐",
+                    "checked": false,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",

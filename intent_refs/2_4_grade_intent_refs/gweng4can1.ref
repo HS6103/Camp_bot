@@ -11,35 +11,59 @@
             "旅平險",
             "醫療險"
         ],
+        "問題": [
+            "狀況",
+            "事情",
+            "需求",
+            "事項",
+            "問題",
+            "急事",
+            "情況"
+        ],
         "地點": [
             "位置",
-            "地方"
+            "地方",
+            "地址",
+            "場地"
         ],
         "小孩": [
             "孩子",
-            "小朋友"
+            "小朋友",
+            "寶貝",
+            "小孩"
         ],
         "年紀": [
             "年級",
             "年齡"
         ],
+        "教材": [
+            "課表",
+            "教具"
+        ],
         "活動": [
             "營隊",
-            "行程"
+            "行程",
+            "課程"
         ],
         "照片": [
             "圖片",
             "影片",
             "相片"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "定價",
+            "費用",
+            "金額",
+            "支出"
+        ],
         "點心": [
-            "",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "糖果",
-            "零食",
-            "餅乾"
+            "下午茶",
+            "小點心",
+            "點心",
+            "甜點"
         ],
         "as_noun": [
             "中午",
@@ -51,12 +75,16 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "早上"
         ],
         "親師群": [
             "Line群",
             "群組",
-            "賴群"
+            "親師群組",
+            "賴群",
+            "line群",
+            "親師群"
         ],
         "吃的東西": [
             "乖乖",
@@ -72,7 +100,7 @@
     },
     "utterance": {
         "帶零食": {
-            "id": "772a33e1-a1db-43f6-9b09-91516ea5b35a",
+            "id": "021bf52c-0d40-4a3f-bae6-76c62b1cfb1a",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -173,27 +201,7 @@
                             "checked": false
                         },
                         {
-                            "text": "忙趕",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "常帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忙送",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -203,7 +211,12 @@
                             "checked": false
                         },
                         {
-                            "text": "帶等",
+                            "text": "送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙趕",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -213,12 +226,27 @@
                             "checked": false
                         },
                         {
+                            "text": "帶讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "帶灘",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶讓",
+                            "text": "忙送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶等",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有帶",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -228,7 +256,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "零食",
                     "checked": true,
                     "checkbox": true
@@ -236,7 +264,7 @@
             ]
         },
         "有點心": {
-            "id": "210a4de1-0667-4974-9b2d-690f98812283",
+            "id": "5d72ef1e-b224-444c-a50d-4858681d31f1",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -292,22 +320,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -545,12 +573,12 @@
                             "checked": false
                         },
                         {
-                            "text": "收取",
+                            "text": "提供了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "收集",
+                            "text": "給予",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -565,17 +593,17 @@
                             "checked": false
                         },
                         {
+                            "text": "收集",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "發送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -677,7 +705,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -772,7 +800,7 @@
             ]
         },
         "帶零食進去": {
-            "id": "e3bfe463-113c-4e10-b060-99a86750970d",
+            "id": "9e7a89a8-f101-448d-9be5-0c6095203755",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -873,27 +901,7 @@
                             "checked": false
                         },
                         {
-                            "text": "忙趕",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "常帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有帶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忙送",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -903,7 +911,12 @@
                             "checked": false
                         },
                         {
-                            "text": "帶等",
+                            "text": "送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙趕",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -913,12 +926,27 @@
                             "checked": false
                         },
                         {
+                            "text": "帶讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "帶灘",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶讓",
+                            "text": "忙送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶等",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有帶",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -928,7 +956,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "零食",
                     "checked": true,
                     "checkbox": true
@@ -947,27 +975,7 @@
                             "checked": false
                         },
                         {
-                            "text": "拿出來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "藏起來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "跑出來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回去",
+                            "text": "拿起來",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -977,17 +985,37 @@
                             "checked": false
                         },
                         {
+                            "text": "出來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "進去了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "拿起來",
+                            "text": "回去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "出來",
+                            "text": "跑出來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿出來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "藏起來",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -998,8 +1026,83 @@
                 }
             ]
         },
+        "早餐怎麼辦": {
+            "id": "a2affcc9-4c86-40e1-b560-e633157a4759",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "早餐",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "籌辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦副",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合辦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "有沒有點心": {
-            "id": "d0af07c1-ad7e-4e07-b5f2-936c3cac6a48",
+            "id": "259c39ea-c36b-45ff-8c52-afc78b3bc77c",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -1021,7 +1124,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "中午",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1059,6 +1162,11 @@
                             "checked": false
                         },
                         {
+                            "text": "吃著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "煮",
                             "level": "word2vec",
                             "checked": false
@@ -1069,17 +1177,7 @@
                             "checked": false
                         },
                         {
-                            "text": "吃著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "喝",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "常吃",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1094,7 +1192,12 @@
                             "checked": false
                         },
                         {
-                            "text": "吃過",
+                            "text": "常吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想吃",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1104,7 +1207,7 @@
                             "checked": false
                         },
                         {
-                            "text": "想吃",
+                            "text": "吃過",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1122,7 +1225,7 @@
             ]
         },
         "把零食帶進去": {
-            "id": "cca85a6b-5b18-4cd6-9e9e-df82e2771aea",
+            "id": "152ba46a-6e77-4567-a42f-2fd6576b1311",
             "argument": [
                 {
                     "pos": "ACTION_lightVerb",
@@ -1131,7 +1234,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "零食",
                     "checked": true,
                     "checkbox": true
@@ -1437,7 +1540,32 @@
                             "checked": false
                         },
                         {
+                            "text": "自備",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "載運",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "夾藏",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "攜帶著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝載",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1452,32 +1580,7 @@
                             "checked": false
                         },
                         {
-                            "text": "載運",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "裝載",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "夾藏",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拿取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "帶備",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "自備",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1795,12 +1898,7 @@
                             "checked": false
                         },
                         {
-                            "text": "消弭",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "緩解",
+                            "text": "解決了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1815,12 +1913,17 @@
                             "checked": false
                         },
                         {
-                            "text": "消除",
+                            "text": "消弭",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "解決了",
+                            "text": "解套",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "緩解",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1830,7 +1933,7 @@
                             "checked": false
                         },
                         {
-                            "text": "解套",
+                            "text": "消除",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1847,7 +1950,7 @@
             ]
         },
         "有沒有點心吃？": {
-            "id": "a2900e47-e4a4-4a62-b8df-eebbe6e491b3",
+            "id": "6b394af3-59bf-47b4-87c3-c032d1e5105a",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -1890,11 +1993,6 @@
                             "checked": false
                         },
                         {
-                            "text": "吃著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "煮",
                             "level": "word2vec",
                             "checked": false
@@ -1905,7 +2003,17 @@
                             "checked": false
                         },
                         {
+                            "text": "吃著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "喝",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常吃",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1920,12 +2028,7 @@
                             "checked": false
                         },
                         {
-                            "text": "常吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想吃",
+                            "text": "吃過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1935,7 +2038,7 @@
                             "checked": false
                         },
                         {
-                            "text": "吃過",
+                            "text": "想吃",
                             "level": "word2vec",
                             "checked": false
                         }
