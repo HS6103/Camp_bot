@@ -134,6 +134,10 @@ class BotClient(discord.Client):  ##和discord連線
                         self.mscDICT[message.author.id]["Q_cnt"] += 1
                         print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "senior")
+                        
+                        if resultDICT["age_grade"]:
+                            self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]                        
+                        
                         print(resultDICT)
                         logging.debug("######\nLoki 處理結果如下：")
                         logging.debug(resultDICT)
@@ -156,6 +160,7 @@ class BotClient(discord.Client):  ##和discord連線
                         self.mscDICT[message.author.id]["Q_cnt"] += 1                                                                            
                         print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "junior")
+                        #self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]                                                
                         print(resultDICT)
                         logging.debug("######\nLoki 處理結果如下：")
                         logging.debug(resultDICT)
