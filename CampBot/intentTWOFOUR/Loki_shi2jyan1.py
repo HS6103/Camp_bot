@@ -67,17 +67,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[可以]接[小孩]的時間":
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("家長","孩子")  
+        if args[1] in userDefinedDICT["小孩"]:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("家長","孩子")
+            else:pass
         else:
             # write your code here
             pass
 
     if utterance == "[幾點][可以]接[小孩]":
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("家長","孩子")  
+        if args[2] in userDefinedDICT["小孩"]:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("家長","孩子")
+            else:pass
         else:
             # write your code here
             pass
@@ -91,9 +95,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[幾點]要送[小孩]過去":
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")                   
+        if args[1] in userDefinedDICT["小孩"]:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("家長","孩子")
+            else:pass
         else:
             # write your code here
             pass
@@ -143,9 +149,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "什麼[時候][可以]接[小孩]":
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("家長","孩子")
+        if args[2] in userDefinedDICT["小孩"]:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("家長","孩子")
+            else:pass
         else:
             # write your code here
             pass
@@ -159,21 +167,23 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "什麼時間[可以]接[小孩]":
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("家長","孩子")
+        if args[1] in userDefinedDICT["小孩"]:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("家長","孩子")
+            else:pass
         else:
             # write your code here
             pass
 
     if utterance == "把[小孩]送過去的時間":
-        if CHATBOT_MODE:
-            if args[0] in ("小孩", "孩子", "小朋友"):
-                if args[0] in userDefinedDICT.keys():
-                    args.append(userDefinedDICT[args[0]][0])
-                    tmpReplySTR = getResponse(utterance, args).format(*args)
-                    resultDICT["response"] = tmpReplySTR
-                else:
+        if args[0] in userDefinedDICT["小孩"]:
+            if CHATBOT_MODE:
+          
+                
+                tmpReplySTR = getResponse(utterance, args).format(*args)
+                resultDICT["response"] = tmpReplySTR
+            else:
                     pass
         else:
             # write your code here
@@ -243,11 +253,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         
     if utterance == "什麼[時候][可以]去接[小孩]":
              # args ["時候", "可以", "小朋友"]
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("家長","孩子")
+        if args[2] in userDefinedDICT["小孩"]:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("家長","孩子")
+            else:pass
         else:
             # write your code here
-            pass        
+            pass      
 
     return resultDICT

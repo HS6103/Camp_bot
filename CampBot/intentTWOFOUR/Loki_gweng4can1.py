@@ -178,7 +178,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:pass            
         else:
             # write your code here
-            resultDICT["response"] = "請問你是要問早餐、午餐，還是點心呢?"
+            pass
 
     if utterance == "有沒[有][點心]吃？":
         if args[1] in userDefinedDICT["點心"]:

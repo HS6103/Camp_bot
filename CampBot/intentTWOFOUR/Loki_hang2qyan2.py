@@ -135,9 +135,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[營隊]行前的工作有哪些":
-        if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("親師群組")
+        if "行前" in utterance:
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("親師群組")
+            else:pass
         else:
             # write your code here
             pass

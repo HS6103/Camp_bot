@@ -369,8 +369,15 @@ def execLoki(content, filterLIST=[], splitLIST=[], refDICT={}):
 
 def testLoki(inputLIST, filterLIST):
     INPUT_LIMIT = 20
+    for i in range(0, len(inputLIST)):
+        print(inputLIST[i])
+        resultDICT = runLoki(['{}'.format(inputLIST[i])])
+        print(resultDICT["response"])
+        
+    
     for i in range(0, math.ceil(len(inputLIST) / INPUT_LIMIT)):
         resultDICT = runLoki(inputLIST[i*INPUT_LIMIT:(i+1)*INPUT_LIMIT], filterLIST)
+        
 
     if "msg" in resultDICT:
         print(resultDICT["msg"])
@@ -506,7 +513,7 @@ def testIntent():
 if __name__ == "__main__":
    
     
-    inputLIST = ["營隊主要的活動內容是"]
+    inputLIST = ["知道活動的課程內容和時間分配"]
     
     resultDICT = runLoki(inputLIST)
     print(resultDICT)     

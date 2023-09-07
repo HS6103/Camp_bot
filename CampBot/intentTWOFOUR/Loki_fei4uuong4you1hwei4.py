@@ -77,6 +77,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+    #新增
+    if utterance == "團報優惠是什麼":
+           # args []
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass        
 
     if utterance == "團報有比較便宜":
         if CHATBOT_MODE:

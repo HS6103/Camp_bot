@@ -206,9 +206,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
     if utterance == "有什麼[不同]":
                # args ["不同"]
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-           
+        if "不" in inputSTR:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
        
         else:
         # write your code here
