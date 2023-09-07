@@ -157,4 +157,23 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+
+    if utterance == "需要[自己]保[保險]":
+        if args[1].endswith("險"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
+        else:
+            # write your code here
+            pass
+
+    if utterance == "有[保險]":
+        if args[0].endswith("險"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
+        else:
+            # write your code here
+            pass
+
     return resultDICT

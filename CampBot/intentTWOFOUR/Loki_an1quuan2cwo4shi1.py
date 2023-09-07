@@ -179,16 +179,22 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "發生[危險]":
         if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")
+            if "危" in args[1]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
+            
         else:
             # write your code here
             pass
 
     if utterance == "碰[上][危險]":
         if CHATBOT_MODE:
-            tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = tmpSTR.format("孩子")
+            if "危" in args[1]:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
+            
         else:
             # write your code here
             pass
@@ -199,6 +205,38 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 tmpSTR = getResponse(utterance, args)
                 resultDICT["response"] = tmpSTR.format("孩子")
             else:pass
+        else:
+            # write your code here
+            pass
+
+    if utterance == "不[舒服]":
+        if args[0] == "舒服":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                # write your code here
+                pass
+
+    if utterance == "出現[危險]的情況":
+        if "危" in args[0]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "身體有狀況":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[不適]":
+        if args[0] == "不適":
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass

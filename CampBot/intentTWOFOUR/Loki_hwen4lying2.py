@@ -196,4 +196,31 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "[同][一組]的[小孩][是]否[都]是[同][年齡]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "同組的[孩子][是]否[都]是[同][年齡]":
+        if "年" in args[4]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "同組的[小孩][都][會]是[同][年紀]嗎":
+        if "年" in args[4]:
+        
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                tmpSTR = tmpSTR.format("孩子")
+                resultDICT["response"] = tmpSTR 
+        else:
+            # write your code here
+            pass
+
     return resultDICT

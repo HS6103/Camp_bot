@@ -231,4 +231,48 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass        
 
+    if utterance == "訂[午餐]":
+        if args[0] in ["午餐", "中餐", "午飯"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[會][餓]":
+        if args[1] == "餓":
+        
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[會][餓]怎麼辦":
+        if args[1] == "餓":
+        
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "吃[不飽]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "肚子[餓]":
+        if args[0] == "餓":
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+ 
+
     return resultDICT
