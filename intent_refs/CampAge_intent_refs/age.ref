@@ -5,13 +5,7 @@
         "atk": "v265",
         "intent": "1.0"
     },
-    "user_defined": {
-        "as_num": [
-            "一",
-            "二",
-            "三"
-        ]
-    },
+    "user_defined": {},
     "utterance": {
         "2": {
             "id": "4cdb2bba-7177-4f86-82b4-c1bfcfa81d04",
@@ -19,69 +13,41 @@
                 {
                     "pos": "ENTITY_num",
                     "text": "2",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
         },
-        "3": {
-            "id": "6ef46eb3-7186-46a0-ab5f-93f45fc4bc30",
+        "8歲": {
+            "id": "9573097c-5c7a-4b63-92b5-93604c855de5",
             "argument": [
                 {
                     "pos": "ENTITY_num",
-                    "text": "3",
-                    "checked": false,
+                    "text": "8",
+                    "checked": true,
                     "checkbox": true
-                }
-            ]
-        },
-        "4": {
-            "id": "6473da17-5fcf-49d3-819b-f83a60181636",
-            "argument": [
-                {
-                    "pos": "ENTITY_num",
-                    "text": "4",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "小三": {
-            "id": "fb14d499-d056-4087-af38-0100757ed306",
-            "argument": [
-                {
-                    "pos": "MODIFIER",
-                    "text": "小",
-                    "checked": false,
-                    "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
-                    "text": "三",
+                    "pos": "ENTITY_noun",
+                    "text": "歲",
                     "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "國一": {
+            "id": "076dadc1-26bd-4824-86eb-52c7b2d43001",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "國一",
+                    "checked": true,
                     "checkbox": true
                 }
             ]
         },
         "小二": {
-            "id": "588a08c9-b974-4138-b491-6f7d796b13f6",
-            "argument": [
-                {
-                    "pos": "MODIFIER",
-                    "text": "小",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "二",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "小四": {
-            "id": "f2a371a0-e71f-4add-bcb1-b94f6dda2e6a",
+            "id": "f27f7089-a58f-45fb-85a4-8af52bc67764",
             "argument": [
                 {
                     "pos": "MODIFIER",
@@ -91,99 +57,19 @@
                 },
                 {
                     "pos": "ENTITY_num",
-                    "text": "四",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "三年級": {
-            "id": "8e0cc6f3-8ca9-4ae4-85ba-525131b703a7",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "三",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
+                    "text": "二",
+                    "checked": true,
                     "checkbox": true
                 }
             ]
         },
         "二年級": {
-            "id": "77bc198d-2c74-479a-8ef4-e2e218c8b5f6",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "二",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "四年級": {
-            "id": "a8e820fb-57ee-468c-b10f-b182dbafbca4",
+            "id": "e4b0f477-ad23-4a64-b67d-9e8e3536e27c",
             "argument": [
                 {
                     "pos": "ENTITY_num",
-                    "text": "四",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "國小三年級": {
-            "id": "614b25ef-21f1-4a75-a98d-8ea67b7a2f45",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "國小",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "三",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "國小二年級": {
-            "id": "3fae6f8d-8021-48f8-aaf8-2094ffc5ead0",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "國小",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
                     "text": "二",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -194,88 +80,19 @@
                 }
             ]
         },
-        "國小四年級": {
-            "id": "da6b6ceb-3076-4a39-bc11-9ee9d7411f6a",
+        "初中二年級": {
+            "id": "91872380-db4e-4a77-a8e3-8c3df97b329a",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
-                    "text": "國小",
-                    "checked": false,
+                    "text": "初中",
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_num",
-                    "text": "四",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "小學三年級": {
-            "id": "6fdfdb0b-abea-4151-b5cf-ab8f5aba6000",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "小學",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "三",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "小學二年級": {
-            "id": "e407cd1e-a9f0-40c8-bd38-5b999917ae51",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "小學",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
                     "text": "二",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "小學四年級": {
-            "id": "e96dd8ab-dd8f-4523-b14c-86860bf32d0f",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "小學",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_num",
-                    "text": "四",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
