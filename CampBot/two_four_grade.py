@@ -70,6 +70,7 @@ try:
     from intentTWOFOUR import Loki_tan4swo3sheng1tai4dao3
     from intentTWOFOUR import Loki_fei4uuong4xi4jye2
     from intentTWOFOUR import Loki_pyin3zhi2
+    from intentAGE import Loki_age  
 except:
     from .intent import Loki_fei4uuong4you1hwei4
     from .intent import Loki_gwo4ye4
@@ -304,6 +305,12 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 # pyin3zhi2
                 if lokiRst.getIntent(index, resultIndex) == "pyin3zhi2":
                     lokiResultDICT = Loki_pyin3zhi2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+                    
+                # age
+                if lokiRst.getIntent(index, resultIndex) == "age":
+                    lokiResultDICT = Loki_age.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
+                
 
 
             # save lokiResultDICT to resultDICT
