@@ -63,7 +63,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                     resultDICT["is_inserting_age"] = True
                     pass
                 else:
-                    resultDICT["response"] = "您的輸入似乎有問題，請重新輸入!"
                     pass
             else:
                 pass
@@ -197,7 +196,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             
         elif args[0] in ["11", "十一"]:
             resultDICT["response"] = "請問是五年級還是六年級呢?"
-            resultDICT["age_grade"] = None
+            resultDICT["age_grade"] = "senior"
             
         elif args[0] in ["12", "十二"]:
             if CHATBOT_MODE:
