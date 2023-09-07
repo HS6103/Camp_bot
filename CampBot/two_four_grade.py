@@ -97,7 +97,7 @@ except:
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
 try:
     accountInfo = json.load(open(os.path.join(os.path.dirname(__file__), "account.info"), encoding="utf-8"))
-    USERNAME = accountInfo["username_24"]
+    USERNAME = accountInfo["username"]
     LOKI_KEY = accountInfo["loki_key_twofour"]
 except Exception as e:
     print("[ERROR] AccountInfo => {}".format(str(e)))
