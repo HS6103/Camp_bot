@@ -120,10 +120,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "有[安全][措施]":
-        if CHATBOT_MODE:
-            if "安" in args[0]:
+        if "安" in args[0]:
+            if CHATBOT_MODE:
+           
                 tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("孩子")    
+                resultDICT["response"] = tmpSTR.format("孩子")
+            else:pass
         else:
             # write your code here
             pass

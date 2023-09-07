@@ -164,10 +164,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         
     #從這裡開始新增    
         
-    if utterance == "營隊針對[2]年級是在做什麼?":
+    if utterance == "針對[2]年級是在做什麼?":
               # args ["2"]
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ("2", "3" , "4", "二", "三", "四"):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass        
@@ -188,17 +190,29 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
         
-    if utterance == "營隊[主要]的活動內容是哪些?":
-        resultDICT["response"] = "請問您是想了解哪個特定營隊呢?"
+    if utterance == "[主要]的活動內容是":
+        resultDICT["response"] = "請問您是想了解哪個特定營隊呢?請輸入營隊名稱，或輸入「想了解營隊」讓我為您介紹。"
               # args ["主要"]    
 
-    if utterance == "[兩個]營隊有什麼差別?":
-                     # args ["兩個"]
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "有什麼[差別]?":
+                   # args ["差別"]
+                     
+        if args[0] in ("差別", "差異" ):
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:pass
         else:
             # write your code here
             pass
+    if utterance == "有什麼[不同]":
+               # args ["不同"]
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+           
+       
+        else:
+        # write your code here
+            pass        
         
     if utterance == "[兩個]營隊[各自]的特色是什麼?":
             # args ["兩個", "個別"]
