@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,38 +87,21 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
-        "是同年": {
-            "id": "af4359ed-10aa-42b2-8497-3bb6f546f174",
-            "argument": [
-                {
-                    "pos": "AUX",
-                    "text": "是",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "同年",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
         "同年齡？": {
             "id": "806dd0b4-80d5-452d-869a-9ec10c2e8780",
             "argument": [
@@ -655,6 +642,130 @@
                 }
             ]
         },
+        "同組的小孩都會是同年紀嗎?": {
+            "id": "de10e9a3-8454-433e-a035-22837f466700",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "同組",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "都",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "同",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "年紀",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "?",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "同組的孩子是否都是同年齡？": {
+            "id": "c4999c9d-61de-4370-9c60-2b0c6fe0e9a3",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "同組",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "孩子",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "都",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "同",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "年齡",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "年紀小的孩子會不會玩不起來?": {
             "id": "a7b1283b-ae52-4600-a953-07e619e4e9bf",
             "argument": [
@@ -870,6 +981,71 @@
                 {
                     "pos": "PUNCTUATION",
                     "text": "?",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "同一組的小孩是否都是同年齡？": {
+            "id": "c3c2e476-a34b-46df-9651-75e7e44c1907",
+            "argument": [
+                {
+                    "pos": "MODIFIER",
+                    "text": "同",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_classifier",
+                    "text": "一組",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "都",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "同",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "年齡",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
                     "checked": false,
                     "checkbox": false
                 }

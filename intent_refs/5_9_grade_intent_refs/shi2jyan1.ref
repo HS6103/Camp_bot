@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,21 +87,459 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
+        "何時結束": {
+            "id": "967aedac-c103-45cf-b9ab-fe521018304d",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhenQ",
+                    "text": "何時",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "了結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "歸結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "終結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "結算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "總結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "了斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "倒閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "做到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分割",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "封閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "截止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "歸納",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "終止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "緊閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "論斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "近親",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "閉塞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "關閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "中止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "落幕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完畢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完成",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行完",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "屆滿",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "結束",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "何時開始": {
+            "id": "c582fbc8-9ec0-4541-9701-68139e4b0b2d",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhenQ",
+                    "text": "何時",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "啟用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開創",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開始了",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開始",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "啥時結束": {
+            "id": "9a10472e-d6d7-4214-8ba2-3d48caa597f5",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "啥",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "時",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "了結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "歸結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "終結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "結算",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "總結",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "了斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "倒閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "做到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分割",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "封閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "截止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "歸納",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "終止",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "緊閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "論斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "近親",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "閉塞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "關閉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "中止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "落幕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完畢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完成",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行完",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "屆滿",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "結束",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "啥時開始": {
+            "id": "e91857a0-24d0-49d1-bb13-0665b8b2f1bc",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "啥",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "時",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "啟用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開創",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開始了",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開始",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "幾點結束": {
             "id": "24df4e4d-928e-4e45-9177-ad409d657087",
             "argument": [
@@ -221,7 +663,7 @@
                             "checked": false
                         },
                         {
-                            "text": "結束了",
+                            "text": "落幕",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -236,17 +678,17 @@
                             "checked": false
                         },
                         {
-                            "text": "屆滿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "落幕",
+                            "text": "結束了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "進行完",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "屆滿",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -280,6 +722,16 @@
                             "checked": false
                         },
                         {
+                            "text": "停止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "結束",
                             "level": "word2vec",
                             "checked": false
@@ -290,22 +742,485 @@
                             "checked": false
                         },
                         {
-                            "text": "停止",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "停止了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "開始了",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
                     "text": "開始",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "接送時間": {
+            "id": "f9fd78a0-abdc-4b7f-9661-ca80eb21bcb5",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "接駁",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "送貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "護送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "載送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送機",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "攙扶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "乘坐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "共乘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接載",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "接送",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "時間",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "帶小孩回家": {
+            "id": "510c7460-b7d7-4bde-a3de-f5a49bf5a68d",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "佩帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "夾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶病",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶走",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "挾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "隨帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "佩戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "披掛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "穿破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "肩扛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "背負",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "負載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "載攜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運送",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "配戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "馱運",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙趕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶拉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶等",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶灘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶讓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "帶",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "返家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回老家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出門",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回鄉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進房",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "起床",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回家了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收工",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "回家",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "帶小孩過去": {
+            "id": "6b0192c9-d907-42f9-8fa5-21fbf8a7038a",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "佩帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "夾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶病",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶走",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "挾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "隨帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "佩戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "披掛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "穿破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "肩扛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "背負",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "負載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "載攜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運送",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "配戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "馱運",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "常帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶拉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙趕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶灘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶等",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有帶",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "帶",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "逝去",
+                            "level": "tier_2",
+                            "checked": false
+                        }
+                    ],
+                    "text": "過去",
                     "checked": false,
                     "checkbox": false
                 }
@@ -334,12 +1249,7 @@
                             "checked": false
                         },
                         {
-                            "text": "結束",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "展開",
+                            "text": "停止了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -349,7 +1259,12 @@
                             "checked": false
                         },
                         {
-                            "text": "停止了",
+                            "text": "結束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展開",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -477,12 +1392,37 @@
                             "checked": false
                         },
                         {
+                            "text": "更接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "端接",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "最接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接上",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接性",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -495,34 +1435,166 @@
                             "text": "接端",
                             "level": "word2vec",
                             "checked": false
-                        },
+                        }
+                    ],
+                    "text": "接",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "送小孩過去": {
+            "id": "cd6d70d1-281a-4a72-9450-371f6dc39811",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
                         {
-                            "text": "接上",
+                            "text": "轉送",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "接性",
+                            "text": "分送",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "轉接",
+                            "text": "迫逃",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "接得",
+                            "text": "送給",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "更接",
+                            "text": "贈送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經送",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "接",
+                    "text": "送",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "逝去",
+                            "level": "tier_2",
+                            "checked": false
+                        }
+                    ],
+                    "text": "過去",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "什麼時候回家": {
+            "id": "1e697d74-74cb-474d-9045-daef5eb9c0ed",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "時候",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "返家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回老家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出門",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回鄉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進房",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "起床",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回家了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收工",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "回家",
                     "checked": false,
                     "checkbox": false
                 }
@@ -557,16 +1629,6 @@
                             "checked": false
                         },
                         {
-                            "text": "停止了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "停止",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "結束",
                             "level": "word2vec",
                             "checked": false
@@ -577,12 +1639,110 @@
                             "checked": false
                         },
                         {
+                            "text": "停止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "開始了",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
                     "text": "開始",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "把小孩送過去": {
+            "id": "f53f60f3-1a3a-4be0-9fb0-ce34cc00b6f6",
+            "argument": [
+                {
+                    "pos": "ACTION_lightVerb",
+                    "text": "把",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "轉送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫逃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贈送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經送",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "送",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "逝去",
+                            "level": "tier_2",
+                            "checked": false
+                        }
+                    ],
+                    "text": "過去",
                     "checked": false,
                     "checkbox": false
                 }
@@ -754,7 +1914,7 @@
             ]
         },
         "幾點可以接小孩": {
-            "id": "b98e4d20-6bda-4822-8026-5ff9bc349f39",
+            "id": "e6ee74d1-bc6a-4b47-9c9f-1447002eeb0d",
             "argument": [
                 {
                     "pos": "TIME_justtime",
@@ -882,12 +2042,37 @@
                             "checked": false
                         },
                         {
+                            "text": "更接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "端接",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "最接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接上",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接性",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -900,31 +2085,6 @@
                             "text": "接端",
                             "level": "word2vec",
                             "checked": false
-                        },
-                        {
-                            "text": "接上",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接性",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更接",
-                            "level": "word2vec",
-                            "checked": false
                         }
                     ],
                     "text": "接",
@@ -932,10 +2092,238 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "小孩",
                     "checked": true,
                     "checkbox": true
+                }
+            ]
+        },
+        "幾點帶小孩回家": {
+            "id": "cc0f23f8-b79e-453a-86dc-500e97171572",
+            "argument": [
+                {
+                    "pos": "TIME_justtime",
+                    "text": "幾點",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "佩帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "夾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶病",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶走",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "挾帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "隨帶",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "佩戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "承接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "披掛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "穿破",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "肩扛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "背負",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "負載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "載攜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運載",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運送",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "配戴",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "馱運",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙趕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有帶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忙送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶拉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶等",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶灘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶讓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "帶",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "返家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回老家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出門",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回鄉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進房",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "起床",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回家了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收工",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "回家",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -1008,7 +2396,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1160,7 +2548,7 @@
                             "checked": false
                         },
                         {
-                            "text": "結束了",
+                            "text": "落幕",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1175,17 +2563,17 @@
                             "checked": false
                         },
                         {
-                            "text": "屆滿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "落幕",
+                            "text": "結束了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "進行完",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "屆滿",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1313,7 +2701,7 @@
                             "checked": false
                         },
                         {
-                            "text": "落幕",
+                            "text": "結束了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1328,17 +2716,17 @@
                             "checked": false
                         },
                         {
-                            "text": "結束了",
+                            "text": "屆滿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "落幕",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "進行完",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "屆滿",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1350,7 +2738,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1484,7 +2872,7 @@
                             "checked": false
                         },
                         {
-                            "text": "結束了",
+                            "text": "落幕",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1499,17 +2887,17 @@
                             "checked": false
                         },
                         {
-                            "text": "屆滿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "落幕",
+                            "text": "結束了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "進行完",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "屆滿",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1681,7 +3069,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "時段",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2036,7 +3424,7 @@
             ]
         },
         "可以接小孩的時間": {
-            "id": "4061bc14-7e82-4ee3-ada7-f63c5944a590",
+            "id": "ba1d70dc-19ad-4aa9-a44f-ad0c8e85d63a",
             "argument": [
                 {
                     "pos": "MODAL",
@@ -2158,12 +3546,37 @@
                             "checked": false
                         },
                         {
+                            "text": "更接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "端接",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "最接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "轉接",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接上",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接性",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2176,31 +3589,6 @@
                             "text": "接端",
                             "level": "word2vec",
                             "checked": false
-                        },
-                        {
-                            "text": "接上",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接性",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "轉接",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接得",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "更接",
-                            "level": "word2vec",
-                            "checked": false
                         }
                     ],
                     "text": "接",
@@ -2208,7 +3596,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "小孩",
                     "checked": true,
                     "checkbox": true
@@ -2222,13 +3610,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
         },
         "幾點要送小孩過去": {
-            "id": "c35079b2-6709-4e0a-b970-d04f4d875ac9",
+            "id": "4dcc4f6d-0712-4714-8a39-2429d7015327",
             "argument": [
                 {
                     "pos": "TIME_justtime",
@@ -2373,7 +3761,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "小孩",
                     "checked": true,
                     "checkbox": true
@@ -2394,7 +3782,7 @@
             ]
         },
         "什麼時候可以接小孩": {
-            "id": "33b3a9f9-9f3b-47f1-a5ff-11c2c8602b43",
+            "id": "a38bb312-1d06-48b7-88d8-1699bde39c6a",
             "argument": [
                 {
                     "pos": "CLAUSE_WhatQ",
@@ -2578,7 +3966,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "小孩",
                     "checked": true,
                     "checkbox": true
@@ -2586,7 +3974,7 @@
             ]
         },
         "什麼時間可以接小孩": {
-            "id": "91d037eb-88cc-4df1-9cbd-d7b0cc12d309",
+            "id": "94702fa9-9a5d-43e9-9c03-7e06eee4a03b",
             "argument": [
                 {
                     "pos": "CLAUSE_WhenQ",
@@ -2597,7 +3985,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2770,210 +4158,18 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "小孩",
                     "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "把小孩送過去的時間": {
-            "id": "867cf722-b835-4ace-88c2-4a698843653a",
-            "argument": [
-                {
-                    "pos": "ACTION_lightVerb",
-                    "text": "把",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "小孩",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "轉送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "迫逃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "贈送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "搬",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經送",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "送",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "逝去",
-                            "level": "tier_2",
-                            "checked": false
-                        }
-                    ],
-                    "text": "過去",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "時間",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "營隊期間的接送時間": {
-            "id": "add854e9-c575-4807-85da-f4d853e599be",
-            "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "營隊",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "RANGE_period",
-                    "text": "期間",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "接駁",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "送貨",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "護送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "載送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "送機",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "攙扶",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "推著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "乘坐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "共乘",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "接載",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "推",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "接送",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "時間",
-                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "活動時間是幾點到幾點": {
-            "id": "44009b57-0ed6-40ba-86ef-a78e89b66da7",
+            "id": "1a5350ed-ef74-479c-bb1e-8af57e91cbf1",
             "argument": [
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "活動",
                     "checked": false,
                     "checkbox": true
@@ -2981,7 +4177,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3368,7 +4564,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "時間",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3398,10 +4594,10 @@
             ]
         },
         "活動進行的時段是從幾點到幾點": {
-            "id": "c6c620ba-8e76-4979-8320-6ede25742918",
+            "id": "617d1619-afe8-4c24-8a2e-9b2af6a3c230",
             "argument": [
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "活動",
                     "checked": false,
                     "checkbox": true
@@ -3483,7 +4679,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "時段",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

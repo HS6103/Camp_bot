@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,24 +87,207 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
-        "拍照": {
-            "id": "0409fe65-9ed4-4705-8212-1e2db9c8b561",
+        "有照片": {
+            "id": "774e46fb-3677-4dcb-a306-f96a7fd7880e",
             "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "照片",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "幫小孩拍照": {
+            "id": "d4039bb4-e987-4569-a92b-2b88e514f124",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "幫助",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扶助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "援助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常幫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "替",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想幫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想替",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幫忙",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "陪",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "幫",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
@@ -203,100 +390,6 @@
                     "text": "拍照",
                     "checked": false,
                     "checkbox": false
-                }
-            ]
-        },
-        "有照片": {
-            "id": "774e46fb-3677-4dcb-a306-f96a7fd7880e",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "照片",
-                    "checked": true,
-                    "checkbox": true
                 }
             ]
         },

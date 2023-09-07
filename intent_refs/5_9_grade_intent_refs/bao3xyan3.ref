@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,23 +87,23 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
         "保保險": {
-            "id": "c65f2a51-dcb3-4a01-ba2e-c604289fd63d",
+            "id": "94ff6863-806f-4bee-97ea-6454b06026a5",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -140,12 +144,7 @@
                             "checked": false
                         },
                         {
-                            "text": "保餘",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "保忠",
+                            "text": "有保",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -155,7 +154,7 @@
                             "checked": false
                         },
                         {
-                            "text": "有保",
+                            "text": "保港",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -165,17 +164,17 @@
                             "checked": false
                         },
                         {
+                            "text": "保餘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "隨保",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "保朋",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "保港",
+                            "text": "保忠",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -183,9 +182,108 @@
                             "text": "祀保",
                             "level": "word2vec",
                             "checked": false
+                        },
+                        {
+                            "text": "保朋",
+                            "level": "word2vec",
+                            "checked": false
                         }
                     ],
                     "text": "保",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "保險",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "有保險": {
+            "id": "05fdb55b-da27-461b-bfca-559e65c1df43",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
                     "checked": false,
                     "checkbox": false
                 },
@@ -197,8 +295,196 @@
                 }
             ]
         },
+        "負責保險": {
+            "id": "1a13fade-d710-4c44-b1f7-2373a5bfbce3",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "做買賣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "掌管",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分管",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔負",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "肩負",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔當",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承擔",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "掌理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "統籌",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受託",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "負責",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "保險",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "購買保險": {
+            "id": "b0c8479e-51a1-4568-b220-c539e90649e9",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "代購",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "回購",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "採買",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "採購",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "搶購",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收買",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收購",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "買入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "買進",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "購得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "購置",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選購",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "採辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "買",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "購入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "售賣",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "販售",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出售",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "購買",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "保險",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "有包含保險": {
-            "id": "ae2e03d2-26d7-4fdd-a547-69b19378e95a",
+            "id": "62e4c432-ba23-48ac-bf1b-ee374ed4844e",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -373,7 +659,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -381,7 +667,7 @@
             ]
         },
         "有提供保險": {
-            "id": "1cc5d0d2-5589-48f1-a7e5-1a052facc9ae",
+            "id": "d40d72af-641d-40e3-a6ac-a987c306b2e1",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -610,7 +896,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -618,7 +904,7 @@
             ]
         },
         "是否提供保險": {
-            "id": "7bb3bdb4-ce53-45a8-82df-8fbb496c525f",
+            "id": "d29f4eed-56b0-4247-aab1-14bb0b973d25",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -770,7 +1056,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -778,7 +1064,7 @@
             ]
         },
         "有投什麼保險": {
-            "id": "523ffb5a-af47-4bf8-87d6-132ae1f18cdd",
+            "id": "67519a57-1ed2-4b51-bbdf-bb5bf0508c51",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -855,7 +1141,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -863,7 +1149,7 @@
             ]
         },
         "有沒有投保險": {
-            "id": "cb133c27-e201-4100-b80d-d5d11e717200",
+            "id": "1187ec26-c4a4-44e9-8787-5481fa521113",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -875,70 +1161,150 @@
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "承保",
+                            "text": "投入",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投射",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投擲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投放",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投注",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "丟掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扔出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扔掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扔棄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拋出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拋射",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拋擲",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拋開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拚棄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "掙脫",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擲",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "繳費",
+                            "text": "投下",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "賠付",
+                            "text": "投過",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "加保",
+                            "text": "投了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "給付",
+                            "text": "共投",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "理賠",
+                            "text": "投滿",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "報稅",
+                            "text": "發投",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "繳納",
+                            "text": "投完",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "繳稅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "保戶",
+                            "text": "主投",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "投保",
+                    "text": "投",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "險",
+                    "pos": "UserDefined",
+                    "text": "保險",
                     "checked": true,
                     "checkbox": true
                 }
             ]
         },
         "投保了什麼保險": {
-            "id": "203bc071-c368-4c78-a7b3-bf06fd1d8dd3",
+            "id": "af876cdb-ac6e-45f5-9af7-d36282ed9bcb",
             "argument": [
                 {
                     "pos": "VerbP",
@@ -1010,7 +1376,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -1018,7 +1384,7 @@
             ]
         },
         "需要自己保保險": {
-            "id": "b2f10e34-b76f-43da-9692-42794019e871",
+            "id": "d0ea3656-f858-42b2-8400-912c120d0f7b",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -1183,7 +1549,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -1191,7 +1557,7 @@
             ]
         },
         "是否要自己負責保險": {
-            "id": "384c29e6-ed33-4858-8fbe-cfbed2de6ab9",
+            "id": "ee7bf26b-a12d-4ed1-ba85-67191092e66d",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -1347,7 +1713,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -1355,7 +1721,7 @@
             ]
         },
         "是否需要自己投保保險": {
-            "id": "594307d5-f6df-481b-b6cc-003e74f3d569",
+            "id": "5837cffb-1c7e-4817-a9c5-36ba3acc8411",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -1496,7 +1862,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -1504,7 +1870,7 @@
             ]
         },
         "是否需要自行購買保險": {
-            "id": "36b3c6e9-f013-43b5-99ae-acf1e7eda9dd",
+            "id": "a9cce3c2-011a-46ee-b2c1-2f8813d13861",
             "argument": [
                 {
                     "pos": "CLAUSE_AnotAQ",
@@ -1690,7 +2056,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -1698,7 +2064,7 @@
             ]
         },
         "在保險方面做了哪些準備？": {
-            "id": "3e0f7931-fd16-4ad2-ac31-8e096c7437c9",
+            "id": "11f4e67f-6fd8-470e-948e-733a43acc6e5",
             "argument": [
                 {
                     "pos": "FUNC_inner",
@@ -1707,7 +2073,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true
@@ -1894,7 +2260,7 @@
             ]
         },
         "在保險方面有怎樣的安排？": {
-            "id": "73cc9702-317a-48df-a027-f673a24535c6",
+            "id": "62247fd6-e0dc-44ac-9b8f-5a6198f0f915",
             "argument": [
                 {
                     "pos": "FUNC_inner",
@@ -1903,7 +2269,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "保險",
                     "checked": true,
                     "checkbox": true

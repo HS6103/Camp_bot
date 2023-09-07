@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,18 +87,18 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
@@ -489,6 +493,104 @@
                 {
                     "pos": "UserDefined",
                     "text": "地點",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "辦在哪裡": {
+            "id": "51333a52-3427-4653-9825-a62baeeea5e0",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "籌辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦副",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合辦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "只有在台北": {
+            "id": "f6090810-5773-41ae-9b49-a5f112fff575",
+            "argument": [
+                {
+                    "pos": "MODIFIER",
+                    "text": "只有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "LOCATION",
+                    "text": "台北",
                     "checked": true,
                     "checkbox": true
                 }
@@ -1059,6 +1161,41 @@
                     "text": "位置",
                     "checked": false,
                     "checkbox": true
+                }
+            ]
+        },
+        "會在台北的哪裡": {
+            "id": "afd36740-ce24-4d5e-ab8a-ae9c5785c63e",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "LOCATION",
+                    "text": "台北",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },

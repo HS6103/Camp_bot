@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,21 +87,132 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
+        "會餓": {
+            "id": "3125ac2b-8e89-4b75-84a9-1a4680020817",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "餓",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "吃不飽": {
+            "id": "bd6fb05f-16e4-48fb-81c3-ca7b7f7183e4",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "吃掉",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸收",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "耗損",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "花掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "煮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "啃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喝",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "生吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃過",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "吃",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "不飽",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "帶零食": {
             "id": "772a33e1-a1db-43f6-9b09-91516ea5b35a",
             "argument": [
@@ -351,6 +466,92 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "點心",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "肚子餓": {
+            "id": "3773dd31-e24c-4183-b362-27771804cd45",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "肚子",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "餓",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "訂午餐": {
+            "id": "30837578-cb1a-4347-a489-f502cb9c7ed1",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "訂立",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂明",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明訂",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "排定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "制定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "頒布",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明定",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "訂",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "午餐",
                     "checked": true,
                     "checkbox": true
                 }
@@ -866,6 +1067,87 @@
                         }
                     ],
                     "text": "進去",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "會餓怎麼辦": {
+            "id": "56a1e86e-d0c9-4171-bb18-ef0db659ae82",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "餓",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "籌辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦副",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合辦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦",
                     "checked": false,
                     "checkbox": false
                 }

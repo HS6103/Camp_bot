@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,21 +87,95 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
+        "退費": {
+            "id": "3bd998e6-c0c0-4383-9e1f-12f76f4e7cc4",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "退款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退票",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "退貨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "理賠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "付款",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "押金",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補繳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補發",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "繳款",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "退費",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "辦退費": {
+            "id": "d37cd310-c3e0-4791-89b9-d3d022313ac0",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "辦退費",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "可以退費": {
             "id": "7020f76a-85ed-4cca-a181-417df877d8d8",
             "argument": [

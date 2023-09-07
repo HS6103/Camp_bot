@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,18 +87,18 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
@@ -236,6 +240,109 @@
                         }
                     ],
                     "text": "參加",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "報名": {
+            "id": "0472332e-2523-4d78-8f37-64c2e032ee17",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "報到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登錄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "填報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投稿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推荐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報考",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "報名",
                     "checked": false,
                     "checkbox": false
                 }
@@ -640,6 +747,81 @@
                     "text": "報名",
                     "checked": false,
                     "checkbox": false
+                }
+            ]
+        },
+        "去你們營隊": {
+            "id": "14a4d2df-e8a7-4ec7-8a32-07d127dfb98a",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "去了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跑去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跑來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "去",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "你們",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
+                    "checked": false,
+                    "checkbox": true
                 }
             ]
         },
@@ -4440,6 +4622,145 @@
                     "text": "報名",
                     "checked": false,
                     "checkbox": false
+                }
+            ]
+        },
+        "送小孩去你們營隊": {
+            "id": "d0c86848-0124-411a-9444-4d8627938a1c",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "轉送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫逃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贈送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經送",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "送",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "去了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跑去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跑來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "去",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "你們",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
+                    "checked": false,
+                    "checkbox": true
                 }
             ]
         },

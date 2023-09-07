@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,18 +87,18 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
@@ -188,12 +192,7 @@
                             "checked": false
                         },
                         {
-                            "text": "服藥",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "喝水",
+                            "text": "拉肚子",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -208,7 +207,22 @@
                             "checked": false
                         },
                         {
-                            "text": "拉肚子",
+                            "text": "喝水",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "服藥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回診",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "刷牙",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -221,16 +235,6 @@
                             "text": "打針",
                             "level": "word2vec",
                             "checked": false
-                        },
-                        {
-                            "text": "刷牙",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回診",
-                            "level": "word2vec",
-                            "checked": false
                         }
                     ],
                     "text": "吃藥",
@@ -239,8 +243,108 @@
                 }
             ]
         },
+        "不能吃": {
+            "id": "06805b49-d083-4bff-840b-27d5e7ae40d6",
+            "argument": [
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "能",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "吃掉",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸收",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "耗損",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "花掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "煮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "啃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喝",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "生吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想吃",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "吃",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "有急事": {
-            "id": "df979188-9e49-4d6d-877b-ab18cac992a6",
+            "id": "fe45f03c-2ba1-4550-a631-0c9a26b94fd4",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -296,22 +400,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -334,7 +438,7 @@
             ]
         },
         "有其他問題": {
-            "id": "c2b54b04-0d95-4d92-a59f-4a52da0af249",
+            "id": "91fa9ffa-dc3d-487a-ace0-b67966e74d62",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -390,22 +494,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -426,7 +530,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "問題",
                     "checked": true,
                     "checkbox": true
@@ -534,7 +638,7 @@
             ]
         },
         "暫時有緊急事項": {
-            "id": "c2298253-5401-4825-ad6c-cca22847b8c2",
+            "id": "2106b229-a186-483e-8402-3b720c5cfd88",
             "argument": [
                 {
                     "pos": "TIME_justtime",
@@ -640,7 +744,7 @@
             ]
         },
         "有其他問題怎麼辦": {
-            "id": "21056221-7e36-4b16-a7e2-7c2abc913a2e",
+            "id": "3bdc63c4-950c-48e7-8b00-44f354146da6",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -696,22 +800,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -732,7 +836,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "問題",
                     "checked": true,
                     "checkbox": true
@@ -804,7 +908,7 @@
             ]
         },
         "突發情況需要找誰": {
-            "id": "9d464f25-321d-42e8-aad7-430f7a0e0e1c",
+            "id": "e360a320-6466-4f68-bcde-5c9ce82e15d0",
             "argument": [
                 {
                     "pos": "MODIFIER",
@@ -813,7 +917,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "情況",
                     "checked": true,
                     "checkbox": true
@@ -1008,7 +1112,7 @@
             ]
         },
         "臨時有狀況要找誰": {
-            "id": "395a8f7e-706c-4308-858f-41fa39b76ed2",
+            "id": "b13f1b44-3307-4ae8-87ac-7c1941f5f07f",
             "argument": [
                 {
                     "pos": "TIME_justtime",
@@ -1100,7 +1204,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "狀況",
                     "checked": true,
                     "checkbox": true

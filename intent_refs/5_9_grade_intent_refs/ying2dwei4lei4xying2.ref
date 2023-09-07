@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,18 +87,18 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
@@ -167,7 +171,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -322,7 +326,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -759,7 +763,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -859,8 +863,277 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "營隊在幹嘛": {
+            "id": "668a0649-7e74-491b-bc11-ab1c7507fb26",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
                     "checked": false,
                     "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhyQ",
+                    "text": "幹嘛",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "營隊有哪些": {
+            "id": "dcfcea73-9813-45c2-9c7f-2ff01a895699",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "營隊在做什麼": {
+            "id": "38e5d584-0637-4570-91c8-26bfa1121c85",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ASPECT",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "作用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "冒充",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創造",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "喬裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "孕育",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攝製",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "生出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "產出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "裝作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "製作",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "新做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "指做",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "做",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -882,7 +1155,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -968,7 +1241,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1074,7 +1347,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1241,13 +1514,13 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nouny",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1353,7 +1626,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1603,7 +1876,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2044,7 +2317,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2211,7 +2484,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2418,7 +2691,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2609,7 +2882,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3188,7 +3461,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3294,7 +3567,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3522,7 +3795,7 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

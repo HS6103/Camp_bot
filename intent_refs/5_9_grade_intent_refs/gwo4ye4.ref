@@ -6,11 +6,6 @@
         "intent": "1.0"
     },
     "user_defined": {
-        "保險": [
-            "意外險",
-            "旅平險",
-            "醫療險"
-        ],
         "優惠": [
             "折扣",
             "團報"
@@ -22,18 +17,12 @@
         "小孩": [
             "孩子",
             "學生",
-            "小朋友",
-            "小孩子"
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
             "年齡"
-        ],
-        "急事": [
-            "問題",
-            "情況",
-            "狀況",
-            "需求"
         ],
         "活動": [
             "營隊",
@@ -57,16 +46,20 @@
             "教師",
             "師資"
         ],
+        "費用": [
+            "價格",
+            "收費",
+            "花費",
+            "金額"
+        ],
         "as_camp": [
             "創新創業營",
-            "搶救玩具島",
             "最重要的小事營",
             "世界和平遊戲營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
-            "保險",
             "冬令營",
             "團報優惠",
             "夏令營",
@@ -76,6 +69,17 @@
             "親師群",
             "過夜"
         ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
+        ],
         "親師群": [
             "Line群",
             "群組",
@@ -83,21 +87,115 @@
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
             "糖果",
             "零食",
             "餅乾",
-            "點心",
-            "午餐",
-            "早餐",
-            "晚餐",
-            "宵夜"
+            "點心"
         ]
     },
     "utterance": {
+        "住哪裡": {
+            "id": "da310207-ddce-407a-9a15-e3794c126943",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "居住",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獨處",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "生存",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "生活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "討生活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "過活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "借住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "同住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "寄住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "暫住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "租住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "住到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "住了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "住下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "住過",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "住",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "會過夜": {
             "id": "b6aa827e-ff74-47af-8a92-b2e310ccb951",
             "argument": [
@@ -112,6 +210,125 @@
                     "text": "過夜",
                     "checked": false,
                     "checkbox": true
+                }
+            ]
+        },
+        "睡哪裡": {
+            "id": "a908e733-affe-4fb5-bd88-53ad6d4c8b28",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "沉睡",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "仰躺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "坐落",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "埋伏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "平伏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "平躺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "橫躺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "沉潛",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "趴伏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "躺倒",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "哭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "洗澡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "躺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入睡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "睡覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃東西",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "就寢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "睡著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "晚睡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "睡了",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "睡",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -417,6 +634,339 @@
                 }
             ]
         },
+        "住宿會如何安排": {
+            "id": "fe19fab1-93a5-46fd-a429-60b6e0de5745",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "寄宿",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "投宿",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "歇宿",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "留宿",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "逗留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駐留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "入住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "過夜",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "休憩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用餐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "渡假",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "度假",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "代訂",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "住宿",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "安放",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "安置",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "安設",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "安頓",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "排列",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "排名",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "排序",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "排檢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "排班",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "排行",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "排錯",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "編排",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "鋪排",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "企劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創記錄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "創造",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "協調",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "待遇",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打算",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搬鋪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搭配",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "操辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擘劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "擺設",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "改編",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "歸入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "約出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "約見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "編製",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "置放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "興辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "規劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "設攤",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開站",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開闢",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "邀請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "編配",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分派",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "規畫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "挑選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調動",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "指派",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "安排",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "怎麼過去住宿地點": {
             "id": "38d888c1-60f0-4c7b-bdb1-496b293c4102",
             "argument": [
@@ -515,7 +1065,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "地點",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -729,6 +1279,179 @@
                 {
                     "pos": "CLAUSE_WhatQ",
                     "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "過夜需要準備什麼": {
+            "id": "6c764477-831e-46b6-9da7-77130cfb3e8a",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "過夜",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "需要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "備戰",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預備",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "企劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意指",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意謂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打算",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "正要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鋪墊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌劃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "等待",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "決定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "準備",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
                     "checked": false,
                     "checkbox": false
                 }
@@ -1777,6 +2500,201 @@
                         }
                     ],
                     "text": "安排",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "過夜要準備些什麼？": {
+            "id": "dca32164-700e-4747-ad17-90a9f40a2ff3",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "過夜",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "渴求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "真要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "備戰",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預備",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "企劃",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意指",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "意謂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打算",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預演",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "等待",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鋪墊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌劃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "決定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "正要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "準備",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "？",
                     "checked": false,
                     "checkbox": false
                 }
@@ -3200,6 +4118,195 @@
                 }
             ]
         },
+        "晚上所居住的地點是什麼": {
+            "id": "be20862b-2c17-4072-999b-17651c6fd723",
+            "argument": [
+                {
+                    "pos": "TIME_day",
+                    "text": "晚上",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "所",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "分居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "同居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "安居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "寄居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "居留",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "旅居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獨居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "群居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "蟄居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "隱居",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "停留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "容忍",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獨處",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "生存",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "生活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "落藉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "討生活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "逗留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "過活",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遵守",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駐留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "同住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "暫住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "租住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "定居",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "長住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聚居",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "居住",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "地點",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "過夜營隊要準備什麼東西": {
             "id": "950a148a-da31-4785-8545-c50860033d1a",
             "argument": [
@@ -3390,7 +4497,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "東西",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -4140,7 +5247,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -4260,7 +5367,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -4271,359 +5378,8 @@
                 }
             ]
         },
-        "過夜營隊的住宿會如何安排": {
-            "id": "e561495e-e4eb-4aaa-addd-66f48961c90f",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "過夜",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "營隊",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "寄宿",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "投宿",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "歇宿",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "留宿",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "逗留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "駐留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "休憩",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "用餐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代訂",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "入住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "過夜",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "度假",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "渡假",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "住宿",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "會",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "如何",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "安放",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "安置",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "安設",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "安頓",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "排列",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "排名",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "排序",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "排檢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "排班",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "排行",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "排錯",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "編排",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "鋪排",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "企劃",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "創記錄",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "創造",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "協調",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "待遇",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "打算",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搬鋪",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搭配",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "操辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擘劃",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擺放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "擺設",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "改編",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "歸入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "籌劃",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "籌辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "約出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "約見",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "編製",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "置放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "興辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "規劃",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "設攤",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "開站",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "開辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "開闢",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "編配",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "挑選",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規畫",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "調動",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "安排了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "指派",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分派",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "邀請",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "安排",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "過夜需要準備的東西有什麼?": {
-            "id": "705a88bb-be61-46e8-b34b-bf62a8899018",
+        "過夜需要準備的東西有什麼": {
+            "id": "bf0c0389-4b8c-458b-8a86-9e7030768735",
             "argument": [
                 {
                     "pos": "UserDefined",
@@ -4879,213 +5635,6 @@
                         }
                     ],
                     "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "過夜營隊晚上所居住的地點是什麼": {
-            "id": "57f42cbf-9f76-4959-88cc-2a8c7ecf742e",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "過夜",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "營隊",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "TIME_day",
-                    "text": "晚上",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "所",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "分居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "同居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "安居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "寄居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "居留",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "旅居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "獨居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "群居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "蟄居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "隱居",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "停留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "容忍",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獨處",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "生存",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "生活",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "落藉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "討生活",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "逗留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "過活",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "遵守",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "駐留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "長住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "同住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聚居",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "暫住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "租住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "定居",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "居住",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "地點",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "AUX",
-                    "text": "是",
                     "checked": false,
                     "checkbox": false
                 },
@@ -5401,7 +5950,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "營隊",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -5521,7 +6070,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -5552,13 +6101,6 @@
         "assistant": "問題「{{Q}}」，答案「{{A}}」"
     },
     "document": [
-        {
-            "title": "低年級",
-            "content": {
-                "A": "其實我們不太建議小四以前參加過夜營隊，因為孩子對爸媽的依附關係還很強，對環境的不安全感也很強，報名時說可以，但晚上常常會鬼哭狼嚎，很讓人於心不忍，對孩子來說也不見得好。\n\n當然如果您的孩子安全感爆棚又獨立，我們可以另外討論看看。",
-                "Q": "低年級有過夜營隊嗎?"
-            }
-        },
         {
             "title": "過夜",
             "content": {
