@@ -86,7 +86,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 pass  
 
     if utterance == "[教材]是不[是]已經包含在[費用][中]了？":
-       if CHATBOT_MODE:
+        if CHATBOT_MODE:
             if args[2] in userDefinedDICT["費用"]:
 
                 tmpReplySTR = getResponse(utterance, args).format(args[2], args[0])
@@ -100,7 +100,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[教材]有[包]含在[費用][裡]嗎？":
-         if CHATBOT_MODE:
+        if CHATBOT_MODE:
             if args[2] in userDefinedDICT["費用"]:
 
                 tmpReplySTR = getResponse(utterance, args).format(args[2], args[0])
@@ -149,7 +149,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[費用][裡]有沒[有][包]含[教材]？":
-       if CHATBOT_MODE:
+        if CHATBOT_MODE:
             if args[0] in userDefinedDICT["費用"]:
 
                 tmpReplySTR = getResponse(utterance, args).format(args[0], args[4])
@@ -171,7 +171,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[費用]有[包]含[教材]嗎":
-         if CHATBOT_MODE:
+        if CHATBOT_MODE:
             if args[0] in userDefinedDICT["費用"]:
 
                 tmpReplySTR = getResponse(utterance, args).format(args[0], args[2])

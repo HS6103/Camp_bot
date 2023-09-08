@@ -92,12 +92,11 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 pass   
               
         else:
-                pass  
+            pass  
         
     if utterance == "[教材]是不[是]已經包含在[費用][中]了？":
         if CHATBOT_MODE:
             if args[2] in userDefinedDICT["費用"]:
-
                 tmpReplySTR = getResponse(utterance, args).format(args[2], args[0])
                 resultDICT["response"] = tmpReplySTR
                 
