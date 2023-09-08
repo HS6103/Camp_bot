@@ -95,6 +95,7 @@ Camp_bot 是以玩轉學校的夏令營為基礎，設計的營隊客服聊天�
 ## 作者
 
 [Ting-Wei Hu "Lancy"](https://github.com/Lancyhu)
+
 [Hsu-Chen Hsiao "Simon"](https://github.com/HS6103)
 
 ## 參考資料
