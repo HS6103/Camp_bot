@@ -230,9 +230,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "知道[營隊]的[課程][內容]":
-        if args[0] in userDefinedDICT["活動"] and args[1] in ["活動", "課程", "行程"]
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in userDefinedDICT["活動"] and args[1] in ["活動", "課程", "行程"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
