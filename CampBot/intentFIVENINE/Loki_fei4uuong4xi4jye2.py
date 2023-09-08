@@ -59,28 +59,56 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[教材][是]否已納入[費用]之[中]？":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[2] in userDefinedDICT["費用"]:
+
+                tmpReplySTR = getResponse(utterance, args).format(args[2], args[0])
+                resultDICT["response"] = tmpReplySTR
+                
+            else:
+                pass                  
+
         else:
             # write your code here
             pass
 
     if utterance == "[教材][是]否已經被納入[費用]了？":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            
+            if args[2] in userDefinedDICT["費用"]:
+
+                tmpReplySTR = getResponse(utterance, args).format(args[2], args[0])
+                resultDICT["response"] = tmpReplySTR
+                
+            else:
+                pass   
+              
         else:
-            # write your code here
-            pass
+                pass  
 
     if utterance == "[教材]是不[是]已經包含在[費用][中]了？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+       if CHATBOT_MODE:
+            if args[2] in userDefinedDICT["費用"]:
+
+                tmpReplySTR = getResponse(utterance, args).format(args[2], args[0])
+                resultDICT["response"] = tmpReplySTR
+                
+            else:
+                pass                  
+
         else:
             # write your code here
             pass
 
     if utterance == "[教材]有[包]含在[費用][裡]嗎？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+         if CHATBOT_MODE:
+            if args[2] in userDefinedDICT["費用"]:
+
+                tmpReplySTR = getResponse(utterance, args).format(args[2], args[0])
+                resultDICT["response"] = tmpReplySTR
+                
+            else:
+                pass                  
+
         else:
             # write your code here
             pass
@@ -108,17 +136,32 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[費用][是]否已經包括了[教材]？":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[0] in userDefinedDICT["費用"]:
+
+                tmpReplySTR = getResponse(utterance, args).format(args[0], args[2])
+                resultDICT["response"] = tmpReplySTR
+                
+            else:
+                pass                  
+
         else:
             # write your code here
             pass
 
     if utterance == "[費用][裡]有沒[有][包]含[教材]？":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+       if CHATBOT_MODE:
+            if args[0] in userDefinedDICT["費用"]:
+
+                tmpReplySTR = getResponse(utterance, args).format(args[0], args[4])
+                resultDICT["response"] = tmpReplySTR
+                
+            else:
+                pass                  
+
         else:
             # write your code here
             pass
+
 
     if utterance == "[費用]是多少":
         if CHATBOT_MODE:
@@ -128,8 +171,15 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[費用]有[包]含[教材]嗎":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+         if CHATBOT_MODE:
+            if args[0] in userDefinedDICT["費用"]:
+
+                tmpReplySTR = getResponse(utterance, args).format(args[0], args[2])
+                resultDICT["response"] = tmpReplySTR
+                
+            else:
+                pass                  
+
         else:
             # write your code here
             pass
