@@ -520,7 +520,7 @@ if __name__ == "__main__":
     #測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ['國中二年級']
+    inputSTR = ['有什麼適合的營隊']
     resultDICT = runLoki(inputSTR)
     print(resultDICT["response"])
     #### 設定參考資料

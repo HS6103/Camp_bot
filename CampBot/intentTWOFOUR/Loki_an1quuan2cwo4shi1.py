@@ -179,7 +179,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "發生[危險]":
         if CHATBOT_MODE:
-            if "危" in args[1]:
+            if "危" in args[0]:
                 tmpSTR = getResponse(utterance, args)
                 resultDICT["response"] = tmpSTR.format("孩子")
             else:pass
