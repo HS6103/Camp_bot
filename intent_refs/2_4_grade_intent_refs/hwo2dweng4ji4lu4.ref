@@ -11,6 +11,10 @@
             "旅平險",
             "醫療險"
         ],
+        "優惠": [
+            "團報",
+            "折扣"
+        ],
         "問題": [
             "狀況",
             "事情",
@@ -22,15 +26,18 @@
         ],
         "地點": [
             "位置",
-            "地方",
             "地址",
-            "場地"
+            "地方",
+            "場地",
+            "地點"
         ],
         "小孩": [
             "孩子",
-            "小朋友",
+            "學生",
             "寶貝",
-            "小孩"
+            "小孩",
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
@@ -50,14 +57,27 @@
             "影片",
             "相片"
         ],
+        "經驗": [
+            "實力",
+            "知識",
+            "知識點",
+            "硬實力",
+            "軟實力"
+        ],
+        "老師": [
+            "工作人員",
+            "師資",
+            "教師",
+            "營隊方"
+        ],
         "費用": [
             "價格",
+            "定價",
+            "支出",
             "收費",
             "花費",
-            "定價",
             "費用",
-            "金額",
-            "支出"
+            "金額"
         ],
         "點心": [
             "下午茶",
@@ -65,30 +85,51 @@
             "點心",
             "甜點"
         ],
+        "as_camp": [
+            "世界和平遊戲營",
+            "創新創業營",
+            "最重要的小事營"
+        ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
+            "早上",
             "紀錄",
             "行前",
             "親師群",
-            "過夜",
-            "早上"
+            "過夜"
+        ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
         ],
         "親師群": [
             "Line群",
-            "群組",
-            "親師群組",
-            "賴群",
             "line群",
-            "親師群"
+            "群組",
+            "親師群",
+            "親師群組",
+            "賴群"
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
@@ -187,6 +228,195 @@
                 },
                 {
                     "pos": "ENTITY_nouny",
+                    "text": "照片",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "看照片": {
+            "id": "378dd99d-6a72-4b4d-867e-73d2639ab1e0",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "探看",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收看",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看守",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看戲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看望",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "看顧",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀看",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "光顧",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "探訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "收視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "注視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "盯住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "省親",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "瞭望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "觀賞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訪問",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "訪談",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走動",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "造訪",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "逼視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看起",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想看",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "瞧",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看到",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "看",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
                     "text": "照片",
                     "checked": true,
                     "checkbox": true
@@ -305,6 +535,29 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "照片",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "活動的相片": {
+            "id": "df4ab63d-f5f3-4ed1-b292-b3288f2f6968",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "活動",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "相片",
                     "checked": true,
                     "checkbox": true
                 }

@@ -11,6 +11,10 @@
             "旅平險",
             "醫療險"
         ],
+        "優惠": [
+            "團報",
+            "折扣"
+        ],
         "問題": [
             "狀況",
             "事情",
@@ -22,15 +26,18 @@
         ],
         "地點": [
             "位置",
-            "地方",
             "地址",
-            "場地"
+            "地方",
+            "場地",
+            "地點"
         ],
         "小孩": [
             "孩子",
-            "小朋友",
+            "學生",
             "寶貝",
-            "小孩"
+            "小孩",
+            "小孩子",
+            "小朋友"
         ],
         "年紀": [
             "年級",
@@ -50,14 +57,27 @@
             "影片",
             "相片"
         ],
+        "經驗": [
+            "實力",
+            "知識",
+            "知識點",
+            "硬實力",
+            "軟實力"
+        ],
+        "老師": [
+            "工作人員",
+            "師資",
+            "教師",
+            "營隊方"
+        ],
         "費用": [
             "價格",
+            "定價",
+            "支出",
             "收費",
             "花費",
-            "定價",
             "費用",
-            "金額",
-            "支出"
+            "金額"
         ],
         "點心": [
             "下午茶",
@@ -65,30 +85,51 @@
             "點心",
             "甜點"
         ],
+        "as_camp": [
+            "世界和平遊戲營",
+            "創新創業營",
+            "最重要的小事營"
+        ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
+            "團報優惠",
             "夏令營",
             "戶外",
+            "早上",
             "紀錄",
             "行前",
             "親師群",
-            "過夜",
-            "早上"
+            "過夜"
+        ],
+        "problem": [
+            "問題",
+            "情況",
+            "狀況",
+            "需求"
+        ],
+        "as_insur": [
+            "意外險",
+            "旅平險",
+            "醫療險"
         ],
         "親師群": [
             "Line群",
-            "群組",
-            "親師群組",
-            "賴群",
             "line群",
-            "親師群"
+            "群組",
+            "親師群",
+            "親師群組",
+            "賴群"
         ],
         "吃的東西": [
             "乖乖",
+            "午餐",
+            "宵夜",
             "巧克力",
+            "早餐",
+            "晚餐",
             "樂事",
             "泡麵",
             "洋芋片",
@@ -99,6 +140,175 @@
         ]
     },
     "utterance": {
+        "探索生態島": {
+            "id": "918b7196-eeae-4c2b-b5ae-98391b5e8670",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "刺探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "勘探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探勘",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探問",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探尋",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探查",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探測",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探究",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探討",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探訪",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探詢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "探險",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "查探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢索",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "試探",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "勘測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋找",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搜尋",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查找",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查看",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "查考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢查",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢視",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "檢驗",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏查",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "漫步",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開拓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "探求",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "追尋",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "探索",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "生態島",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "探索生態島在幹嘛": {
             "id": "61dfb993-127e-42dc-aa13-c2b496c2c62b",
             "argument": [
