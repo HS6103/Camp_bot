@@ -69,7 +69,7 @@ try:
     from intentFIVENINE import Loki_bao4mying2
     from intentFIVENINE import Loki_ying2dwei4nei4rweng2
     from intentFIVENINE import Loki_fei4uuong4xi4jye2
-    from intentFIVENINE import Loki_age
+    from intentAGE import Loki_age
     
 except:
     from .intent import Loki_di4dyan3
@@ -515,14 +515,14 @@ def testIntent():
 if __name__ == "__main__":
     # 測試所有意圖
     
-    testIntent()
+    #testIntent()
 
     #測試其它句子
-    #filterLIST = []
-    #splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    #inputSTR = ['有什麼不同？']
-    #resultDICT = runLoki(inputSTR)
-    #print(resultDICT["response"])
+    filterLIST = []
+    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    inputSTR = ['國中二年級']
+    resultDICT = runLoki(inputSTR)
+    print(resultDICT["response"])
     #### 設定參考資料
     #refDICT = {
         #"key": []
