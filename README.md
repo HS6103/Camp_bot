@@ -78,19 +78,19 @@ Camp_bot 是以玩轉學校的夏令營為基礎，設計的營隊客服聊天�
 ## 互動說明
 
 1. Tag @campbot之後輸入「hi」，向他打招呼。
-!(https://cdn.discordapp.com/attachments/1139465672603226213/1149621123504406608/image.png)
+![hello](https://cdn.discordapp.com/attachments/1139465672603226213/1149621123504406608/image.png)
 
 2. 輸入年級
-!(https://cdn.discordapp.com/attachments/1139465672603226213/1149621190835572797/image.png)
+![grade](https://cdn.discordapp.com/attachments/1139465672603226213/1149621190835572797/image.png)
 
 3. 輸入問題，可以從「我想了解營隊」開始。
-!(https://cdn.discordapp.com/attachments/1139465672603226213/1149621291096227882/image.png)
+![q1](https://cdn.discordapp.com/attachments/1139465672603226213/1149621291096227882/image.png)
 
 4. 如果還有其他問題，輸入問題繼續問下去。
-!(https://cdn.discordapp.com/attachments/1139465672603226213/1149621630100840579/image.png)
+![q2](https://cdn.discordapp.com/attachments/1139465672603226213/1149621630100840579/image.png)
 
 5. 如果沒有其他想問的問題，輸入「沒有」結束對話。
-!(https://cdn.discordapp.com/attachments/1139465672603226213/1149622415949824030/image.png)
+![end](https://cdn.discordapp.com/attachments/1139465672603226213/1149622415949824030/image.png)
 
 ## 作者
 
