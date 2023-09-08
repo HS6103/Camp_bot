@@ -372,72 +372,44 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[相片]要怎麼看":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+   
 
-    if utterance == "了解[孩子]參與狀況":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+   
 
-    if utterance == "得知[孩子]參與狀況":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+    
 
-    if utterance == "幫[小孩]拍照":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "有沒[有][活動]的[相片]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+  
 
     if utterance == "[活動]的[相片]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[1].endswith("片"):
+            if CHATBOT_MODE:
+               
+                    
+                tmpReplySTR = getResponse(utterance, args).format("活動", args[2])
+                resultDICT["response"] = tmpReplySTR
+               
+                    
+            else: pass
+           
         else:
             # write your code here
             pass
+   
+   
 
-    if utterance == "幫[小孩]拍照":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "更新[每天]的[活動][相片]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "更新[活動][相片]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
+    
 
     if utterance == "看[照片]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0].endswith("片"):
+            if CHATBOT_MODE:
+               
+                    
+                tmpReplySTR = getResponse(utterance, args).format("活動", args[2])
+                resultDICT["response"] = tmpReplySTR
+               
+                    
+            else: pass
+           
         else:
             # write your code here
             pass

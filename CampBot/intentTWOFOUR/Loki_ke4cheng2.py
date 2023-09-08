@@ -284,11 +284,5 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             else:
                 pass            
 
-    if utterance == "知道[營隊]的課程內容和時間分配":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
+ 
     return resultDICT
