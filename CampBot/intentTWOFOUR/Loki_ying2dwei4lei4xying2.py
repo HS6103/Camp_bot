@@ -244,21 +244,12 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
-
-    
-
+        
    
 
-    
-
-   
-
-  
-
-    
 
     if utterance == "營隊有哪些":
-        if "夜" in inputSTR:
+        if "過夜" in inputSTR:
             pass
                 
         
@@ -282,6 +273,25 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+        
+    if utterance == "[可以]學[才藝]的營隊":
+        if args[1] not in ["創業"]:
+            
+            if CHATBOT_MODE:
+                tmpSTR = getResponse(utterance, args)
+                resultDICT["response"] = "關於學習{{}}呢,".format(args[1]) +tmpSTR 
+        else:
+            # write your code here
+            pass
+        
+    if utterance == "營隊在學什麼":
+
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+            
+        else:
+            # write your code here
+            pass             
         
           
 
