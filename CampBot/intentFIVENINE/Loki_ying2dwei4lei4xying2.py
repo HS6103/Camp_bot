@@ -82,16 +82,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             pass
 
-    if utterance == "參加何[種][營隊][活動]？":
-        if args[1] in userDefinedDICT["活動"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
-            else:
-                # write your code here
-                pass
-        else:
-            pass
+
 
     if utterance == "想了解[營隊]":
         if args[0] in userDefinedDICT["活動"]:
@@ -250,20 +241,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "營隊在做什麼":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "營隊在幹嘛":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
     if utterance == "有什麼[不同]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -293,20 +270,64 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
         
     if utterance == "[可以]學[才藝]的營隊":
-        if args[1] not in ["創業"]:
-            
-            if CHATBOT_MODE:
-                tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = "關於學習{{}}呢,".format(args[1]) +tmpSTR 
+
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = "關於學習{{}}呢,".format(args[1]) +tmpSTR 
         else:
             # write your code here
             pass
-    if utterance == "營隊在學什麼":
 
+
+    if utterance == "[可以]學創業的營隊":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
-            pass      
+            pass
+
+    if utterance == "[營隊]在做什麼":
+        if args[0] in userDefinedDICT["活動"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                # write your code here
+                pass
+        else:
+            pass
+
+    if utterance == "[營隊]在學什麼":
+        if args[0] in userDefinedDICT["活動"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                # write your code here
+                pass
+        else:
+            pass
+
+    if utterance == "[營隊]在幹嘛":
+        if args[0] in userDefinedDICT["活動"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                # write your code here
+                pass
+        else:
+            pass
+
+    if utterance == "參加何[種][營隊]活動？":
+        if args[1] in userDefinedDICT["活動"]:
+            
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+            else:
+                # write your code here
+                pass
+        else:
+            pass
 
     return resultDICT
