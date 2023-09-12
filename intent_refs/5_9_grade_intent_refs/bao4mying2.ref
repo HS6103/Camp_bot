@@ -2,13 +2,15 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
         "優惠": [
             "折扣",
-            "團報"
+            "團報",
+            "團體報名",
+            "團報優惠"
         ],
         "地點": [
             "位置",
@@ -26,7 +28,8 @@
         ],
         "活動": [
             "營隊",
-            "行程"
+            "行程",
+            "課程"
         ],
         "照片": [
             "圖片",
@@ -50,7 +53,8 @@
             "價格",
             "收費",
             "花費",
-            "金額"
+            "金額",
+            "費用"
         ],
         "as_camp": [
             "創新創業營",
@@ -61,13 +65,13 @@
             "中午",
             "休息時間",
             "冬令營",
-            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
             "行前",
-            "親師群",
-            "過夜"
+            "過夜",
+            "才藝",
+            "創業"
         ],
         "problem": [
             "問題",
@@ -78,7 +82,8 @@
         "as_insur": [
             "意外險",
             "旅平險",
-            "醫療險"
+            "醫療險",
+            "保險"
         ],
         "親師群": [
             "Line群",
@@ -647,6 +652,115 @@
                         }
                     ],
                     "text": "要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "報到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登錄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "填報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投稿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推荐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報考",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "報名",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "如何報名": {
+            "id": "38c82cd4-2529-45df-bc6b-abcbc50e06ac",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "如何",
                     "checked": false,
                     "checkbox": false
                 },
@@ -5499,7 +5613,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "小朋友",
                     "checked": true,
                     "checkbox": true

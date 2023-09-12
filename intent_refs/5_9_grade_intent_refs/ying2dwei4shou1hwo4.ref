@@ -2,13 +2,15 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
         "優惠": [
             "折扣",
-            "團報"
+            "團報",
+            "團體報名",
+            "團報優惠"
         ],
         "地點": [
             "位置",
@@ -26,7 +28,8 @@
         ],
         "活動": [
             "營隊",
-            "行程"
+            "行程",
+            "課程"
         ],
         "照片": [
             "圖片",
@@ -50,7 +53,8 @@
             "價格",
             "收費",
             "花費",
-            "金額"
+            "金額",
+            "費用"
         ],
         "as_camp": [
             "創新創業營",
@@ -61,13 +65,13 @@
             "中午",
             "休息時間",
             "冬令營",
-            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
             "行前",
-            "親師群",
-            "過夜"
+            "過夜",
+            "才藝",
+            "創業"
         ],
         "problem": [
             "問題",
@@ -78,7 +82,8 @@
         "as_insur": [
             "意外險",
             "旅平險",
-            "醫療險"
+            "醫療險",
+            "保險"
         ],
         "親師群": [
             "Line群",
@@ -903,6 +908,278 @@
                 }
             ]
         },
+        "有什麼收穫": {
+            "id": "38668cfa-c1ba-48b6-a6a8-72271f83f0e2",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "採收",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收割",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收成",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收益",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "博取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "博得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "報答",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "套取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪回",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "弄到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "得出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵充",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵扣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵補",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "採集",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "活摘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "爭得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "犒賞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獎賞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賞罰",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賠付",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔恤",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賺得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "斬獲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收獲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收穫了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "豐收",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "栽種",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "收穫",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "有沒有收穫": {
             "id": "6346884b-bff7-425b-948a-d86b9e924c06",
             "argument": [
@@ -1046,22 +1323,12 @@
                             "checked": false
                         },
                         {
+                            "text": "賺得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "斬獲",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收穫了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "栽種",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "豐收",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1071,7 +1338,7 @@
                             "checked": false
                         },
                         {
-                            "text": "贏得",
+                            "text": "收穫了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1081,7 +1348,17 @@
                             "checked": false
                         },
                         {
-                            "text": "賺得",
+                            "text": "贏得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "豐收",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "栽種",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1089,6 +1366,181 @@
                     "text": "收穫",
                     "checked": false,
                     "checkbox": false
+                }
+            ]
+        },
+        "獲得的東西": {
+            "id": "0ac09331-385b-487d-9993-804844cf60d7",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "博得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "拾獲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "掙得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "爭得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲獎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "習得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "謀得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "博取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "套取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪回",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "學到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "弄到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "謀取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "過關",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "達到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "獲得",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "東西",
+                    "checked": true,
+                    "checkbox": true
                 }
             ]
         },
@@ -1294,22 +1746,12 @@
                             "checked": false
                         },
                         {
-                            "text": "厚植",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "磨練",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "培育出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "培養出",
+                            "text": "增進",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1319,7 +1761,17 @@
                             "checked": false
                         },
                         {
-                            "text": "增進",
+                            "text": "培養出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "培育出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "厚植",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1335,7 +1787,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "實力",
                     "checked": true,
                     "checkbox": true
@@ -1455,6 +1907,116 @@
                     "text": "？",
                     "checked": false,
                     "checkbox": false
+                }
+            ]
+        },
+        "學到那些東西": {
+            "id": "23a1ded2-553d-4fc4-aad9-cae6861933e0",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "弄到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "習得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "教給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學不到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "體會到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "讀到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學習過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸取了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學習了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "汲取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "學習",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸取",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "學到",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_DetPhrase",
+                    "text": "那些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "東西",
+                    "checked": true,
+                    "checkbox": true
                 }
             ]
         },
@@ -1580,12 +2142,7 @@
                             "checked": false
                         },
                         {
-                            "text": "得到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲得了",
+                            "text": "拿下",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1595,7 +2152,12 @@
                             "checked": false
                         },
                         {
-                            "text": "拿下",
+                            "text": "獲得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1626,137 +2188,16 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "經驗",
                     "checked": true,
                     "checkbox": true
                 }
             ]
         },
-        "累積什麼經驗": {
-            "id": "2dcc81cb-6973-408c-b66f-28e9220b8843",
+        "獲得哪些收穫": {
+            "id": "60c9672e-0f7b-4118-9d52-88fcefb3b2af",
             "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "堆積",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "積攢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "積累",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "積聚",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "累計",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "聚積",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "蓄積",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "攢聚",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "攢集",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "收集",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "聚集",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "集聚",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "累加",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "遞減",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "增加",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "遞增",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "積累了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "積累",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "累積",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "經驗",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "能獲得哪些知識？": {
-            "id": "22cba6cc-5051-42c1-8bc5-0930fa160afa",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "能",
-                    "checked": false,
-                    "checkbox": false
-                },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
@@ -1922,28 +2363,303 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
-                    "text": "知識",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "採收",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收割",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收成",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "收益",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "博取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "博得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "報答",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "套取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪回",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "弄到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "得出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵充",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵扣",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵補",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "採集",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "活摘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "爭得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "犒賞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獎賞",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賞罰",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賠付",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "輔恤",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "斬獲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收穫了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "栽種",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "豐收",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收獲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進帳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賺得",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "收穫",
                     "checked": false,
                     "checkbox": false
                 }
             ]
         },
-        "可以獲得怎樣的知識": {
-            "id": "2bf59d21-47e2-4d7d-b780-0c268bc4fa04",
+        "累積什麼經驗": {
+            "id": "2dcc81cb-6973-408c-b66f-28e9220b8843",
             "argument": [
                 {
-                    "pos": "MODAL",
-                    "text": "可以",
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "堆積",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "積攢",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "積累",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "積聚",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "累計",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "聚積",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "蓄積",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "攢聚",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攢集",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "收集",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "聚集",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "集聚",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "累加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遞減",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遞增",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "積累了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "積累",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "累積",
                     "checked": false,
                     "checkbox": false
                 },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "經驗",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "獲得怎樣的知識": {
+            "id": "e908bc34-7589-4662-b2fd-77b29917b476",
+            "argument": [
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
@@ -1970,7 +2686,7 @@
                         {
                             "text": "得到",
                             "level": "tier_1",
-                            "checked": true
+                            "checked": false
                         },
                         {
                             "text": "得著",
@@ -1995,7 +2711,7 @@
                         {
                             "text": "獲取",
                             "level": "tier_1",
-                            "checked": true
+                            "checked": false
                         },
                         {
                             "text": "獲獎",
@@ -2035,7 +2751,7 @@
                         {
                             "text": "學到",
                             "level": "tier_2",
-                            "checked": true
+                            "checked": false
                         },
                         {
                             "text": "弄到",
@@ -2090,12 +2806,12 @@
                         {
                             "text": "得到",
                             "level": "word2vec",
-                            "checked": true
+                            "checked": false
                         },
                         {
                             "text": "取得",
                             "level": "word2vec",
-                            "checked": true
+                            "checked": false
                         }
                     ],
                     "text": "獲得",
@@ -2115,7 +2831,375 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
+                    "text": "知識",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "能獲得哪些知識": {
+            "id": "eafad5ee-8373-412a-a1e9-d9b3d9f0d803",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "能",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "博得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "拾獲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "掙得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "爭得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲獎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "習得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "謀得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "博取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "套取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪回",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "學到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "弄到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "謀取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "過關",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "達到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "獲得",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "哪些",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "知識",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "可以獲得怎樣的知識": {
+            "id": "2bf59d21-47e2-4d7d-b780-0c268bc4fa04",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "博得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "得著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "拾獲",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "掙得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "爭得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲獎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "習得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "謀得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏得",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "博取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "套取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奪回",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "學到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "弄到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "謀取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "過關",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "達到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "取得",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "獲得",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎樣",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
                     "text": "知識",
                     "checked": true,
                     "checkbox": true

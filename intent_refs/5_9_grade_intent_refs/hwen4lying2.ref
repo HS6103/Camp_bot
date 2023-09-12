@@ -2,13 +2,15 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
         "優惠": [
             "折扣",
-            "團報"
+            "團報",
+            "團體報名",
+            "團報優惠"
         ],
         "地點": [
             "位置",
@@ -26,7 +28,8 @@
         ],
         "活動": [
             "營隊",
-            "行程"
+            "行程",
+            "課程"
         ],
         "照片": [
             "圖片",
@@ -50,7 +53,8 @@
             "價格",
             "收費",
             "花費",
-            "金額"
+            "金額",
+            "費用"
         ],
         "as_camp": [
             "創新創業營",
@@ -61,13 +65,13 @@
             "中午",
             "休息時間",
             "冬令營",
-            "團報優惠",
             "夏令營",
             "戶外",
             "紀錄",
             "行前",
-            "親師群",
-            "過夜"
+            "過夜",
+            "才藝",
+            "創業"
         ],
         "problem": [
             "問題",
@@ -78,7 +82,8 @@
         "as_insur": [
             "意外險",
             "旅平險",
-            "醫療險"
+            "醫療險",
+            "保險"
         ],
         "親師群": [
             "Line群",
@@ -102,6 +107,23 @@
         ]
     },
     "utterance": {
+        "是同年": {
+            "id": "fda012cf-578b-4aa2-a110-eeff051022d7",
+            "argument": [
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "同年",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "同年齡？": {
             "id": "806dd0b4-80d5-452d-869a-9ec10c2e8780",
             "argument": [
@@ -1539,27 +1561,7 @@
                             "checked": false
                         },
                         {
-                            "text": "抱持著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "厭惡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "深感",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "感到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "內疚",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1570,6 +1572,26 @@
                         },
                         {
                             "text": "顯得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱持著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "內疚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "深感",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "感到了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2038,22 +2060,7 @@
                             "checked": false
                         },
                         {
-                            "text": "認為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相信",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "直呼",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看起來",
+                            "text": "聽起來",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2063,12 +2070,27 @@
                             "checked": false
                         },
                         {
+                            "text": "直呼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相信",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "以為",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "聽起來",
+                            "text": "認為",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2567,27 +2589,7 @@
                             "checked": false
                         },
                         {
-                            "text": "抱持著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "厭惡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "深感",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "感到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "內疚",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2598,6 +2600,26 @@
                         },
                         {
                             "text": "顯得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱持著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "內疚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "深感",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "感到了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2996,7 +3018,17 @@
                             "checked": false
                         },
                         {
-                            "text": "結合",
+                            "text": "解離",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "燒結",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吸附",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3011,22 +3043,12 @@
                             "checked": false
                         },
                         {
-                            "text": "解離",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸附",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "燒結",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "精煉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結合",
                             "level": "word2vec",
                             "checked": false
                         }
