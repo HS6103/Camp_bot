@@ -105,7 +105,7 @@ class BotClient(discord.Client):  ##和discord連線
                         elif self.mscDICT[message.author.id]["Q_cnt"] == 0:  
                             replySTR = "嗨嗨，歡迎回來，您上次還沒問問題喔~"  #判斷有無問過問題
                         else:
-                            replySTR = "嗨嗨，歡迎回來，您上次問到" + self.mscDICT[message.author.id]["latestQuest"]  #提醒使用者上次問的問題
+                            replySTR = "嗨嗨，歡迎回來，您上次問到「{}」".format(self.mscDICT[message.author.id]["latestQuest"])  #提醒使用者上次問的問題
                             
 
             #沒有講過話(給他一個新的template)
@@ -193,7 +193,7 @@ class BotClient(discord.Client):  ##和discord連線
                         
                         
                     except Exception:
-                        replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎在LINE 官方 @pleyschool聯絡真人客服~聯絡真人客服~"
+                        replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎在LINE 官方 @pleyschool聯絡真人客服~"
                         
                         
             
