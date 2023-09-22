@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -1507,22 +1514,12 @@
                             "checked": false
                         },
                         {
+                            "text": "厚植",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "磨練",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "增進",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "培養了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "培養出",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1532,7 +1529,17 @@
                             "checked": false
                         },
                         {
-                            "text": "厚植",
+                            "text": "培養出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "培養了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增進",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1548,9 +1555,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "實力",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1654,116 +1661,6 @@
                 {
                     "pos": "CLAUSE_WhatQ",
                     "text": "哪些",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "東西",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "學到那些東西": {
-            "id": "d101d8bc-2109-49d5-8020-744f65ebc76e",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "弄到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "得到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "奪得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲取",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "習得",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "教給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學不到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "體會到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "讀到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學習過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸取了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學習了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "汲取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "學習",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吸取",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "學到",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_DetPhrase",
-                    "text": "那些",
                     "checked": false,
                     "checkbox": false
                 },
@@ -1897,12 +1794,7 @@
                             "checked": false
                         },
                         {
-                            "text": "拿下",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "取得了",
+                            "text": "得到了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1912,7 +1804,12 @@
                             "checked": false
                         },
                         {
-                            "text": "得到了",
+                            "text": "取得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿下",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1943,9 +1840,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "經驗",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2364,7 +2261,17 @@
                             "checked": false
                         },
                         {
+                            "text": "累加",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "遞減",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "增加",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2374,17 +2281,7 @@
                             "checked": false
                         },
                         {
-                            "text": "累加",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "積累了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "增加",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2405,9 +2302,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "經驗",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2586,9 +2483,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "知識",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2883,9 +2780,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "知識",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]

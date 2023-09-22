@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -140,11 +147,45 @@
         ]
     },
     "utterance": {
+        "多貴": {
+            "id": "14e01d7f-4662-4a80-b786-c0ae8bcc2fed",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "多",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "貴",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "多少錢": {
+            "id": "a223c22c-2722-42b6-b183-5aeff4639f82",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "多少",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "錢",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "費用為何?": {
             "id": "3f5b2def-dbcd-4a83-8600-2444ed7c87b5",
             "argument": [
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -167,7 +208,7 @@
             "id": "c10a77b7-523a-4f28-9169-41576ff2f2f3",
             "argument": [
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -285,7 +326,7 @@
             "id": "b1f3e6f6-2d3d-4f86-9e16-67f832f4f98a",
             "argument": [
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "價格",
                     "checked": true,
                     "checkbox": true
@@ -417,7 +458,7 @@
             "id": "f7e95710-b7df-427e-8435-ecbb1a0d531e",
             "argument": [
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -595,9 +636,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -671,22 +712,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -713,9 +754,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -789,22 +830,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -831,7 +872,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "花費",
                     "checked": true,
                     "checkbox": true
@@ -848,9 +889,9 @@
             "id": "b02668c1-5c1b-4b88-a7b8-83f7616fff99",
             "argument": [
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -907,22 +948,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -986,7 +1027,7 @@
                             "checked": false
                         },
                         {
-                            "text": "富含",
+                            "text": "喝含",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -996,22 +1037,22 @@
                             "checked": false
                         },
                         {
+                            "text": "富含",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "含鉛",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "喝含",
+                            "text": "含了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "限於",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "含了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1032,7 +1073,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -1258,7 +1299,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -1275,7 +1316,7 @@
             "id": "dacbc091-f1e8-4048-a03e-30574d50a08a",
             "argument": [
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -1382,9 +1423,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1399,9 +1440,9 @@
             "id": "1bfec395-bcd9-4c47-b7b6-0df34067ef42",
             "argument": [
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1465,27 +1506,17 @@
                             "checked": false
                         },
                         {
-                            "text": "劃入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "劃為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "列入",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "列入了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "列為",
+                            "text": "劃入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "定為",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1495,12 +1526,22 @@
                             "checked": false
                         },
                         {
+                            "text": "劃為",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "歸入",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "定為",
+                            "text": "列為",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "列入",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1510,7 +1551,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -1539,7 +1580,7 @@
             "id": "d6c5dfcd-37e0-49a1-8205-014e3172429b",
             "argument": [
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -1735,9 +1776,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1752,9 +1793,9 @@
             "id": "f36b4cee-244d-4dab-b260-e93531f0fcd5",
             "argument": [
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1869,9 +1910,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1951,22 +1992,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2010,17 +2051,7 @@
                             "checked": false
                         },
                         {
-                            "text": "需預",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "需約",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "允許",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2030,12 +2061,22 @@
                             "checked": false
                         },
                         {
-                            "text": "需經過",
+                            "text": "允許",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需經過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需預",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2133,7 +2174,12 @@
                             "checked": false
                         },
                         {
-                            "text": "收取",
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "代付",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2148,12 +2194,7 @@
                             "checked": false
                         },
                         {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代付",
+                            "text": "收取",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2169,7 +2210,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true
@@ -2251,22 +2292,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2293,9 +2334,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "金額",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2450,12 +2491,7 @@
                             "checked": false
                         },
                         {
-                            "text": "繳費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "代付",
+                            "text": "收取",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2470,7 +2506,12 @@
                             "checked": false
                         },
                         {
-                            "text": "收取",
+                            "text": "繳費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "代付",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2491,9 +2532,9 @@
             "id": "9dbbeb54-234f-42ab-86cc-f6bfd830e6a3",
             "argument": [
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2627,16 +2668,6 @@
                             "checked": false
                         },
                         {
-                            "text": "包括了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "含",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "包含著",
                             "level": "word2vec",
                             "checked": false
@@ -2647,7 +2678,17 @@
                             "checked": false
                         },
                         {
+                            "text": "含",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "包含了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "包括了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2693,7 +2734,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "費用",
                     "checked": true,
                     "checkbox": true

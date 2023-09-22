@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -140,6 +147,34 @@
         ]
     },
     "utterance": {
+        "不適": {
+            "id": "dd1c4e42-6446-4ffe-b57c-8d3ec5175b53",
+            "argument": [
+                {
+                    "pos": "MODIFIER",
+                    "text": "不適",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "不舒服": {
+            "id": "70318dee-56cd-40ef-9950-3eb5fdae6c23",
+            "argument": [
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "舒服",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "會受傷": {
             "id": "85331082-386e-4a7c-8609-59dae5d2e041",
             "argument": [
@@ -1309,6 +1344,106 @@
                 }
             ]
         },
+        "身體有狀況": {
+            "id": "d942060f-2f10-41cc-a1e6-3d9dad64f093",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "身體",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "狀況",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "如何處理受傷": {
             "id": "9a54051a-7156-4f27-be3c-6ae732af678b",
             "argument": [
@@ -1805,9 +1940,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "情況",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2397,7 +2532,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]

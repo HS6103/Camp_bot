@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -327,9 +334,9 @@
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -346,7 +353,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "教材",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -563,13 +570,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "課表",
                     "checked": false,
                     "checkbox": true
@@ -829,9 +836,9 @@
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -998,16 +1005,6 @@
                             "checked": false
                         },
                         {
-                            "text": "驚覺",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發覺",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "知道了",
                             "level": "word2vec",
                             "checked": false
@@ -1018,12 +1015,22 @@
                             "checked": false
                         },
                         {
-                            "text": "明白了",
+                            "text": "明白",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "明白",
+                            "text": "驚覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明白了",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1033,13 +1040,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "課表",
                     "checked": false,
                     "checkbox": true
@@ -1161,22 +1168,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1203,9 +1210,9 @@
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1947,9 +1954,9 @@
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "活動",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -2107,13 +2114,13 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "課表",
                     "checked": false,
                     "checkbox": true
@@ -2907,7 +2914,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "事情",
                     "checked": false,
                     "checkbox": true
@@ -3796,27 +3803,12 @@
                             "checked": false
                         },
                         {
-                            "text": "作",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "常做",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "做過",
+                            "text": "作",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3826,12 +3818,17 @@
                             "checked": false
                         },
                         {
-                            "text": "有做",
+                            "text": "做了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "新做",
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有做",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3841,7 +3838,17 @@
                             "checked": false
                         },
                         {
+                            "text": "做出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "指做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "新做",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -3857,7 +3864,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "事情",
                     "checked": false,
                     "checkbox": true
@@ -3899,37 +3906,7 @@
                             "checked": false
                         },
                         {
-                            "text": "進行了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "展開",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "完成",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "實施",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "進行過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "作出",
+                            "text": "進行著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3939,7 +3916,37 @@
                             "checked": false
                         },
                         {
-                            "text": "進行著",
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "作出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "實施",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進行過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "完成",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3960,7 +3967,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "活動",
                     "checked": false,
                     "checkbox": true
@@ -4063,27 +4070,12 @@
                             "checked": false
                         },
                         {
-                            "text": "作",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "常做",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "做過",
+                            "text": "作",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4093,12 +4085,17 @@
                             "checked": false
                         },
                         {
-                            "text": "有做",
+                            "text": "做了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "新做",
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有做",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4108,7 +4105,17 @@
                             "checked": false
                         },
                         {
+                            "text": "做出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "指做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "新做",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -4124,7 +4131,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "事情",
                     "checked": false,
                     "checkbox": true
@@ -4228,37 +4235,12 @@
                             "checked": false
                         },
                         {
-                            "text": "提問",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "反問",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "告知",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "問",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "問到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "追問",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "求證",
+                            "text": "提問",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4268,7 +4250,32 @@
                             "checked": false
                         },
                         {
+                            "text": "問到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "問",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "質問",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "追問",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "告知",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "求證",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -4296,12 +4303,7 @@
                             "checked": false
                         },
                         {
-                            "text": "符",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吻合",
+                            "text": "針對",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4311,22 +4313,27 @@
                             "checked": false
                         },
                         {
-                            "text": "針對",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "討論",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "關聯",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
+                            "text": "吻合",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "涉及",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "符",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "討論",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -4336,9 +4343,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -4348,7 +4355,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "課程",
                     "checked": false,
                     "checkbox": true
@@ -4564,32 +4571,12 @@
                             "checked": false
                         },
                         {
+                            "text": "邀請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "編配",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "挑選",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "規畫",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "調動",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "安排了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "指派",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4599,7 +4586,27 @@
                             "checked": false
                         },
                         {
-                            "text": "邀請",
+                            "text": "規畫",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "安排了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "挑選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調動",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "指派",
                             "level": "word2vec",
                             "checked": false
                         }

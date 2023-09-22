@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -373,103 +380,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "優惠",
                     "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "有折扣": {
-            "id": "a672cc44-d965-4d6d-a2b5-50a1d8b38c21",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "折扣",
-                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -540,6 +453,17 @@
                     "text": "打折",
                     "checked": false,
                     "checkbox": false
+                }
+            ]
+        },
+        "團報優惠": {
+            "id": "97aa3820-aff4-41d8-8eec-7da2359ecd4c",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "團報優惠",
+                    "checked": false,
+                    "checkbox": true
                 }
             ]
         },
@@ -645,12 +569,12 @@
                             "checked": false
                         },
                         {
-                            "text": "收取",
+                            "text": "提供了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "收集",
+                            "text": "給予",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -665,17 +589,17 @@
                             "checked": false
                         },
                         {
+                            "text": "收集",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "發送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -690,10 +614,110 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "優惠",
                     "checked": false,
                     "checkbox": true
+                }
+            ]
+        },
+        "有折扣嗎": {
+            "id": "baadbc11-723a-4853-835f-f32b00ad448d",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "折扣",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -790,7 +814,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "優惠",
                     "checked": false,
                     "checkbox": true
@@ -959,7 +983,7 @@
             "id": "396d5df7-00f9-4270-a3b1-bb915f4459d9",
             "argument": [
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "團報",
                     "checked": false,
                     "checkbox": true
@@ -1048,7 +1072,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "優惠",
                     "checked": false,
                     "checkbox": true
@@ -1112,22 +1136,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1148,7 +1172,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "優惠",
                     "checked": false,
                     "checkbox": true
@@ -1212,22 +1236,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1242,7 +1266,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "優惠",
                     "checked": false,
                     "checkbox": true
@@ -1250,7 +1274,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "方案",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1400,7 +1424,24 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
+                    "text": "優惠",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "有沒有優惠": {
+            "id": "1bbbc87f-67f0-424a-9473-a5a08c3ca66f",
+            "argument": [
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "有沒有",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
                     "text": "優惠",
                     "checked": false,
                     "checkbox": true
@@ -1508,22 +1549,7 @@
                             "checked": false
                         },
                         {
-                            "text": "給老",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "留給",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給聖",
+                            "text": "給對",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1533,17 +1559,12 @@
                             "checked": false
                         },
                         {
-                            "text": "給阿",
+                            "text": "留給",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "給了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "予",
+                            "text": "交給",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1553,7 +1574,27 @@
                             "checked": false
                         },
                         {
-                            "text": "給對",
+                            "text": "給了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給阿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給老",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給聖",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1569,9 +1610,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "折扣",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1580,14 +1621,8 @@
             "id": "a6528f1f-4ec9-4aa4-872d-f95f10f5947a",
             "argument": [
                 {
-                    "pos": "ENTITY_oov",
-                    "text": "團報",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "優惠",
+                    "pos": "UserDefined",
+                    "text": "團報優惠",
                     "checked": false,
                     "checkbox": true
                 },
@@ -1609,7 +1644,7 @@
             "id": "ab7e6cb7-aff0-4036-a3b8-a357757eb5c4",
             "argument": [
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "團報",
                     "checked": false,
                     "checkbox": true
@@ -1632,7 +1667,7 @@
             "id": "063c0159-9172-4676-8102-e4952bb65d4a",
             "argument": [
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "團報",
                     "checked": false,
                     "checkbox": true
@@ -1691,22 +1726,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1881,9 +1916,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "折扣",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1891,6 +1926,597 @@
                     "text": "方案",
                     "checked": false,
                     "checkbox": true
+                }
+            ]
+        },
+        "有提供折扣或優惠": {
+            "id": "5d3ac1f2-934a-4d44-9ca8-e4f63223c31d",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供應",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供銷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供電",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提案",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奉獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "武裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獻出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭拜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭祀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出借",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收集",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "提供",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "折扣",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "或",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "優惠",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "有優惠方案可供選擇": {
+            "id": "b52e4188-358f-4d35-9745-21171441f019",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "優惠",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "方案",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供認",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "招供",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "承認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "招認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "專供",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "供參",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "供當",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有供",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "供予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "供作",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "供入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "容納",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "方便",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "供",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "徵選",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "挑選",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "揀選",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擇定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄選",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "評選",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "遴選",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選定",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選拔",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選用",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選課",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選購",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "選送",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "點選",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "拔取",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拾得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拾獲",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "挑揀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "採摘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提拔",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "摘採",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄拔",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "自願",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預設",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "選取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "決定",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "考慮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "選擇了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "判斷",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "選擇",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         }

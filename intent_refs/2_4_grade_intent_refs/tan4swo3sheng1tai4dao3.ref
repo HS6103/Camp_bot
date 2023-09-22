@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -140,175 +147,6 @@
         ]
     },
     "utterance": {
-        "探索生態島": {
-            "id": "918b7196-eeae-4c2b-b5ae-98391b5e8670",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "刺探",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "勘探",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探勘",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探問",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探尋",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探查",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探測",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探究",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探討",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探訪",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探詢",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "探險",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "查探",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢索",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "試探",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "勘測",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "尋找",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "尋求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "搜尋",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "查找",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "查看",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "查考",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢查",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢視",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "檢驗",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "踏查",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "漫步",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開拓",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "探求",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "追尋",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "探索",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "生態島",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
         "探索生態島在幹嘛": {
             "id": "61dfb993-127e-42dc-aa13-c2b496c2c62b",
             "argument": [
@@ -1419,7 +1257,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "課表",
                     "checked": false,
                     "checkbox": true

@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -202,11 +209,11 @@
                 {
                     "pos": "ENTITY_num",
                     "text": "二",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "年級",
                     "checked": false,
                     "checkbox": true
@@ -219,17 +226,17 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "初中",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_num",
                     "text": "二",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_oov",
+                    "pos": "UserDefined",
                     "text": "年級",
                     "checked": false,
                     "checkbox": true

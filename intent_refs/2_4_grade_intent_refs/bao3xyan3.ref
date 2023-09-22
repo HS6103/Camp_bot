@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -140,6 +147,100 @@
         ]
     },
     "utterance": {
+        "有保險": {
+            "id": "2b336023-fa30-4516-8487-0f27e180fc22",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "保險",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
         "保什麼險": {
             "id": "4a5c4579-515e-475d-a2b1-b30b323b21dd",
             "argument": [
@@ -1305,7 +1406,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "保險",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -1386,6 +1487,179 @@
                     "pos": "UserDefined",
                     "text": "保險",
                     "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "需要自己保保險": {
+            "id": "24becefb-aa11-4035-8dfa-b7e4afe73134",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "索要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "要求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "需求",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索求",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "索討",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "允許",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "需要",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "自己",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "保衛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "守禦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "守護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "維護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "防護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "保通",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保餘",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保忠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保站",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保篤",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "隨保",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保朋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "保港",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "祀保",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "保",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "保險",
+                    "checked": true,
                     "checkbox": true
                 }
             ]

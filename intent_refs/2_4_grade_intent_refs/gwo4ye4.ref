@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -206,17 +213,12 @@
                             "checked": false
                         },
                         {
-                            "text": "借住",
+                            "text": "住下",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "同住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "寄住",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -231,6 +233,11 @@
                             "checked": false
                         },
                         {
+                            "text": "住過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "住到",
                             "level": "word2vec",
                             "checked": false
@@ -241,12 +248,12 @@
                             "checked": false
                         },
                         {
-                            "text": "住下",
+                            "text": "寄住",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "住過",
+                            "text": "借住",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -840,7 +847,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
                     "checked": false,
                     "checkbox": true
@@ -1494,7 +1501,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
                     "checked": false,
                     "checkbox": true
@@ -1517,7 +1524,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
                     "checked": false,
                     "checkbox": true
@@ -1611,22 +1618,22 @@
                             "checked": false
                         },
                         {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "含有",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1745,12 +1752,12 @@
                             "checked": false
                         },
                         {
-                            "text": "提供了",
+                            "text": "收取",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "給予",
+                            "text": "收集",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1765,17 +1772,17 @@
                             "checked": false
                         },
                         {
-                            "text": "收集",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "發送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1829,16 +1836,6 @@
                             "checked": false
                         },
                         {
-                            "text": "入住",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "過夜",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "休憩",
                             "level": "word2vec",
                             "checked": false
@@ -1849,7 +1846,17 @@
                             "checked": false
                         },
                         {
-                            "text": "渡假",
+                            "text": "代訂",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入住",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "過夜",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1859,7 +1866,7 @@
                             "checked": false
                         },
                         {
-                            "text": "代訂",
+                            "text": "渡假",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1875,7 +1882,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
                     "checked": false,
                     "checkbox": true
@@ -1975,7 +1982,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nouny",
+                    "pos": "UserDefined",
                     "text": "營隊",
                     "checked": false,
                     "checkbox": true
@@ -2095,9 +2102,9 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_noun",
+                    "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {

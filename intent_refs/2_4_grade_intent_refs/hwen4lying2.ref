@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v265",
+        "atk": "v266",
         "intent": "1.0"
     },
     "user_defined": {
@@ -16,20 +16,19 @@
             "折扣"
         ],
         "問題": [
-            "狀況",
             "事情",
-            "需求",
             "事項",
             "問題",
             "急事",
-            "情況"
+            "情況",
+            "狀況",
+            "需求"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地",
-            "地點"
+            "場地"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +43,8 @@
             "年齡"
         ],
         "教材": [
-            "課表",
-            "教具"
+            "教具",
+            "課表"
         ],
         "活動": [
             "營隊",
@@ -80,10 +79,17 @@
             "金額"
         ],
         "點心": [
+            "",
             "下午茶",
             "小點心",
-            "點心",
-            "甜點"
+            "巧克力",
+            "泡麵",
+            "洋芋片",
+            "甜點",
+            "糖果",
+            "零食",
+            "餅乾",
+            "點心"
         ],
         "as_camp": [
             "世界和平遊戲營",
@@ -102,7 +108,8 @@
             "紀錄",
             "行前",
             "親師群",
-            "過夜"
+            "過夜",
+            "才藝"
         ],
         "problem": [
             "問題",
@@ -697,13 +704,125 @@
                 }
             ]
         },
+        "同組的孩子是否都是同年齡": {
+            "id": "46c313d3-ce2c-4bb6-8bab-8e5bbe6cea4e",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "同組",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "孩子",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是否",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "都",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "同",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "年齡",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "同組的小孩都會是同年紀嗎": {
+            "id": "ac221ad6-788b-492c-96a9-2cc370b50c8f",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "同組",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "都",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "會",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "同",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "年紀",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "年紀小的孩子會不會玩不起來?": {
             "id": "a7b1283b-ae52-4600-a953-07e619e4e9bf",
             "argument": [
                 {
                     "pos": "UserDefined",
                     "text": "年紀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -721,7 +840,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -744,42 +863,7 @@
                             "checked": false
                         },
                         {
-                            "text": "玩了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "散步",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "玩著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "買東西",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "玩耍",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "逛",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "打電動",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "玩水",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -789,7 +873,42 @@
                             "checked": false
                         },
                         {
+                            "text": "買東西",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "散步",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "遊玩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打電動",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩耍",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩水",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逛",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -876,7 +995,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年紀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -894,7 +1013,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -923,7 +1042,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年齡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -941,7 +1060,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1135,27 +1254,7 @@
                             "checked": false
                         },
                         {
-                            "text": "抱持著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "厭惡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "深感",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "感到了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "內疚",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1166,6 +1265,26 @@
                         },
                         {
                             "text": "顯得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱持著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "內疚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "深感",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "感到了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1199,7 +1318,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年紀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1211,7 +1330,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1463,7 +1582,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年紀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1481,7 +1600,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1594,12 +1713,12 @@
                             "checked": false
                         },
                         {
-                            "text": "導入",
+                            "text": "帶入",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "帶入了",
+                            "text": "融入了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1614,7 +1733,7 @@
                             "checked": false
                         },
                         {
-                            "text": "帶入",
+                            "text": "導入",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1624,7 +1743,7 @@
                             "checked": false
                         },
                         {
-                            "text": "融入了",
+                            "text": "帶入了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1658,7 +1777,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年紀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -1676,7 +1795,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2227,7 +2346,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年紀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2245,7 +2364,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "小孩",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2491,7 +2610,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年紀",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2509,7 +2628,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
@@ -2614,42 +2733,12 @@
                             "checked": false
                         },
                         {
-                            "text": "得比",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得湖",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得面",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看下",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "得身",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "呆了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "得同",
+                            "text": "得總",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2659,7 +2748,37 @@
                             "checked": false
                         },
                         {
-                            "text": "得總",
+                            "text": "得湖",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得面",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "呆了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得比",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2756,7 +2875,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "年齡",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 },
                 {
