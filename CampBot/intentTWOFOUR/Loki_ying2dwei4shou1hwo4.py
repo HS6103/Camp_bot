@@ -146,7 +146,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "獲得怎樣的[知識]":
+    if utterance == "[可以]獲得怎樣的[知識]":
         if CHATBOT_MODE:
             tmpSTR = "關於{}呢...".format("獲得什麼") + getResponse(utterance, args)
             resultDICT["response"] = tmpSTR.format("孩子") 
@@ -190,5 +190,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+
+    if utterance == "[能]獲得哪些知識":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "獲得怎樣的知識":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
 
     return resultDICT

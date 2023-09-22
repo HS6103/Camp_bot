@@ -66,50 +66,41 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[可以]接[小孩]的時間":
-        if args[1] in userDefinedDICT["小孩"]:
-            if CHATBOT_MODE:
-                tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("家長","孩子")
-            else:pass
+    if utterance == "[可以]接[他]的時間":
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("家長","孩子")
         else:
             # write your code here
             pass
 
-    if utterance == "[幾點][可以]接[小孩]":
-        if args[2] in userDefinedDICT["小孩"]:
-            if CHATBOT_MODE:
-                tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("家長","孩子")
-            else:pass
-        else:
-            # write your code here
-            pass
+    if utterance == "[幾點][可以]接[他]":
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("家長","孩子")
+        else:pass
+
 
     if utterance == "[幾點]結束":
         if CHATBOT_MODE:
             tmpSTR = getResponse(utterance, args)
             resultDICT["response"] = tmpSTR.format("家長","孩子")  
         else:
-            # write your code here
             pass
 
-    if utterance == "[幾點]要送[小孩]過去":
-        if args[1] in userDefinedDICT["小孩"]:
-            if CHATBOT_MODE:
-                tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("家長","孩子")
-            else:pass
+    if utterance == "[幾點]要送[他]過去":
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("家長","孩子")
         else:
-            # write your code here
             pass
+
 
     if utterance == "[幾點]開始":
         if CHATBOT_MODE:
             tmpSTR = getResponse(utterance, args)
             resultDICT["response"] = tmpSTR.format("孩子")
         else:
-            # write your code here
             pass
 
     if utterance == "[幾點]開始接":
@@ -117,7 +108,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             tmpSTR = getResponse(utterance, args)
             resultDICT["response"] = tmpSTR.format("家長","孩子")
         else:
-            # write your code here
             pass
 
     if utterance == "[活動]時間是[幾點]到[幾點]":
@@ -148,12 +138,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "什麼[時候][可以]接[小孩]":
-        if args[2] in userDefinedDICT["小孩"]:
-            if CHATBOT_MODE:
-                tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("家長","孩子")
-            else:pass
+    if utterance == "什麼[時候][可以]接[他]":
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("家長","孩子")
         else:
             # write your code here
             pass
@@ -166,28 +154,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "什麼時間[可以]接[小孩]":
-        if args[1] in userDefinedDICT["小孩"]:
-            if CHATBOT_MODE:
-                tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("家長","孩子")
-            else:pass
+    if utterance == "什麼時間[可以]接[他]":
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("家長","孩子")
         else:
             # write your code here
             pass
 
-    if utterance == "把[小孩]送過去的時間":
-        if args[0] in userDefinedDICT["小孩"]:
-            if CHATBOT_MODE:
-          
-                
-                tmpReplySTR = getResponse(utterance, args).format(*args)
-                resultDICT["response"] = tmpReplySTR
-            else:
-                    pass
+    if utterance == "把[他]送過去的時間":
+        if CHATBOT_MODE:
+            tmpReplySTR = getResponse(utterance, args).format(*args)
+            resultDICT["response"] = tmpReplySTR
         else:
-            # write your code here
             pass
+
 
     if utterance == "接送時間是[幾點]":
         if CHATBOT_MODE:
@@ -235,7 +216,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "開始與結束時間是[幾點]到[幾點]":
+    if utterance == "開始與結束[時][間]是[幾點]到[幾點]":
         if CHATBOT_MODE:
             tmpSTR = getResponse(utterance, args)
             resultDICT["response"] = tmpSTR.format("活動")
@@ -251,16 +232,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
         
-    if utterance == "什麼[時候][可以]去接[小孩]":
-             # args ["時候", "可以", "小朋友"]
-        if args[2] in userDefinedDICT["小孩"]:
-            if CHATBOT_MODE:
-                tmpSTR = getResponse(utterance, args)
-                resultDICT["response"] = tmpSTR.format("家長","孩子")
-            else:pass
+    if utterance == "什麼[時候][可以]去接[他]":
+        if CHATBOT_MODE:
+            tmpSTR = getResponse(utterance, args)
+            resultDICT["response"] = tmpSTR.format("家長","孩子")
         else:
-            # write your code here
-            pass      
+            pass
+
 
     if utterance == "接送[時間]":
         if CHATBOT_MODE:
@@ -276,63 +254,151 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "什麼[時候]送[小孩]過去":
-        if args[1] in userDefinedDICT["小孩"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+
+    if utterance == "活動時間是[幾點]到[幾點]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "結束":
-        if "時" in inputSTR:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "活動進行的時段是從[幾點]到[幾點]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "開始":
-        if "時" in inputSTR:
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+
+    if utterance == "營隊[期間]的接送[時間]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "帶[小孩]回家":
-        if args[0] in userDefinedDICT["小孩"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "[可以]接[他]的[時間]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "帶[小孩]過去":
-        if args[0] in userDefinedDICT["小孩"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "[幾點][可以]接[他]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "把[小孩]送過去":
-        if args[0] in userDefinedDICT["小孩"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "[幾點]帶[他]回家":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "送[小孩]過去":
-        if args[0] in userDefinedDICT["小孩"]:
-            
-            if CHATBOT_MODE:
-                resultDICT["response"] = getResponse(utterance, args)
+    if utterance == "[幾點]要送[他]過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "什麼[時候][可以]去接[他]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "何時結束":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "何時開始":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "啥時結束":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "啥時開始":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "帶[他]回家":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "帶[他]過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "把[他]送過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "把[他]送過去的[時間]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "接送[時間]是[幾點]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "活動[時間]是[幾點]到[幾點]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "活動進行的[時段]是從[幾點]到[幾點]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "結束[時間]是[幾點]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "送[他]過去":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass

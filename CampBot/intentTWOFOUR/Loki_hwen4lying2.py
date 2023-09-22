@@ -157,7 +157,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "年紀[小]會不[會]跟不[上]":
+    if utterance == "[年紀][小]會不[會]跟不[上]":
         if CHATBOT_MODE:
             tmpSTR = getResponse(utterance, args)
             tmpSTR = tmpSTR.format("孩子")
@@ -219,6 +219,104 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 tmpSTR = getResponse(utterance, args)
                 tmpSTR = tmpSTR.format("孩子")
                 resultDICT["response"] = tmpSTR 
+        else:
+            # write your code here
+            pass
+
+    if utterance == "同組的孩子[是]否[都]是[同]年齡":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "在分組時[不同]年齡的人是不[是][都]混合在[一起]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "年紀[小]的孩子[是]否[能]跟得[上]活動的節奏":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "年紀[小]的孩子會不[會]玩不起來?":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "年紀[小]的小孩能不[能]融入[這個]活動":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "年紀比較大的孩子會不[會][無聊]?":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "年紀比較大的孩子會不[會]覺得[無聊]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "年紀比較大的小孩會不[會]感到[無聊]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "年齡較大的孩子[是]否[會]感到[無聊]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "較大年紀的孩子[是]否[會]感到[無聊]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[年紀][小]會不[會]跟不[上]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[同][一組]的[小孩][是]否[都]是[同][年齡]？":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "同組的[孩子][是]否[都]是[同][年齡]？":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "同組的[小孩][都][會]是[同][年紀]嗎?":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
