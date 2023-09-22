@@ -13,13 +13,14 @@
         ],
         "優惠": [
             "團報",
+            "團報優惠",
+            "團體報名",
             "折扣"
         ],
         "問題": [
             "事情",
             "事項",
             "問題",
-            "急事",
             "情況",
             "狀況",
             "需求"
@@ -94,22 +95,25 @@
         "as_camp": [
             "世界和平遊戲營",
             "創新創業營",
-            "最重要的小事營"
+            "最重要的小事營",
+            "拯救玩具島",
+            "探索生態島"
         ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
+            "創業",
             "團報優惠",
             "夏令營",
             "戶外",
+            "才藝",
             "早上",
             "紀錄",
             "行前",
             "親師群",
-            "過夜",
-            "才藝"
+            "過夜"
         ],
         "problem": [
             "問題",
@@ -118,6 +122,7 @@
             "需求"
         ],
         "as_insur": [
+            "保險",
             "意外險",
             "旅平險",
             "醫療險"
@@ -3202,6 +3207,53 @@
                 }
             ]
         },
+        "營隊各自的特色是什麼?": {
+            "id": "c00855a6-6732-4531-ae67-cc79e0dc8e4d",
+            "argument": [
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "各自",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "特色",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_WhatQ",
+                    "text": "什麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "PUNCTUATION",
+                    "text": "?",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
         "可以參加的營隊有哪些？": {
             "id": "2dc197d5-3355-4793-ad12-0bf2139dc307",
             "argument": [
@@ -3674,68 +3726,9 @@
                 }
             ]
         },
-        "兩個營隊各自的特色是什麼?": {
-            "id": "7dd89385-c2e9-44cc-8ed9-1ef950b76f81",
+        "營隊可以都解釋給我聽嗎?": {
+            "id": "3b8ce3f3-2a2a-4e71-a964-3b1620ec4f17",
             "argument": [
-                {
-                    "pos": "ENTITY_classifier",
-                    "text": "兩個",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "營隊",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "各自",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "特色",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "AUX",
-                    "text": "是",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "?",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "兩個營隊可以都解釋給我聽嗎?": {
-            "id": "8647ccdf-3ddb-4b1c-9c98-a97c1b810220",
-            "argument": [
-                {
-                    "pos": "ENTITY_classifier",
-                    "text": "兩個",
-                    "checked": true,
-                    "checkbox": false
-                },
                 {
                     "pos": "UserDefined",
                     "text": "營隊",

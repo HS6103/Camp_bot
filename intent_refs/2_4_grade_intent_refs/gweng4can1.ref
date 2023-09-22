@@ -13,13 +13,14 @@
         ],
         "優惠": [
             "團報",
+            "團報優惠",
+            "團體報名",
             "折扣"
         ],
         "問題": [
             "事情",
             "事項",
             "問題",
-            "急事",
             "情況",
             "狀況",
             "需求"
@@ -94,22 +95,25 @@
         "as_camp": [
             "世界和平遊戲營",
             "創新創業營",
-            "最重要的小事營"
+            "最重要的小事營",
+            "拯救玩具島",
+            "探索生態島"
         ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
+            "創業",
             "團報優惠",
             "夏令營",
             "戶外",
+            "才藝",
             "早上",
             "紀錄",
             "行前",
             "親師群",
-            "過夜",
-            "才藝"
+            "過夜"
         ],
         "problem": [
             "問題",
@@ -118,6 +122,7 @@
             "需求"
         ],
         "as_insur": [
+            "保險",
             "意外險",
             "旅平險",
             "醫療險"
@@ -511,7 +516,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "點心",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -597,7 +602,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -711,161 +716,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "午餐",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "提供午餐": {
-            "id": "6ea7a744-3cac-49bb-a4a3-bf820a1b21e7",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "供應",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供給",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供貨",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供銷",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "供電",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提出",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "提案",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "協助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "奉獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "武裝",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "獻出",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "發放",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭拜",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "祭祀",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "補給",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "貢獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "資助",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "進獻",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "提供了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出借",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "獲取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收集",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "收取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發送",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶來",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "提供",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -939,7 +790,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -950,7 +801,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1277,7 +1128,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "早餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1439,7 +1290,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "點心",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1918,7 +1769,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "午餐",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2287,7 +2138,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "點心",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

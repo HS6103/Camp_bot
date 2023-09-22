@@ -13,13 +13,14 @@
         ],
         "優惠": [
             "團報",
+            "團報優惠",
+            "團體報名",
             "折扣"
         ],
         "問題": [
             "事情",
             "事項",
             "問題",
-            "急事",
             "情況",
             "狀況",
             "需求"
@@ -94,22 +95,25 @@
         "as_camp": [
             "世界和平遊戲營",
             "創新創業營",
-            "最重要的小事營"
+            "最重要的小事營",
+            "拯救玩具島",
+            "探索生態島"
         ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
+            "創業",
             "團報優惠",
             "夏令營",
             "戶外",
+            "才藝",
             "早上",
             "紀錄",
             "行前",
             "親師群",
-            "過夜",
-            "才藝"
+            "過夜"
         ],
         "problem": [
             "問題",
@@ -118,6 +122,7 @@
             "需求"
         ],
         "as_insur": [
+            "保險",
             "意外險",
             "旅平險",
             "醫療險"
@@ -236,7 +241,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -253,7 +258,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -347,13 +352,13 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -547,13 +552,13 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -647,13 +652,13 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -737,7 +742,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -749,7 +754,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "相片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -903,7 +908,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -915,7 +920,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "相片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2276,7 +2281,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2355,7 +2360,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "狀況",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2474,7 +2479,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "孩子",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2553,7 +2558,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "狀況",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2570,7 +2575,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2582,7 +2587,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2676,7 +2681,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2786,7 +2791,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "圖片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2902,13 +2907,13 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2919,7 +2924,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2931,7 +2936,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "相片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3210,7 +3215,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3326,7 +3331,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "相片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -3593,13 +3598,13 @@
                 {
                     "pos": "UserDefined",
                     "text": "活動",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "UserDefined",
                     "text": "照片",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

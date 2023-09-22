@@ -13,13 +13,14 @@
         ],
         "優惠": [
             "團報",
+            "團報優惠",
+            "團體報名",
             "折扣"
         ],
         "問題": [
             "事情",
             "事項",
             "問題",
-            "急事",
             "情況",
             "狀況",
             "需求"
@@ -94,22 +95,25 @@
         "as_camp": [
             "世界和平遊戲營",
             "創新創業營",
-            "最重要的小事營"
+            "最重要的小事營",
+            "拯救玩具島",
+            "探索生態島"
         ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
+            "創業",
             "團報優惠",
             "夏令營",
             "戶外",
+            "才藝",
             "早上",
             "紀錄",
             "行前",
             "親師群",
-            "過夜",
-            "才藝"
+            "過夜"
         ],
         "problem": [
             "問題",
@@ -118,6 +122,7 @@
             "需求"
         ],
         "as_insur": [
+            "保險",
             "意外險",
             "旅平險",
             "醫療險"
@@ -290,100 +295,6 @@
                     "text": "優待",
                     "checked": false,
                     "checkbox": false
-                }
-            ]
-        },
-        "有優惠": {
-            "id": "0859684b-eabc-4064-ac80-d5af3527a15b",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "優惠",
-                    "checked": false,
-                    "checkbox": true
                 }
             ]
         },
@@ -710,7 +621,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "折扣",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -816,8 +727,83 @@
                 {
                     "pos": "UserDefined",
                     "text": "優惠",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
+                }
+            ]
+        },
+        "可以打折嗎": {
+            "id": "c56e8923-d181-4d07-b04b-6c9763c1aeaa",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "賠錢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加價",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "變貴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "減價",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "縮水",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "換購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "亂吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加量",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "降價",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "打折",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -1074,7 +1060,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "優惠",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1174,7 +1160,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "優惠",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1268,7 +1254,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "優惠",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -1443,7 +1429,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "優惠",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -1612,31 +1598,8 @@
                 {
                     "pos": "UserDefined",
                     "text": "折扣",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
-                }
-            ]
-        },
-        "團報優惠是什麼": {
-            "id": "a6528f1f-4ec9-4aa4-872d-f95f10f5947a",
-            "argument": [
-                {
-                    "pos": "UserDefined",
-                    "text": "團報優惠",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "AUX",
-                    "text": "是",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
@@ -1918,7 +1881,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "折扣",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2161,7 +2124,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "折扣",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2173,7 +2136,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "優惠",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -2267,7 +2230,7 @@
                 {
                     "pos": "UserDefined",
                     "text": "優惠",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
