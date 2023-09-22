@@ -48,6 +48,7 @@ import json
 import math
 import os
 import re
+import time
 try:
     from intentTWOFOUR import Loki_fei4uuong4you1hwei4
     from intentTWOFOUR import Loki_gwo4ye4
@@ -66,8 +67,7 @@ try:
     from intentTWOFOUR import Loki_gweng4can1
     from intentTWOFOUR import Loki_hwo2dweng4ji4lu4
     from intentTWOFOUR import Loki_bao4mying2
-    from intentTWOFOUR import Loki_zheng3jyou4wan2juu4dao3
-    from intentTWOFOUR import Loki_tan4swo3sheng1tai4dao3
+    from intentTWOFOUR import Loki_ying2dwei4nei4rweng2
     from intentTWOFOUR import Loki_fei4uuong4xi4jye2
     from intentTWOFOUR import Loki_pyin3zhi2
     from intentAGE import Loki_age  
@@ -290,14 +290,6 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "bao4mying2":
                     lokiResultDICT = Loki_bao4mying2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
-                # zheng3jyou4wan2juu4dao3
-                if lokiRst.getIntent(index, resultIndex) == "zheng3jyou4wan2juu4dao3":
-                    lokiResultDICT = Loki_zheng3jyou4wan2juu4dao3.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
-
-                # tan4swo3sheng1tai4dao3
-                if lokiRst.getIntent(index, resultIndex) == "tan4swo3sheng1tai4dao3":
-                    lokiResultDICT = Loki_tan4swo3sheng1tai4dao3.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
-
                 # fei4uuong4xi4jye2
                 if lokiRst.getIntent(index, resultIndex) == "fei4uuong4xi4jye2":
                     lokiResultDICT = Loki_fei4uuong4xi4jye2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
@@ -309,6 +301,10 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 # age
                 if lokiRst.getIntent(index, resultIndex) == "age":
                     lokiResultDICT = Loki_age.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+                
+                # ying2dwei4nei4rweng2
+                if lokiRst.getIntent(index, resultIndex) == "ying2dwei4nei4rweng2":
+                    lokiResultDICT = Loki_ying2dwei4nei4rweng2.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
                 
 
@@ -390,148 +386,169 @@ def testLoki(inputLIST, filterLIST):
         print(resultDICT["msg"])
 
 def testIntent():
+    # an1quuan2cwo4shi1
+    print("[TEST] an1quuan2cwo4shi1")
+    inputLIST = ['不適','不舒服','會受傷','有危險','發生危險','碰上危險','確保安全','受傷怎麼辦','會不會受傷','有安全措施','有防護措施','身體有狀況','如何處理受傷','出現危險的情況','受傷了該怎麼辦','有什麼安全措施','有安全保護措施','有沒有安全措施','有相關的安全措施','在你們那受傷怎麼辦']
+    testLoki(inputLIST, ['an1quuan2cwo4shi1'])
+    print("")
+    time.sleep(60)
+
+    # bao4mying2
+    print("[TEST] bao4mying2")
+    inputLIST = ['如何報名','想要參加','想要報名','詢問報名','去哪裡報名','幫小孩報名','想報名參加','有興趣參加','要怎麼報名','如何報名參加','如何進行報名','想讓小孩參加','報名方式是什麼','希望給小孩報名','給我家小孩報名','幫我姊姊的姐姐報名','幫我姐姐的小孩報名','幫我小孩的姐姐報名','幫我小孩的小孩報名']
+    testLoki(inputLIST, ['bao4mying2'])
+    print("")
+    time.sleep(60)
+
+    # fei4uuong4twei4fei4
+    print("[TEST] fei4uuong4twei4fei4")
+    inputLIST = ['退費','辦退費','可以退費','想要退費','申請退費','辦理退費','是全額退費','比例怎麼算','可不可以退費','退費怎麼辦理','退費比例政策','退費比例規定','是否可以退費？','比例該怎麼算？','退款比例的原則','退費比例怎麼算','退費比例的標準','退費要如何進行','退費要怎麼辦理','怎樣計算退費比例？','比例要如何計算呢？','退費的比例該如何計算？','比例的計算方式是什麼呢？']
+    testLoki(inputLIST, ['fei4uuong4twei4fei4'])
+    print("")
+    time.sleep(60)
+
+    # fei4uuong4xi4jye2
+    print("[TEST] fei4uuong4xi4jye2")
+    inputLIST = ['多貴','多少錢','費用為何?','費用是多少','費用要多少','價格是多少錢?','費用需要多少錢?','費用有包含教材嗎','會不會有額外的費用','是否會有其他的花費？','教材有包含在費用裡嗎？','是否會產生額外的費用？','費用裡有沒有包含教材？','教材是否已納入費用之中？','費用是否已經包括了教材？','教材是否已經被納入費用了？','會不會有額外需支付的費用？','是否會有額外的金額需要支付？','教材是不是已經包含在費用中了？']
+    testLoki(inputLIST, ['fei4uuong4xi4jye2'])
+    print("")
+    time.sleep(60)
+
     # fei4uuong4you1hwei4
     print("[TEST] fei4uuong4you1hwei4")
-    inputLIST = ['有優待','有優惠','可以打折','提供優惠','給個優惠','可否打個折','團報有優惠','有什麼優惠','有優惠方案','有打折優惠','有沒有打折','給一點折扣','團報會比較便宜','團報有比較便宜','提供任何折扣方案']
+    inputLIST = ['有優待','有優惠','可以打折','團報優惠','提供優惠','有折扣嗎','給個優惠','可否打個折','團報有優惠','有什麼優惠','有優惠方案','有打折優惠','有沒有優惠','有沒有打折','給一點折扣','團報優惠是什麼','團報會比較便宜','團報有比較便宜','提供任何折扣方案','有提供折扣或優惠','有優惠方案可供選擇']
     testLoki(inputLIST, ['fei4uuong4you1hwei4'])
     print("")
-
-    # gwo4ye4
-    print("[TEST] gwo4ye4")
-    inputLIST = ['會過夜','有過夜的安排','過夜的營隊有哪些','低年級有過夜的營隊','低年級有安排過夜的營隊','參加哪些提供過夜的營隊','所有的營隊都會在夜晚過夜','有哪些提供過夜住宿的營隊','有哪些營隊可以讓孩子過夜','低年級有提供過夜活動的營隊']
-    testLoki(inputLIST, ['gwo4ye4'])
-    print("")
+    time.sleep(60)
 
     # hang2qyan2
     print("[TEST] hang2qyan2")
     inputLIST = ['進入親師群','被加入親師群','有營隊行前通知','提供營隊行前通知','被邀請加入親師群','何時會被納入親師群','告知營隊行前的通知','提供營隊行前的通知','營隊行前任務是什麼','有沒有營隊行前的通知','營隊行前的工作有哪些','營隊行前需要做什麼準備','營隊開始前需要準備什麼','進入營隊前要做哪些準備','進入營隊前須要準備什麼','營隊行前需做哪些準備工作','營隊行前要完成的任務有哪些','參加營隊前應該做哪些準備事項','營隊行前應該要做什麼準備工作','營隊行前須要完成的事情是什麼','進營隊之前應該先作哪些準備的安排']
     testLoki(inputLIST, ['hang2qyan2'])
     print("")
-
-    # ke4cheng2
-    print("[TEST] ke4cheng2")
-    inputLIST = ['有戶外活動','了解營隊課表','安排戶外活動','知道營隊課表','什麼是同樂會?','同樂會在幹嘛?','有哪些戶外活動','空課指的是什麼','同樂會在做什麼?','要參加同樂會嗎?','安排一些戶外活動','詢問關於營隊課表','午休的時候會做什麼','中午休息時間會做什麼','午休時會做哪些事情呢','午休時間通常會做什麼','中午休息時通常會做什麼','中午休息時都會做什麼事','午休的時候會做什麼事情','中午休息時間會進行哪些活動','中午休息時間都會做什麼事情','知道營隊的課程內容和時間分配','詢問有關營隊的課程時間和安排']
-    testLoki(inputLIST, ['ke4cheng2'])
-    print("")
-
-    # shi2jyan1
-    print("[TEST] shi2jyan1")
-    inputLIST = ['幾點結束','幾點開始','幾點開始接','什麼時候開始','甚麼時候結束','幾點可以接小孩','接送時間是幾點','甚麼時候會結束','結束時間是幾點','結束需要到幾點','可以在哪個時段接','可以在幾點之後接','可以接小孩的時間','幾點要送小孩過去','什麼時候可以接小孩','什麼時間可以接小孩','把小孩送過去的時間','營隊期間的接送時間','活動時間是幾點到幾點','需要在幾點被送到那裡','開始與結束時間是幾點到幾點','活動進行的時段是從幾點到幾點']
-    testLoki(inputLIST, ['shi2jyan1'])
-    print("")
-
-    # ying2dwei4lei4xying2
-    print("[TEST] ying2dwei4lei4xying2")
-    inputLIST = ['推薦營隊','參加什麼營','想了解營隊','有哪些營隊','參加哪個營隊','有適合的營隊','營隊是在幹嘛','適合什麼營隊','推薦適合的營隊','報名參加哪個營隊','有什麼營隊可參加','有哪些營隊能夠報名','兩個營隊有什麼差別?','有哪幾個營隊可以參加','有多少種營隊可以選擇','可以參加的營隊有哪些？','有哪些營隊是可以報名的','營隊針對2年級是在做什麼?','兩個營隊各自的特色是什麼?','營隊主要的活動內容是哪些?','兩個營隊可以都解釋給我聽嗎?']
-    testLoki(inputLIST, ['ying2dwei4lei4xying2'])
-    print("")
-
-    # bao3xyan3
-    print("[TEST] bao3xyan3")
-    inputLIST = ['包含保險','提供保險','投什麼保險','有沒有投保險','自己負責保險','投保了什麼保險','需要自己投保保險','需要自行購買保險','在保險方面做了哪些準備','在保險方面有怎樣的安排']
-    testLoki(inputLIST, ['bao3xyan3'])
-    print("")
-
-    # fei4uuong4twei4fei4
-    print("[TEST] fei4uuong4twei4fei4")
-    inputLIST = ['可以退費','想要退費','申請退費','辦理退費','可不可以退費','退費怎麼辦理','是否可以退費？','退費要如何進行','退費要怎麼辦裡']
-    testLoki(inputLIST, ['fei4uuong4twei4fei4'])
-    print("")
-
-    # di4dyan3
-    print("[TEST] di4dyan3")
-    inputLIST = ['知道地點','確定地點','地點在哪裡','地點在哪邊','地點位於哪裡','得知具體位置','知道確切位置','取得地點的資訊','地點在哪個位置','得知地點的具體情況','地點的具體位置是哪裡']
-    testLoki(inputLIST, ['di4dyan3'])
-    print("")
-
-    # fen1zu3
-    print("[TEST] fen1zu3")
-    inputLIST = ['分在一組','劃分小組','安排分組','怎麼分組','進行分組','分在不同組','是老師分組','老師會分組','與好友同組','跟朋友同一組','老師要進行分組','分組方法是怎樣的','分組的方式是什麼','由老師來進行分組']
-    testLoki(inputLIST, ['fen1zu3'])
-    print("")
-
-    # an1quuan2cwo4shi1
-    print("[TEST] an1quuan2cwo4shi1")
-    inputLIST = ['會受傷','有危險','發生危險','碰上危險','確保安全','受傷怎麼辦','會不會受傷','有安全措施','有防護措施','如何處理受傷','出現危險的情況','受傷了該怎麼辦','有什麼安全措施','有安全保護措施','有沒有安全措施','有相關的安全措施']
-    testLoki(inputLIST, ['an1quuan2cwo4shi1'])
-    print("")
+    time.sleep(60)
 
     # hwen4lying2
     print("[TEST] hwen4lying2")
-    inputLIST = ['是同年','同年齡？','是相同年紀','分組都是混齡','包含不同年齡層','以不同年齡混合分組','年紀小會不會跟不上','年紀小的孩子會不會玩不起來?','年紀比較大的孩子會不會無聊?','年齡較大的孩子是否會感到無聊','較大年紀的孩子是否會感到無聊','年紀小的小孩能不能融入這個活動','年紀比較大的孩子會不會覺得無聊','年紀比較大的小孩可能會感到無趣','年紀比較大的小孩會不會感到無聊','年紀小的孩子是否能跟得上活動的節奏','在分組時不同年齡的人是不是都混合在一起']
+    inputLIST = ['是同年','同年齡？','是相同年紀','分組都是混齡','包含不同年齡層','以不同年齡混合分組','年紀小會不會跟不上','同組的孩子是否都是同年齡','同組的小孩都會是同年紀嗎','年紀小的孩子會不會玩不起來?','年紀比較大的孩子會不會無聊?','年齡較大的孩子是否會感到無聊','較大年紀的孩子是否會感到無聊','年紀小的小孩能不能融入這個活動','年紀比較大的孩子會不會覺得無聊','年紀比較大的小孩可能會感到無趣','年紀比較大的小孩會不會感到無聊','年紀小的孩子是否能跟得上活動的節奏','在分組時不同年齡的人是不是都混合在一起']
     testLoki(inputLIST, ['hwen4lying2'])
     print("")
+    time.sleep(60)
 
-    # te4shu1xuu1qyou2
-    print("[TEST] te4shu1xuu1qyou2")
-    inputLIST = ['吃素','吃藥','有其他問題','有急事找誰','有特殊需求','有臨時狀況','臨時有事情','有額外的問題','暫時有緊急事項','有其他問題怎麼辦','突發情況需要找誰','臨時有狀況要找誰']
-    testLoki(inputLIST, ['te4shu1xuu1qyou2'])
+    # hwo2dweng4ji4lu4
+    print("[TEST] hwo2dweng4ji4lu4")
+    inputLIST = ['有照片','有沒有照片','有活動照片','想看活動相片','更新活動照片','看到活動照片','找到活動的相片','提供活動的相片','會不會幫忙拍照','會幫小朋友拍照','照片要去哪裡看','看我女兒的照片','看我小孩的照片','了解孩子參與狀況','得知孩子參與狀況','有沒有活動的照片','有活動拍攝的圖片','更新每天的活動照片','活動的相片要怎麼看','有沒有活動所拍攝的相片','想要看活動照片要去哪裡找']
+    testLoki(inputLIST, ['hwo2dweng4ji4lu4'])
     print("")
+    time.sleep(60)
+
+    # ke4cheng2
+    print("[TEST] ke4cheng2")
+    inputLIST = ['有教材','有戶外活動','有沒有教材','了解營隊課表','安排戶外活動','知道營隊課表','什麼是同樂會?','同樂會在幹嘛?','有哪些戶外活動','空課指的是什麼','同樂會在做什麼?','要參加同樂會嗎?','安排一些戶外活動','詢問關於營隊課表','午休的時候會做什麼','知道營隊的課程內容','中午休息時間會做什麼','午休時會做哪些事情呢','午休時間通常會做什麼','中午休息時通常會做什麼','中午休息時都會做什麼事','午休的時候會做什麼事情','中午休息時間會進行哪些活動','中午休息時間都會做什麼事情','詢問有關營隊的課程時間和安排']
+    testLoki(inputLIST, ['ke4cheng2'])
+    print("")
+    time.sleep(60)
+
+    # pyin3zhi2
+    print("[TEST] pyin3zhi2")
+    inputLIST = ['是小班制','班級人數','什麼是玩伴','帶幾個小孩','玩伴是什麼','師生比是多少','控制教學品質','玩伴在做什麼','確保教師素質','管理教學品質','維護教學品質','如何把關教學品質','如何確保教學品質','師生比例是多少？','確保營隊師資品質','老師和學生的比例','師生之間的比例是多少']
+    testLoki(inputLIST, ['pyin3zhi2'])
+    print("")
+    time.sleep(60)
+
+    # shi2jyan1
+    print("[TEST] shi2jyan1")
+    inputLIST = ['結束','開始','幾點結束','幾點開始','接送時間','帶小孩回家','帶小孩過去','幾點開始接','送小孩過去','什麼時候回家','什麼時候開始','把小孩送過去','甚麼時候結束','幾點可以接小孩','接送時間是幾點','甚麼時候會結束','結束時間是幾點','結束需要到幾點','可以在哪個時段接','可以在幾點之後接','可以接小孩的時間','幾點要送小孩過去','什麼時候可以接小孩','什麼時候送小孩過去','什麼時間可以接小孩','把小孩送過去的時間','營隊期間的接送時間','什麼時候可以去接小孩','活動時間是幾點到幾點','需要在幾點被送到那裡','開始與結束時間是幾點到幾點','活動進行的時段是從幾點到幾點']
+    testLoki(inputLIST, ['shi2jyan1'])
+    print("")
+    time.sleep(60)
+
+    # ying2dwei4lei4xying2
+    print("[TEST] ying2dwei4lei4xying2")
+    inputLIST = ['推薦營隊','參加什麼營','想了解營隊','有什麼不同','有什麼差別?','參加哪個營隊','有適合的營隊','營隊是在幹嘛','適合什麼營隊','推薦適合的營隊','有哪些營隊適合','主要的活動內容是','可以學才藝的營隊','報名參加哪個營隊','有什麼營隊可參加','有什麼適合的營隊','有哪些營隊能夠報名','針對2年級是在做什麼?','有哪幾個營隊可以參加','有多少種營隊可以選擇','可以參加的營隊有哪些？','有哪些營隊是可以報名的','兩個營隊各自的特色是什麼?','兩個營隊可以都解釋給我聽嗎?']
+    testLoki(inputLIST, ['ying2dwei4lei4xying2'])
+    print("")
+    time.sleep(60)
+
+    # gweng4can1
+    print("[TEST] gweng4can1")
+    inputLIST = ['會餓','吃不飽','帶零食','有點心','肚子餓','訂午餐','供應午餐','提供午餐','自備午餐','午餐吃什麼','帶零食進去','早餐怎麼辦','會餓怎麼辦','有沒有點心','中午會吃什麼','把零食帶進去','自行攜帶午餐','早餐是自己解決','早餐是自行解決','有沒有點心吃？']
+    testLoki(inputLIST, ['gweng4can1'])
+    print("")
+    time.sleep(60)
+
+    # tan4swo3sheng1tai4dao3
+    print("[TEST] tan4swo3sheng1tai4dao3")
+    inputLIST = ['探索生態島在幹嘛','探索生態島的細節','探索生態島在做什麼','探索生態島的詳細內容','有探索生態島的課表嗎','探索生態島是在做什麼的','探索生態島的特色是什麼','探索生態島都在戶外活動嗎']
+    testLoki(inputLIST, ['tan4swo3sheng1tai4dao3'])
+    print("")
+    time.sleep(60)
+
+    # di4dyan3
+    print("[TEST] di4dyan3")
+    inputLIST = ['會在哪裡','知道地點','確定地點','辦在哪裡','只有在台北','地點在哪裡','地點在哪邊','地點位於哪裡','得知具體位置','會在哪裡舉行','知道確切位置','取得地點的資訊','地點在哪個位置','會在台北的哪裡','得知地點的具體情況','地點的具體位置是哪裡']
+    testLoki(inputLIST, ['di4dyan3'])
+    print("")
+    time.sleep(60)
+
+    # age
+    print("[TEST] age")
+    inputLIST = ['2','8歲','國一','小二','二年級','初中二年級']
+    testLoki(inputLIST, ['age'])
+    print("")
+    time.sleep(60)
+
+    # bao3xyan3
+    print("[TEST] bao3xyan3")
+    inputLIST = ['有保險','保什麼險','包含保險','投什麼險','投保保險','提供保險','負責保險','購買保險','投什麼保險','有沒有投保險','投保了什麼保險','需要自己保保險','在保險方面做了哪些準備','在保險方面有怎樣的安排']
+    testLoki(inputLIST, ['bao3xyan3'])
+    print("")
+    time.sleep(60)
 
     # ying2dwei4shou1hwo4
     print("[TEST] ying2dwei4shou1hwo4")
     inputLIST = ['有收穫','學到什麼','得到什麼','有什麼收穫','有沒有收穫','獲得的東西','能學到什麼','培養什麼實力','學到哪些東西','獲得什麼經驗','獲得哪些收穫','累積什麼經驗','獲得怎樣的知識','能夠學到些什麼','能獲得哪些知識']
     testLoki(inputLIST, ['ying2dwei4shou1hwo4'])
     print("")
+    time.sleep(60)
 
-    # gweng4can1
-    print("[TEST] gweng4can1")
-    inputLIST = ['帶零食','有點心','供應午餐','提供午餐','自備午餐','午餐吃什麼','帶零食進去','有沒有點心','中午會吃什麼','把零食帶進去','自行攜帶午餐','早餐是自己解決','早餐是自行解決','有沒有點心吃？']
-    testLoki(inputLIST, ['gweng4can1'])
+    # fen1zu3
+    print("[TEST] fen1zu3")
+    inputLIST = ['分在一組','劃分小組','安排分組','怎麼分組','進行分組','分在不同組','是老師分組','老師會分組','與好友同組','誰會負責分組','跟朋友同一組','老師要進行分組','分組方法是怎樣的','分組的方式是什麼','由老師來進行分組']
+    testLoki(inputLIST, ['fen1zu3'])
     print("")
+    time.sleep(60)
 
-    # hwo2dweng4ji4lu4
-    print("[TEST] hwo2dweng4ji4lu4")
-    inputLIST = ['有照片','有沒有照片','有活動照片','想看活動相片','更新活動照片','看到活動照片','找到活動的相片','提供活動的相片','看我女兒的照片','看我小孩的照片','了解孩子參與狀況','得知孩子參與狀況','有沒有活動的照片','有活動拍攝的圖片','活動的相片要怎麼看','有沒有活動所拍攝的相片','想要看活動照片要去哪裡找']
-    testLoki(inputLIST, ['hwo2dweng4ji4lu4'])
+    # gwo4ye4
+    print("[TEST] gwo4ye4")
+    inputLIST = ['會過夜','晚上會住哪裡','有過夜的安排','有過夜的營隊','有安排過夜的營隊','過夜的營隊有哪些','有提供過夜活動的營隊','參加哪些提供過夜的營隊','所有的營隊都會在夜晚過夜','有哪些提供過夜住宿的營隊','有哪些營隊可以讓孩子過夜']
+    testLoki(inputLIST, ['gwo4ye4'])
     print("")
+    time.sleep(60)
 
-    # bao4mying2
-    print("[TEST] bao4mying2")
-    inputLIST = ['如何報名','想要參加','想要報名','詢問報名','去哪裡報名','幫小孩報名','想報名參加','有興趣參加','要怎麼報名','如何報名參加','如何進行報名','想讓小孩參加','報名方式是什麼','希望給小孩報名','幫我姊姊的姐姐報名','幫我姐姐的小孩報名','幫我小孩的小孩報名']
-    testLoki(inputLIST, ['bao4mying2'])
+    # te4shu1xuu1qyou2
+    print("[TEST] te4shu1xuu1qyou2")
+    inputLIST = ['吃素','吃藥','不能吃','有急事','有其他問題','有急事找誰','有特殊需求','有臨時狀況','臨時有事情','有額外的問題','暫時有緊急事項','有其他問題怎麼辦','突發情況需要找誰','臨時有狀況要找誰']
+    testLoki(inputLIST, ['te4shu1xuu1qyou2'])
     print("")
-
-    # zheng3jyou4wan2juu4dao3
-    print("[TEST] zheng3jyou4wan2juu4dao3")
-    inputLIST = ['拯救玩具島在幹嘛','拯救玩具島的細節','拯救玩具島在做什麼','拯救玩具島的詳細內容','有拯救玩具島的課表嗎','拯救玩具島的特色是什麼','拯救玩具島都在教室活動嗎']
-    testLoki(inputLIST, ['zheng3jyou4wan2juu4dao3'])
-    print("")
-
-    # tan4swo3sheng1tai4dao3
-    print("[TEST] tan4swo3sheng1tai4dao3")
-    inputLIST = ['探索生態島在幹嘛','探索生態島的細節','探索生態島在做什麼','探索生態島的詳細內容','有探索生態島的課表嗎','探索生態島的特色是什麼','探索生態島都在戶外活動嗎']
-    testLoki(inputLIST, ['tan4swo3sheng1tai4dao3'])
-    print("")
-    
-    # fei4uuong4xi4jye2
-    print("[TEST] fei4uuong4xi4jye2")
-    inputLIST = ['費用為何?','費用是多少','費用要多少','價格是多少錢?','花費需要多少錢?','費用有包含教材嗎','會不會有額外的費用','是否會有其他的花費？','教材有包含在費用裡嗎？','是否會產生額外的費用？','費用裡有沒有包含教材？','教材是否已納入費用之中？','費用是否已經包括了教材？','教材是否已經被納入費用了？','會不會有額外需支付的費用？','是否會有額外的金額需要支付？','教材是不是已經包含在費用中了？']
-    testLoki(inputLIST, ['fei4uuong4xi4jye2'])
-    print("")
-    
-    # pyin3zhi2
-    print("[TEST] pyin3zhi2")
-    inputLIST = ['是小班制','班級人數','什麼是玩伴','帶幾個小孩','玩伴是什麼','師生比是多少','控制教學品質','玩伴在做什麼','確保教師素質','管理教學品質','維護教學品質','如何把關教學品質','如何確保教學品質','師生比例是多少？','確保營隊師資品質','老師和學生的比例','師生之間的比例是多少']
-    testLoki(inputLIST, ['pyin3zhi2'])
-    print("")    
+    time.sleep(60)
 
 
 if __name__ == "__main__":
    
 
-    inputLIST = ["兩個營隊各自的特色是什麼?"]
+    inputLIST = ["提供保險?"]
     
     resultDICT = runLoki(inputLIST)
-    print(resultDICT)     
+    print(resultDICT)
+    
+    # 測試所有意圖
+    
+    #testIntent()      
     
     '''
-    # 測試所有意圖
-<<<<<<< .merge_file_Rd79Cg
-    #testIntent()
-=======
-    testIntent()  
->>>>>>> .merge_file_rn58pe
+
+
 
     # 測試其它句子
     filterLIST = []
