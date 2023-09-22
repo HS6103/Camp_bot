@@ -948,7 +948,7 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "措施",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
