@@ -278,7 +278,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             
         if CHATBOT_MODE:
             tmpSTR = getResponse(utterance, args)
-            resultDICT["response"] = "關於學習{{}}呢,".format(args[1]) +tmpSTR 
+            resultDICT["response"] = "關於學習{}呢,".format(args[1]) +tmpSTR 
         else:
             # write your code here
             pass

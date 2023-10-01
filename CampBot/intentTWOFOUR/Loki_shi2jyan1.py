@@ -348,7 +348,9 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "帶[他]過去":
-        if CHATBOT_MODE:
+        if args[0] == "":
+            pass
+        elif CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
