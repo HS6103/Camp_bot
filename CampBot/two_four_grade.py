@@ -70,7 +70,7 @@ try:
     from intentTWOFOUR import Loki_ying2dwei4nei4rweng2
     from intentTWOFOUR import Loki_fei4uuong4xi4jye2
     from intentTWOFOUR import Loki_pyin3zhi2
-    from intentAGE import Loki_age  
+    from intentTWOFOUR import Loki_age  
 except:
     from .intent import Loki_fei4uuong4you1hwei4
     from .intent import Loki_gwo4ye4
