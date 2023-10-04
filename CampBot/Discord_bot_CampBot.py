@@ -144,7 +144,7 @@ class BotClient(discord.Client):  ##和discord連線
                         print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "senior")
                         
-                        if "age_grade" in resultDICT:
+                        if ("age_grade" in resultDICT) and resultDICT["switch_age"] == True:
                             self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]
                             replySTR = resultDICT["response"][0]
                         else:
@@ -162,8 +162,9 @@ class BotClient(discord.Client):  ##和discord連線
                          
                         
                     except Exception:
-                        replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎在LINE 官方 @pleyschool聯絡真人客服~~"
-                    
+                        #replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎在LINE 官方 @pleyschool聯絡真人客服~~"
+                        replySTR = "我是預設的回應字串…你會看到我這串字，肯定是出了什麼錯！"
+                        
                 elif self.mscDICT[message.author.id]["age_grade"] == "junior":
                     try:
                         self.mscDICT[message.author.id]["latestQuest"] = msgSTR
@@ -172,7 +173,7 @@ class BotClient(discord.Client):  ##和discord連線
                         print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "junior")
                         
-                        if "age_grade" in resultDICT:
+                        if ("age_grade" in resultDICT) and resultDICT["switch_age"] == True:
                             self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]
                             replySTR = resultDICT["response"][0]
                         else:
@@ -193,7 +194,8 @@ class BotClient(discord.Client):  ##和discord連線
                         
                         
                     except Exception:
-                        replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎在LINE 官方 @pleyschool聯絡真人客服~"
+                        #replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎在LINE 官方 @pleyschool聯絡真人客服~"
+                        replySTR = "我是預設的回應字串…你會看到我這串字，肯定是出了什麼錯！"
                         
                         
             
