@@ -2,7 +2,7 @@
     "language": "zh-tw",
     "type": "basic",
     "version": {
-        "atk": "v266",
+        "atk": "v265",
         "intent": "1.0"
     },
     "user_defined": {
@@ -13,23 +13,23 @@
         ],
         "優惠": [
             "團報",
-            "團報優惠",
-            "團體報名",
             "折扣"
         ],
         "問題": [
+            "狀況",
             "事情",
+            "需求",
             "事項",
             "問題",
-            "情況",
-            "狀況",
-            "需求"
+            "急事",
+            "情況"
         ],
         "地點": [
             "位置",
             "地址",
             "地方",
-            "場地"
+            "場地",
+            "地點"
         ],
         "小孩": [
             "孩子",
@@ -44,8 +44,8 @@
             "年齡"
         ],
         "教材": [
-            "教具",
-            "課表"
+            "課表",
+            "教具"
         ],
         "活動": [
             "營隊",
@@ -80,35 +80,24 @@
             "金額"
         ],
         "點心": [
-            "",
             "下午茶",
             "小點心",
-            "巧克力",
-            "泡麵",
-            "洋芋片",
-            "甜點",
-            "糖果",
-            "零食",
-            "餅乾",
-            "點心"
+            "點心",
+            "甜點"
         ],
         "as_camp": [
             "世界和平遊戲營",
             "創新創業營",
-            "最重要的小事營",
-            "拯救玩具島",
-            "探索生態島"
+            "最重要的小事營"
         ],
         "as_noun": [
             "中午",
             "休息時間",
             "保險",
             "冬令營",
-            "創業",
             "團報優惠",
             "夏令營",
             "戶外",
-            "才藝",
             "早上",
             "紀錄",
             "行前",
@@ -122,7 +111,6 @@
             "需求"
         ],
         "as_insur": [
-            "保險",
             "意外險",
             "旅平險",
             "醫療險"
@@ -152,34 +140,6 @@
         ]
     },
     "utterance": {
-        "不適": {
-            "id": "dd1c4e42-6446-4ffe-b57c-8d3ec5175b53",
-            "argument": [
-                {
-                    "pos": "MODIFIER",
-                    "text": "不適",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "不舒服": {
-            "id": "70318dee-56cd-40ef-9950-3eb5fdae6c23",
-            "argument": [
-                {
-                    "pos": "FUNC_negation",
-                    "text": "不",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "舒服",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "會受傷": {
             "id": "85331082-386e-4a7c-8609-59dae5d2e041",
             "argument": [
@@ -1112,343 +1072,6 @@
                 }
             ]
         },
-        "有防護措施": {
-            "id": "051b4f2f-abfa-4c5b-a813-1fe5818419d8",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "保護",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "守護",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "維護",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "護著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "護衛",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "防備",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "防守",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "防禦",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "防衛",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "值守",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "守住",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "守望",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "守禦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "扼守",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "把關",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "死守",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "看守",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "鎮守",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "防寒",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防火",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防風",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防盜",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防震",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防災",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防範",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防毒",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防水",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "防護",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "措施",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
-        "身體有狀況": {
-            "id": "d942060f-2f10-41cc-a1e6-3d9dad64f093",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "身體",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "具有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "兼有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "存有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "帶有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "懷有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "持有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁有",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有了",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "有著",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "保留",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "存在",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "有",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "狀況",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
         "如何處理受傷": {
             "id": "9a54051a-7156-4f27-be3c-6ae732af678b",
             "argument": [
@@ -1945,7 +1568,7 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "UserDefined",
+                    "pos": "ENTITY_nouny",
                     "text": "情況",
                     "checked": true,
                     "checkbox": true
@@ -2531,6 +2154,166 @@
                 {
                     "pos": "MODIFIER",
                     "text": "安全",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "措施",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "有沒有防護措施": {
+            "id": "b165a802-2f15-4d6f-b8be-e0e4e675d246",
+            "argument": [
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "有沒有",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "保護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "守護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "維護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "護著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "護衛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "防備",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "防守",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "防禦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "防衛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "值守",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "守住",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "守望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "守禦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "扼守",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "把關",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "死守",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看守",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "鎮守",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "防寒",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防火",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防風",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防盜",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防震",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防災",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防範",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防毒",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "防水",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "防護",
                     "checked": false,
                     "checkbox": false
                 },

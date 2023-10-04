@@ -537,7 +537,7 @@ def testIntent():
 if __name__ == "__main__":
    
 
-    inputLIST = ["可以把糖果帶進去嗎??"]
+    inputLIST = ["有適合的營隊嗎?"]
     
     resultDICT = runLoki(inputLIST)
     print(resultDICT)
