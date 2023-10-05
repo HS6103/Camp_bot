@@ -250,109 +250,6 @@
                 }
             ]
         },
-        "報名": {
-            "id": "0472332e-2523-4d78-8f37-64c2e032ee17",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "報到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "應徵",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "應聘",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "投考",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "登入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "登錄",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "簽到",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "填報",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "甄選",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "甄試",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "投稿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "推荐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂位",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "報考",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預約",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "報名",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
         "要參加": {
             "id": "32506c77-34fb-4ea5-97f6-d290c9e5d06f",
             "argument": [
@@ -1802,6 +1699,121 @@
                         },
                         {
                             "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預約",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "報名",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "哪裡可以報名": {
+            "id": "b7815d8a-0cdb-438f-8fa3-ed1ac7e7056f",
+            "argument": [
+                {
+                    "pos": "CLAUSE_WhereQ",
+                    "text": "哪裡",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "報到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "加入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應徵",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "應聘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "投考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登入",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "登錄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "填報",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甄試",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "投稿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "申辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推荐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂位",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "報考",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -4147,185 +4159,6 @@
                         }
                     ],
                     "text": "參加",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "去哪裡可以報名？": {
-            "id": "de1ed4ee-6ea0-4a51-b292-95e3c4c48f82",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "要去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "去了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "跑去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "跑來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "趕去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "出去",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "來",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "去",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_WhereQ",
-                    "text": "哪裡",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "可以",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "報到",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "加入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "應徵",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "應聘",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "投考",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "登入",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "登錄",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "簽到",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "申辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "推荐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "甄試",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "報考",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "填報",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "投稿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂位",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "甄選",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "申請",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "預約",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "報名",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "PUNCTUATION",
-                    "text": "？",
                     "checked": false,
                     "checkbox": false
                 }
