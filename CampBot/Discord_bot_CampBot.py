@@ -145,13 +145,10 @@ class BotClient(discord.Client):  ##和discord連線
                         print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "senior")
                         
-                        if ("age_grade" in resultDICT) and resultDICT["switch_age"] == True:
+                        if ("age_grade" in resultDICT) and (resultDICT["age_grade"][0] != self.mscDICT[message.author.id]["age_grade"]):
                             self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]
                             replySTR = resultDICT["response"][0]
-                        else:
-                            if ("age_grade" in resultDICT) and resultDICT["switch_age"] == True:      #對話途中更改年級
-                                self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]
-                                replySTR = resultDICT["response"][0]
+
                             
                         else:
                             print(resultDICT)
@@ -163,7 +160,7 @@ class BotClient(discord.Client):  ##和discord連線
                                 replySTR = "抱歉，我沒有辦法回答你的問題。若您有需要的話歡迎在LINE 官方 @pleyschool聯絡真人客服~"
                             else:
                                 replySTR = resultDICT["response"][0]  + "\n\n請問還有想問什麼問題嗎~"
-                                
+                            
                         resultDICT["response"] = ''
                         self.mscDICT[message.author.id]["latestQuest"] = msgSTR
                             
@@ -183,9 +180,11 @@ class BotClient(discord.Client):  ##和discord連線
                         print(msgSTR)
                         resultDICT = getLokiResult(msgSTR, "junior")
                         
-                        if ("age_grade" in resultDICT) and resultDICT["switch_age"] == True:      #對話途中更改年級
+                        if ("age_grade" in resultDICT) and (resultDICT["age_grade"][0] != self.mscDICT[message.author.id]["age_grade"]):      #對話途中更改年級
                             self.mscDICT[message.author.id]["age_grade"] = resultDICT["age_grade"][0]
+                            print(self.mscDICT[message.author.id]["age_grade"])
                             replySTR = resultDICT["response"][0]
+                            
                             
                         else:
                             print(resultDICT)
