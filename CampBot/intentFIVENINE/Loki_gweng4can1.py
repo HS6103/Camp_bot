@@ -50,19 +50,13 @@ def getResponse(utterance, args):
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[中午][會]吃什麼":
-        if args[0] not in ["中午", "午餐", "點心"]:
-            resultDICT["response"] = "我們僅有提供午餐和點心喔!"
-        elif CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "[午餐]吃什麼":
-        if args[0] != "午餐":
-            resultDICT["response"] = "我們僅有提供午餐和點心喔!"
-        elif CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+        if args[0] in ["中午", "午餐", "中餐"]:
+            if CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+                
+        elif args[0] in userDefinedDICT["點心"]:
+            resultDICT["response"] = "我們會視情況安排可以期待一下每天的{}時間~".format(args[0])           
+        
         else:
             # write your code here
             pass
@@ -221,5 +215,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
-
+        
+    if utterance == "那有[午餐]嗎":
+        if args[0] in userDefinedDICT["吃的東西"]:
+            if args[0] not in ["午餐", "點心"]:
+                resultDICT["response"] = "我們僅有提供午餐和點心喔!"
+                
+            elif CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
+    
+    if utterance == "不提供[午餐]":
+        if args[0] in userDefinedDICT["吃的東西"]:
+            if args[0] not in ["午餐", "點心"]:
+                resultDICT["response"] = "我們僅有提供午餐和點心喔!"
+                
+            elif CHATBOT_MODE:
+                resultDICT["response"] = getResponse(utterance, args)
+        else:
+            pass
     return resultDICT
