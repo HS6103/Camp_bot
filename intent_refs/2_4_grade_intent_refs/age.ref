@@ -41,7 +41,29 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "國一",
-                    "checked": true,
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "國三": {
+            "id": "8e941ee8-6e43-4732-95b4-6c72440a991d",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "國三",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
+        "國二": {
+            "id": "c1a9a992-b395-452a-a3b1-0b3c503b6203",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "國二",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -80,59 +102,13 @@
                 }
             ]
         },
-        "中學二年級": {
-            "id": "75a58bd4-2094-448b-b605-f607d256446b",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "中學",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_num",
-                    "text": "二",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
-        "初中二年級": {
-            "id": "91872380-db4e-4a77-a8e3-8c3df97b329a",
-            "argument": [
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "初中",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_num",
-                    "text": "二",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "年級",
-                    "checked": false,
-                    "checkbox": true
-                }
-            ]
-        },
         "國中二年級": {
             "id": "9c48fbab-f1cd-4088-9e96-47e5099366c0",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
                     "text": "國中",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
