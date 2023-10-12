@@ -276,7 +276,7 @@ if __name__ == "__main__":
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    inputSTR = ["價格是多少錢?"]
+    inputSTR = ["國4"]
     resultDICT = execLoki(inputSTR, splitLIST= splitLIST)
     print (resultDICT)
     
