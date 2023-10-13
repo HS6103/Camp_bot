@@ -562,16 +562,16 @@ if __name__ == "__main__":
     #testIntent()
 
     #測試其它句子
-    #filterLIST = []
-    #splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
-    #inputSTR = ['可以學才藝的營隊']
-    #resultDICT = runLoki(inputSTR)
-    #print(resultDICT["response"])
+    filterLIST = ['age']
+    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    inputSTR = ['二年級有哪些營隊']
+    resultDICT = runLoki(inputSTR, filterLIST)
+    print(resultDICT)
     
-    print("[TEST] fei4uuong4xi4jye2")
-    inputLIST = ['多貴','多少錢','費用為何?','費用是多少','費用要多少','價格是多少錢?','花費需要多少錢?','費用有包含教材嗎','會不會有額外的費用','是否會有其他的花費？','教材有包含在費用裡嗎？','是否會產生額外的費用？','費用裡有沒有包含教材？','教材是否已納入費用之中？','費用是否已經包括了教材？','教材是否已經被納入費用了？','會不會有額外需支付的費用？','是否會有額外的金額需要支付？','教材是不是已經包含在費用中了？']
-    testLoki(inputLIST, ['fei4uuong4xi4jye2'])
-    print("")
+    #print("[TEST] fei4uuong4xi4jye2")
+    #inputLIST = ['多貴','多少錢','費用為何?','費用是多少','費用要多少','價格是多少錢?','花費需要多少錢?','費用有包含教材嗎','會不會有額外的費用','是否會有其他的花費？','教材有包含在費用裡嗎？','是否會產生額外的費用？','費用裡有沒有包含教材？','教材是否已納入費用之中？','費用是否已經包括了教材？','教材是否已經被納入費用了？','會不會有額外需支付的費用？','是否會有額外的金額需要支付？','教材是不是已經包含在費用中了？']
+    #testLoki(inputLIST, ['fei4uuong4xi4jye2'])
+    #print("")
     
     #### 設定參考資料
     #refDICT = {

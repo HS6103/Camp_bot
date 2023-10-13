@@ -64,6 +64,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 else:
                     pass
             else:
+                resultDICT["response"] = "我們沒有適合的營隊喔!"
+                resultDICT["age_grade"] = None                
                 pass
         
         elif len(inputSTR) == 1:
@@ -95,6 +97,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                     
                     pass           
         else:
+            resultDICT["response"] = "我們沒有適合的營隊喔!"
+            resultDICT["age_grade"] = None            
             pass
 
     if utterance == "[二]年級":
@@ -120,6 +124,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["age_grade"] = "senior"                                
                 pass
         else:
+            resultDICT["response"] = "我們沒有適合的營隊喔!"
+            resultDICT["age_grade"] = None            
             pass
 
     if utterance == "[小][二]":
@@ -141,7 +147,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                     resultDICT["age_grade"] = "senior"
                     pass
             else:
-                pass
+                resultDICT["response"] = "我們沒有適合的營隊喔!"
+                resultDICT["age_grade"] = None
         else:
             pass
 
@@ -163,6 +170,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 pass
             
         else:
+            resultDICT["response"] = "我們沒有適合的營隊喔!"
+            resultDICT["age_grade"] = None            
             pass
         
     if utterance == "[8]歲":
@@ -225,6 +234,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["age_grade"] = "senior"                                
                 pass                   
         else:
+            resultDICT["response"] = "我們沒有適合的營隊喔!"
+            resultDICT["age_grade"] = None            
             pass
 
         
@@ -236,6 +247,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
                 resultDICT["age_grade"] = "senior"                                
                 pass        
         else:
+            resultDICT["response"] = "我們沒有適合的營隊喔!"
+            resultDICT["age_grade"] = None            
             pass
   
         
