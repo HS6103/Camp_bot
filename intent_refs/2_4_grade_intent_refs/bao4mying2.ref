@@ -3527,6 +3527,145 @@
                 }
             ]
         },
+        "送小孩去你們營隊": {
+            "id": "80e3158d-d345-4fb7-bc59-6764c9b6ff80",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "轉送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "迫逃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贈送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "送了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "經送",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "送",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "小孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "要去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "去了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跑去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "跑來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "趕去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出去",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "去",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "你們",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "幫我姊姊的姐姐報名": {
             "id": "0834523e-dc14-4eb8-ae7a-8e478c855484",
             "argument": [

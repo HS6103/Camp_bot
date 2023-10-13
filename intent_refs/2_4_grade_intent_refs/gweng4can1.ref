@@ -795,6 +795,166 @@
                 }
             ]
         },
+        "不提供午餐": {
+            "id": "5c2c7778-1ee1-4c59-84bb-73dc1d1e5e6d",
+            "argument": [
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "供應",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供銷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供電",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提案",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "奉獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "武裝",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "獻出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭拜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭祀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "提供了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出借",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獲取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收集",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發送",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶來",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "提供",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "午餐",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "午餐吃什麼": {
             "id": "47e915c6-60ec-4f82-a85e-144ca651f290",
             "argument": [
@@ -1292,6 +1452,29 @@
                     "text": "點心",
                     "checked": true,
                     "checkbox": true
+                }
+            ]
+        },
+        "那有午餐嗎": {
+            "id": "ade8c8af-5ec8-4c3e-bd6c-baafcd907a33",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "那有",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "午餐",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },

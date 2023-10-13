@@ -750,103 +750,163 @@
                 }
             ]
         },
-        "午餐吃什麼": {
-            "id": "47e915c6-60ec-4f82-a85e-144ca651f290",
+        "不提供午餐": {
+            "id": "19bb6a72-596b-47ce-867d-a3a66491cc6b",
             "argument": [
                 {
-                    "pos": "UserDefined",
-                    "text": "午餐",
-                    "checked": true,
-                    "checkbox": true
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
                 },
                 {
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "吃掉",
+                            "text": "供應",
                             "level": "tier_1",
                             "checked": false
                         },
                         {
-                            "text": "吸收",
+                            "text": "供給",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供貨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供銷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "供電",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "提案",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "協助",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "攝入",
+                            "text": "奉獻",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "耗損",
+                            "text": "帶給",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "花掉",
+                            "text": "武裝",
                             "level": "tier_2",
                             "checked": false
                         },
                         {
-                            "text": "煮",
+                            "text": "獻出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發放",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭拜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祭祀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "補給",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "貢獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "資助",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進獻",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "收取",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "啃",
+                            "text": "收集",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "吃著",
+                            "text": "出借",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "喝",
+                            "text": "獲取",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "常吃",
+                            "text": "發送",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "吃了",
+                            "text": "給予",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "生吃",
+                            "text": "提供了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "吃過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想吃",
+                            "text": "帶來",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "吃",
+                    "text": "提供",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "CLAUSE_WhatQ",
-                    "text": "什麼",
-                    "checked": false,
-                    "checkbox": false
+                    "pos": "UserDefined",
+                    "text": "午餐",
+                    "checked": true,
+                    "checkbox": true
                 }
             ]
         },
@@ -1247,6 +1307,29 @@
                     "text": "點心",
                     "checked": true,
                     "checkbox": true
+                }
+            ]
+        },
+        "那有午餐嗎": {
+            "id": "d01aa62b-b73e-4680-9a0d-393a27e96130",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "那有",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "午餐",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },

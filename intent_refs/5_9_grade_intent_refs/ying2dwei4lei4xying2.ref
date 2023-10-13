@@ -1196,6 +1196,92 @@
                 }
             ]
         },
+        "推薦一下營隊": {
+            "id": "e8929b2d-128f-41af-aae2-3a2b535ff151",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "引薦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉薦",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "引進",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "挑選",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推荐",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推介",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "提拔",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "欽點",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "介紹",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "邀請",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "推舉",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "推薦",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "一",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "下",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "營隊",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "營隊在做什麼": {
             "id": "38e5d584-0637-4570-91c8-26bfa1121c85",
             "argument": [
